@@ -20,6 +20,7 @@
 <link rel="stylesheet" type="text/css" href="css/component2.css" />
 <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.css" />
 <link rel="stylesheet" href="css/sky-mega-menu.css">
+<link rel="stylesheet" type="text/css" href="css/component3.css" />
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 <script src="js/jquery-1.9.1.js"></script>
 <script src="js/jquery.easing.min.js"></script>
@@ -47,20 +48,21 @@
   <div id="ascensorBuilding">
     <div class="floor-checkout">
       <div class="checkout">
-      	<div class="left">
-      	<div class="checkout-bar">
-        	<ul id="progressbar">
-                <li class="active">Review Cart</li>
-                <li>Fill in details</li>
-                <li>Order Summary</li>
+        <div class="left">
+          <div class="checkout-bar">
+            <ul id="progressbar">
+              <li class="active">Review Cart</li>
+              <li>Fill in details</li>
+              <li>Order Summary</li>
             </ul>
-        </div>
-        <div class="clear"></div>
-        <h1>What’s in your shopping cart</h1>
-        <p>The items below are currently in your shopping cart. To remove any item click on delete icon. To checkout please <br />click on ‘proceed to checkout’</p>
-        <div class="modal-dialog4">
-          <div class="modal-content3">
-            <!--<div class="modal-header2">
+          </div>
+          <div class="clear"></div>
+          <h1>What’s in your shopping cart</h1>
+          <p>The items below are currently in your shopping cart. To remove any item click on delete icon. To checkout please <br />
+            click on ‘proceed to checkout’</p>
+          <div class="modal-dialog4">
+            <div class="modal-content3"> 
+              <!--<div class="modal-header2">
               <div class="boxCart2">
                 <div class="bucket left"><img alt="" src="images/cart_icon_big.png"></div>
                 <div class="txt">Your Cart has 5 Items</div>
@@ -68,81 +70,79 @@
             </div>
             <div class="clear"></div>
             <div class="line_h4"></div>
-            <div class="clear"></div>-->
-            <!-- contents -->
-            <div class="modal-body3 wrapper ps-container" id="description">
-              <div class="product-list3">
-                <ul>
-                  <li>
-                    <div class="pro-image"><img src="images/cart_pro01.png" alt="" /></div>
-                    <div class="pro-detail">
-                      <p class="name">The Décolleté Compact Clutch or maybe a bigger name of the product.</p>
-                      <p>A Camera Clutch inspired by the mystery of Paris' 7th arrondissement - lazy afternoons, red lipstick on thin cigarettes, and a secret</p>
-                    </div>
-                    <div class="pro-quantity marRight20">
-                      <div class="title">Quantity</div>
-                      <div class="clear"></div>
-                      <form id='myform' method='POST' action='#'>
-                        <input type='text' name='quantity2' value='1' class='qty3' />
-                        <label>pc</label>
-                      </form>
-                    </div>
-                    <div class="pro-price marRight20">
-                      <div class="title">Unit Price</div>
-                      <p>$250</p>
-                    </div>
-                    <div class="pro-subtotal">
-                      <div class="title">Subtotal</div>
-                      <p>$250</p>
-                    </div>
-                    <div class="pro-del2 last2"> 
-                      <!--<div class="line_v"></div>--> 
-                      <img src="images/icon-cross2.png" alt="" /> 
-                    </div>
-                    <div class="right">
+            <div class="clear"></div>--> 
+              <!-- contents -->
+              <div class="modal-body3 wrapper ps-container" id="description">
+                <div class="product-list3">
+                  <ul>
+                    <li>
+                      <div class="pro-image"><img src="images/cart_pro01.png" alt="" /></div>
+                      <div class="pro-detail">
+                        <p class="name">The Décolleté Compact Clutch or maybe a bigger name of the product.</p>
+                        <p>A Camera Clutch inspired by the mystery of Paris' 7th arrondissement - lazy afternoons, red lipstick on thin cigarettes, and a secret</p>
+                      </div>
+                      <div class="pro-quantity marRight20">
+                        <div class="title">Quantity</div>
+                        <div class="clear"></div>
+                        <form id='myform' method='POST' action='#'>
+                          <input type='text' name='quantity2' value='1' class='qty3' />
+                          <label>pc</label>
+                        </form>
+                      </div>
+                      <div class="pro-price marRight20">
+                        <div class="title">Unit Price</div>
+                        <p>$250</p>
+                      </div>
+                      <div class="pro-subtotal">
+                        <div class="title">Subtotal</div>
+                        <p>$250</p>
+                      </div>
+                      <div class="pro-del2 last2"> 
+                        <!--<div class="line_v"></div>--> 
+                        <img src="images/icon-cross2.png" alt="" /> </div>
+                      <div class="right">
                         <div class="price-box-main3 marTop20">
                           <div class="left" onclick="location.href='checkout.html';">Add a monogram</div>
                           <div class="view-product5">$ 20 (extra)</div>
                         </div>
-                  	</div>
-                  </li>
-                  <li>
-                    <div class="pro-image"><img src="images/cart_pro01.png" alt="" /></div>
-                    <div class="pro-detail">
-                      <p class="name">The Décolleté Compact Clutch or maybe a bigger name of the product.</p>
-                      <p>A Camera Clutch inspired by the mystery of Paris' 7th arrondissement - lazy afternoons, red lipstick on thin cigarettes, and a secret</p>
-                    </div>
-                    <div class="pro-quantity marRight20">
-                      <div class="title">Quantity</div>
-                      <div class="clear"></div>
-                      <form id='myform' method='POST' action='#'>
-                        <input type='text' name='quantity2' value='1' class='qty3' />
-                        <label>pc</label>
-                      </form>
-                    </div>
-                    <div class="pro-price marRight20">
-                      <div class="title">Unit Price</div>
-                      <p>$250</p>
-                    </div>
-                    <div class="pro-subtotal">
-                      <div class="title">Subtotal</div>
-                      <p>$250</p>
-                    </div>
-                    <div class="pro-del2 last2"> 
-                      <!--<div class="line_v"></div>--> 
-                      <img src="images/icon-cross2.png" alt="" /> 
-                    </div>
-                    <div class="right">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pro-image"><img src="images/cart_pro01.png" alt="" /></div>
+                      <div class="pro-detail">
+                        <p class="name">The Décolleté Compact Clutch or maybe a bigger name of the product.</p>
+                        <p>A Camera Clutch inspired by the mystery of Paris' 7th arrondissement - lazy afternoons, red lipstick on thin cigarettes, and a secret</p>
+                      </div>
+                      <div class="pro-quantity marRight20">
+                        <div class="title">Quantity</div>
+                        <div class="clear"></div>
+                        <form id='myform' method='POST' action='#'>
+                          <input type='text' name='quantity2' value='1' class='qty3' />
+                          <label>pc</label>
+                        </form>
+                      </div>
+                      <div class="pro-price marRight20">
+                        <div class="title">Unit Price</div>
+                        <p>$250</p>
+                      </div>
+                      <div class="pro-subtotal">
+                        <div class="title">Subtotal</div>
+                        <p>$250</p>
+                      </div>
+                      <div class="pro-del2 last2"> 
+                        <!--<div class="line_v"></div>--> 
+                        <img src="images/icon-cross2.png" alt="" /> </div>
+                      <div class="right">
                         <div class="price-box-main3 marTop20">
                           <div class="left" onclick="location.href='checkout.html';">Add a monogram</div>
                           <div class="view-product5">$ 20 (extra)</div>
                         </div>
-                  	</div>
-                  </li>
-                </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <!--<div class="clear"></div>
+              <!--<div class="clear"></div>
             <div class="modal-footer marTop40">
               <div class="left contFont marLeft40">continue browsing</div>
               <div class="right">
@@ -152,110 +152,180 @@
                 </div>
               </div>
               <div class="clear"></div>
-            </div>-->
+            </div>--> 
+            </div>
           </div>
         </div>
-        </div>
         <div id="cbp-spmenu-s2" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right cbp-spmenu-open">
-        <div class="product-billing">
-          <div id="accordion">
-            <h3 class="line_bottom marTop20">Billing Detail</h3>
-            <div class="line_bottom">
-              <!--<p class="shipping">
+          <div class="product-billing">
+            <div id="accordion">
+              <h3 class="line_bottom marTop20">Billing Detail</h3>
+              <div class="line_bottom"> 
+                <!--<p class="shipping">
                 <input type="radio" id="opt_1" name="shipping" value="1">
                 <label class="icon-" for="opt_1"><span>use this for shipping</span></label>
               </p>-->
-              <p class="marTop10">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" value="">
-              </p>
-              <p>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" value="">
-              </p>
-              <p>
-                <label for="email">Email</label>
-                <input type="text" id="email" value="">
-              </p>
-              <p>
-                <label for="tel">Telephone</label>
-                <input type="text" id="tel" value="">
-              </p>
-              <p>
-                <label for="address">Billing Address</label>
-                <input type="text" id="address" value="">
-                <input type="text" id="address" value="">
-                <input type="text" id="address" value="">
-              </p>
-            </div>
-            <h3 class="line_bottom">Shipping Detail</h3>
-            <div class="line_bottom">
-              <!--<p class="shipping">
+                <p class="marTop20">
+                  <input type="text" id="fname" value="" placeholder="Shadman Ahmed">
+                </p>
+                <!--<p>
+                <input type="text" id="lname" value="" placeholder="shadmanahmed@letsthinksimple.com">
+              </p>-->
+                <p>
+                  <input type="text" id="email" value="" placeholder="shadmanahmed@letsthinksimple.com">
+                </p>
+                <p>
+                  <input type="text" id="tel" value="" placeholder="+91 9812345 67890">
+                </p>
+                <p>
+                  <input type="text" id="address" value="" placeholder="Address Line 1">
+                  <input type="text" id="address" value="" placeholder="Address Line 1">
+                  <input type="text" id="address" value="">
+                </p>
+                <p><a href="#">use this as shipping address</a></p>
+              </div>
+              <h3 class="line_bottom">Shipping Detail</h3>
+              <div class="line_bottom"> 
+                <!--<p class="shipping">
                 <input type="radio" id="opt_2" checked name="shipping" value="2">
                 <label class="icon-" for="opt_2"><span>use this for shipping</span></label>
               </p>-->
-              <span class="bill">same as billing</span>
-              <p>
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" value="">
-              </p>
-              <p>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" value="">
-              </p>
-              <p>
-                <label for="email">Email</label>
-                <input type="text" id="email" value="">
-              </p>
-              <p>
-                <label for="tel">Telephone</label>
-                <input type="text" id="tel" value="">
-              </p>
-              <p>
-                <label for="address">Billing Address</label>
-                <input type="text" id="address" value="">
-                <input type="text" id="address" value="">
-                <input type="text" id="address" value="">
-              </p>
-              <p>
-                <label for="extra">&nbsp;</label>
-              </p>
+                <p class="marTop20">
+                  <input type="text" id="fname" value="" placeholder="Shadman Ahmed">
+                </p>
+                <!--<p>
+                <input type="text" id="lname" value="" placeholder="shadmanahmed@letsthinksimple.com">
+              </p>-->
+                <p>
+                  <input type="text" id="email" value="" placeholder="shadmanahmed@letsthinksimple.com">
+                </p>
+                <p>
+                  <input type="text" id="tel" value="" placeholder="+91 9812345 67890">
+                </p>
+                <p>
+                  <input type="text" id="address" value="" placeholder="Address Line 1">
+                  <input type="text" id="address" value="" placeholder="Address Line 1">
+                  <input type="text" id="address" value="">
+                </p>
+                <p><a href="#">use this as billing address</a></p>
+              </div>
+              <h3 class="line_bottom">Card Details</h3>
+              <div>
+                <div class="billCurrency">
+                  <label>Billing Currency</label>
+                  <div class="styled-select monthSelect marRight10">
+                    <select name="month" onchange="changeDate(this.options[selectedIndex].value);">
+                      <option value="na">INR - Indian Rupees</option>
+                      <option value="1">EUR</option>
+                      <option value="2">GBP</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="clear"></div>
+                <div id="tabs" class="tabs">
+                  <nav>
+                    <ul>
+                      <li><a href="#section-1" class="bg-lightColor"><span>Card</span></a></li>
+                      <li><a href="#section-2" class="bg-greyColor"><span>Paypal</span></a></li>
+                    </ul>
+                  </nav>
+                  <div class="content">
+                    <section id="section-1">
+                      <p class="padLeft20">
+                        <label for="cnum">Card Number <span>*</span></label>
+                        <input type="text" id="cnum" value="">
+                      </p>
+                      <p>
+                      <div class="left width62p">
+                        <div class="cardInput padLeft20">
+                          <label for="cexp">Card Expiration Date <span>*</span></label>
+                          <div class="styled-select monthSelect marRight5">
+                            <select name="month" onChange="changeDate(this.options[selectedIndex].value);">
+                              <option value="na">month</option>
+                              <option value="1">January</option>
+                              <option value="2">February</option>
+                              <option value="3">March</option>
+                              <option value="4">April</option>
+                              <option value="5">May</option>
+                              <option value="6">June</option>
+                              <option value="7">July</option>
+                              <option value="8">August</option>
+                              <option value="9">September</option>
+                              <option value="10">October</option>
+                              <option value="11">November</option>
+                              <option value="12">December</option>
+                            </select>
+                          </div>
+                          <div class="styled-select yearSelect">
+                            <select name="year" id="year">
+                              <option value="na">year</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right width35p padLeft36">
+                        <label for="cvnum">CVV <span>*</span></label>
+                        <input type="text" id="cvnum" value="" class="width71">
+                      </div>
+                      </p>
+                      <div class="clear"></div>
+                      <p class="padLeft20">
+                        <label for="hnum">Card Holder’s Name <span>*</span></label>
+                        <input type="text" id="hnum" value="">
+                      </p>
+                    </section>
+                    <section id="section-2">
+                      <p class="padLeft20">
+                        <label for="cnum">Card Number <span>*</span></label>
+                        <input type="text" id="cnum" value="">
+                      </p>
+                      <p>
+                      <div class="left width62p">
+                        <div class="cardInput padLeft20">
+                          <label for="cexp">Card Expiration Date <span>*</span></label>
+                          <div class="styled-select monthSelect marRight5">
+                            <select name="month" onChange="changeDate(this.options[selectedIndex].value);">
+                              <option value="na">month</option>
+                              <option value="1">January</option>
+                              <option value="2">February</option>
+                              <option value="3">March</option>
+                              <option value="4">April</option>
+                              <option value="5">May</option>
+                              <option value="6">June</option>
+                              <option value="7">July</option>
+                              <option value="8">August</option>
+                              <option value="9">September</option>
+                              <option value="10">October</option>
+                              <option value="11">November</option>
+                              <option value="12">December</option>
+                            </select>
+                          </div>
+                          <div class="styled-select yearSelect">
+                            <select name="year" id="year">
+                              <option value="na">year</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right width35p padLeft36">
+                        <label for="cvnum">CVV <span>*</span></label>
+                        <input type="text" id="cvnum" value="" class="width71">
+                      </div>
+                      </p>
+                      <div class="clear"></div>
+                      <p class="padLeft20">
+                        <label for="hnum">Card Holder’s Name <span>*</span></label>
+                        <input type="text" id="hnum" value="">
+                      </p>
+                    </section>
+                  </div>
+                  <!-- /content --> 
+                </div>
+                <!-- /tabs --> 
+              </div>
+              <h1 class="next">proceed to next step</h1>
             </div>
-            <h3 class="line_bottom">Card Details</h3>
-            <div>
-              <fieldset class="formRadio">
-                <ul>
-                  <li>
-                    <label> <span class="card"><img src="images/card_master.png" alt="" /></span> </label>
-                    <input name="card" type="radio" checked="checked" value="master">
-                  </li>
-                  <li>
-                    <label> <span class="card"><img src="images/card_paypal.png" alt="" /></span> </label>
-                    <input name="card" type="radio" value="paypal">
-                  </li>
-                  <li>
-                    <label> <span class="card"><img src="images/card_visa.png" alt="" /></span> </label>
-                    <input name="card" type="radio" value="visa">
-                  </li>
-                </ul>
-              </fieldset>
-              <p class="padLeft0">
-                <label for="cnum">Card number</label>
-                <input type="text" id="cnum" value="">
-              </p>
-              <p class="padLeft0"> <span class="left">
-                <label for="cexp">Card Expiry</label>
-                <input type="text" id="cexp1" value="" class="width40">
-                <input type="text" id="cexp2" value="" class="width40">
-                </span> <span class="right width41">
-                <label for="cvnum">CVV number</label>
-                <input type="text" id="cvnum" value="" class="width80_px">
-                </span> </p>
-              <!--<p class="view-product4" onclick="location.href='checkout.html';">make payment</p>-->
-            </div>
-            <h1>proceed to next step</h1>
           </div>
-        </div>
         </div>
       </div>
     </div>
@@ -456,24 +526,6 @@
 <script src="js/jquery-1.9.1.js"></script> 
 <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie --> 
 <script src="js/classie.js"></script> 
-<script>
-			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-				showRightPush = document.getElementById( 'showRightPush' ),
-				body = document.body;
-
-			showRightPush.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'cbp-spmenu-push-toleft' );
-				classie.toggle( menuRight, 'cbp-spmenu-open' );
-				disableOther( 'showRightPush' );
-			};
-
-			function disableOther( button ) {
-				if( button !== 'showRightPush' ) {
-					classie.toggle( showRightPush, 'disabled' );
-				}
-			}
-</script> 
 <script type="text/javascript" src="js/jquery.min.js"></script> 
 <script type="text/javascript" src="js/jquery.slidePanel.js"></script> 
 <script type="text/javascript">
@@ -576,6 +628,11 @@ $('.last2').live('click',function () {
 	  active: false
     });
   });
-  </script>
+  </script> 
+<script src="js/cbpFWTabs.js"></script> 
+<script>
+	new CBPFWTabs( document.getElementById( 'tabs' ) );
+</script>
+<script src="js/nxt-progress-bar.js"></script>
 </body>
 </html>
