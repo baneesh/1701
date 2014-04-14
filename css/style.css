@@ -2790,6 +2790,9 @@ input.qtyminus2 {
 	margin-right: 0px;
 	cursor: pointer;
 }
+.checkout .product-billing h3:focus{
+	outline:none;
+	}
 .checkout-bar{
 	width:1074px;
 	margin: 90px auto;
