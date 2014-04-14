@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>jQuery SlideDown() / SlideUp() With Bottom-Positioned Elements</title>
+<!-- CSS
+================================================== -->
+<!-- Bootstrap  -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!-- Custom css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<!-- icon fonts -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
+<style type="text/css">
+#container {
+	bottom: 0px;
+	display: none;
+	left: 20px;
+	position: fixed;
+	width: 90%;
+}
+#inner {
+	background-color: #F0F0F0;
+	border: 1px solid #666666;
+	border-bottom-width: 0px;
+	padding: 20px 20px 100px 20px;
+}
+</style>
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script>
+$(document).ready(function(){
+  $('.slider1').bxSlider({
+    slideWidth: 200,
+    minSlides: 2,
+    maxSlides: 3,
+    slideMargin: 10
+  });
+});
+</script>
+<script type="text/javascript">
+     
+    // When the DOM is ready, initialize the scripts.
+    jQuery(function( $ ){
+     
+    // Get a reference to the container.
+    var container = $( "#container" );
+     
+     
+    // Bind the link to toggle the slide.
+    $( "#C-slider" ).click(
+    function( event ){
+    // Prevent the default event.
+    event.preventDefault();
+     
+    // Toggle the slide based on its current
+    // visibility.
+    if (container.is( ":visible" )){
+     
+    // Hide - slide up.
+    container.slideUp( 500 );
+     
+    } else {
+     
+    // Show - slide down.
+    container.slideDown( 500 );
+     
+    }
+    }
+    );
+     
+    });
+     
+</script>
+</head>
+<body>
+<div class="slider1">
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar1"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar2"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar3"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar4"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div>
+    </div>
+<h1> jQuery SlideDown() / SlideUp() With Bottom-Positioned Elements </h1>
+<p id="C-slider"> <a href="#">Show Div With SlideDown()</a> </p>
+<div id="container">
+  <div id="inner">
+    <div class="slider1">
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar1"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar2"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar3"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar4"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

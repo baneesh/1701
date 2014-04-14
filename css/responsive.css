@@ -1,0 +1,182 @@
+/*********************************************************************************************
+
+9. Media Queries
+
+*********************************************************************************************/
+
+
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+.main2 {
+    right: 310px;
+}
+}
+
+@media only screen and (max-width : 1824px) {
+
+}
+
+@media screen and (max-width: 1680px) {
+
+}
+
+@media screen and (max-width: 1600px) {
+
+}
+
+@media screen and (max-width: 1452px) {
+
+}
+
+@media screen and (max-width: 1400px) {
+	
+	.modal-dialog3, .modal-dialog{
+		margin-top:30px;
+		}
+
+}
+
+@media screen and (max-width: 1351px) {
+
+}
+
+@media screen and (max-width: 1350px) {
+	
+
+}
+
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 1224px) {
+
+}
+
+@media only screen and (max-width : 1152px) {
+	
+.navbar-nav.navbar-right:last-child {
+    margin-right: 10px;
+}
+}
+
+/* -------------------------- Small screens -------------------------------------- */
+
+
+@media only screen and (max-width : 1024px) {
+	
+
+.nextStory {
+    left: 41%;
+}
+	
+
+
+}
+
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+	
+	
+	
+
+	
+	
+
+}
+
+
+
+
+/* -------------------------- Small screens -------------------------------------- */
+
+@media only screen and (max-width : 975px) {
+	
+
+	
+	
+	}
+
+ 
+
+
+
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+	
+	
+.nav li.bar{
+	display:none;
+	}
+.nextStory {
+    left: 39%;
+}
+.modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+.container {
+	min-width:inherit;
+    width: 64%;
+}
+.social > div{
+	border:none;
+	}
+	
+}
+
+
+
+
+
+/* All Mobile Sizes (devices and browser) */
+@media screen and (max-width: 640px) {
+	
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 568px) {
+/* iPhone 5 or iPod Touch 5th generation */
+
+
+
+
+
+
+}
+
+
+
+
+/* iPhone landscape */
+@media screen and (max-width: 480px) {
+	
+
+.container {
+    width: 85%;
+}
+
+
+
+}
+
+/* Phone Portrait */
+@media screen and (max-width: 320px) {
+	
+
+.container {
+    width: 100%;
+}
+
+
+
+}
