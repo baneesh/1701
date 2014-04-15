@@ -46,21 +46,23 @@
 <div class="clear"></div>
 <div class="mainSection">
   <div id="ascensorBuilding">
-    <div class="floor-checkout">
-      <div class="checkout">
+    <div class="floor-checkout03">
+      <div class="checkout03">
         <div class="left">
-          <div class="checkout-bar">
+          <div class="checkout03-bar">
             <ul id="progressbar">
               <li class="active">Review Cart</li>
-              <li>Fill in details</li>
-              <li>Order Summary</li>
+              <li class="active">Fill in details</li>
+              <li class="active">Order Summary</li>
             </ul>
           </div>
           <div class="clear"></div>
-          <h1>What’s in your shopping cart</h1>
-          <p>The items below are currently in your shopping cart. To remove any item click on delete icon. To checkout please <br />
-            click on ‘proceed to checkout’</p>
-          <div class="modal-dialog4">
+          <div class="bt-success"><i class="fa fa-check-circle03"></i>success</div>
+          <h4>Thank you for your order! We appreciate your business</h4>
+          <div class="bucket-content">
+          <h2>Your order number is <span>653245</span></h2>
+          <p>We have sent an order confirmation  email to your account. Please print this page for your records.  If you have any questions about <br />your order, please contact us on help@1701.in</p>
+          <div class="modal-dialog5">
             <div class="modal-content3"> 
               <!--<div class="modal-header2">
               <div class="boxCart2">
@@ -97,15 +99,14 @@
                         <div class="title">Subtotal</div>
                         <p>$250</p>
                       </div>
-                      <div class="pro-del2 last2"> 
-                        <!--<div class="line_v"></div>--> 
-                        <img src="images/icon-cross2.png" alt="" /> </div>
-                      <div class="right">
+                      <!--<div class="pro-del2 last2"> 
+                        <img src="images/icon-cross2.png" alt="" /> </div>-->
+                      <!--<div class="right">
                         <div class="price-box-main3 marTop20">
                           <div class="left" onclick="location.href='checkout.html';">Add a monogram</div>
                           <div class="view-product5">$ 20 (extra)</div>
                         </div>
-                      </div>
+                      </div>-->
                     </li>
                     <li>
                       <div class="pro-image"><img src="images/cart_pro01.png" alt="" /></div>
@@ -129,15 +130,14 @@
                         <div class="title">Subtotal</div>
                         <p>$250</p>
                       </div>
-                      <div class="pro-del2 last2"> 
-                        <!--<div class="line_v"></div>--> 
-                        <img src="images/icon-cross2.png" alt="" /> </div>
-                      <div class="right">
+                      <!--<div class="pro-del2 last2"> 
+                        <img src="images/icon-cross2.png" alt="" /> </div>-->
+                      <!--<div class="right">
                         <div class="price-box-main3 marTop20">
                           <div class="left" onclick="location.href='checkout.html';">Add a monogram</div>
                           <div class="view-product5">$ 20 (extra)</div>
                         </div>
-                      </div>
+                      </div>-->
                     </li>
                   </ul>
                 </div>
@@ -155,176 +155,55 @@
             </div>--> 
             </div>
           </div>
+          </div>
         </div>
         <div id="cbp-spmenu-s2" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right cbp-spmenu-open">
-          <div class="product-billing">
-            <div id="accordion">
-              <h3 class="line_bottom marTop20">Billing Detail</h3>
-              <div class="line_bottom"> 
-                <!--<p class="shipping">
-                <input type="radio" id="opt_1" name="shipping" value="1">
-                <label class="icon-" for="opt_1"><span>use this for shipping</span></label>
-              </p>-->
-                <p class="marTop20">
-                  <input type="text" id="fname" value="" placeholder="Shadman Ahmed">
-                </p>
-                <!--<p>
-                <input type="text" id="lname" value="" placeholder="shadmanahmed@letsthinksimple.com">
-              </p>-->
-                <p>
-                  <input type="text" id="email" value="" placeholder="shadmanahmed@letsthinksimple.com">
-                </p>
-                <p>
-                  <input type="text" id="tel" value="" placeholder="+91 9812345 67890">
-                </p>
-                <p>
-                  <input type="text" id="address" value="" placeholder="Address Line 1">
-                  <input type="text" id="address" value="" placeholder="Address Line 1">
-                  <input type="text" id="address" value="">
-                </p>
-                <p><a href="#">use this as shipping address</a></p>
-              </div>
-              <h3 class="line_bottom">Shipping Detail</h3>
-              <div class="line_bottom"> 
-                <!--<p class="shipping">
-                <input type="radio" id="opt_2" checked name="shipping" value="2">
-                <label class="icon-" for="opt_2"><span>use this for shipping</span></label>
-              </p>-->
-                <p class="marTop20">
-                  <input type="text" id="fname" value="" placeholder="Shadman Ahmed">
-                </p>
-                <!--<p>
-                <input type="text" id="lname" value="" placeholder="shadmanahmed@letsthinksimple.com">
-              </p>-->
-                <p>
-                  <input type="text" id="email" value="" placeholder="shadmanahmed@letsthinksimple.com">
-                </p>
-                <p>
-                  <input type="text" id="tel" value="" placeholder="+91 9812345 67890">
-                </p>
-                <p>
-                  <input type="text" id="address" value="" placeholder="Address Line 1">
-                  <input type="text" id="address" value="" placeholder="Address Line 1">
-                  <input type="text" id="address" value="">
-                </p>
-                <p><a href="#">use this as billing address</a></p>
-              </div>
-              <h3 class="line_bottom">Card Details</h3>
-              <div>
-                <div class="billCurrency">
-                  <label>Billing Currency</label>
-                  <div class="styled-select monthSelect marRight10">
-                    <select name="month" onchange="changeDate(this.options[selectedIndex].value);">
-                      <option value="na">INR - Indian Rupees</option>
-                      <option value="1">EUR</option>
-                      <option value="2">GBP</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="clear"></div>
-                <div id="tabs" class="tabs">
-                  <nav>
-                    <ul>
-                      <li><a href="#section-1" class="bg-lightColor"><span>Card</span></a></li>
-                      <li><a href="#section-2" class="bg-greyColor"><span>Paypal</span></a></li>
-                    </ul>
-                  </nav>
-                  <div class="content">
-                    <section id="section-1">
-                      <p class="padLeft20">
-                        <label for="cnum">Card Number <span>*</span></label>
-                        <input type="text" id="cnum" value="">
-                      </p>
-                      <p>
-                      <div class="left width62p">
-                        <div class="cardInput padLeft20">
-                          <label for="cexp">Card Expiration Date <span>*</span></label>
-                          <div class="styled-select monthSelect marRight5">
-                            <select name="month" onChange="changeDate(this.options[selectedIndex].value);">
-                              <option value="na">month</option>
-                              <option value="1">January</option>
-                              <option value="2">February</option>
-                              <option value="3">March</option>
-                              <option value="4">April</option>
-                              <option value="5">May</option>
-                              <option value="6">June</option>
-                              <option value="7">July</option>
-                              <option value="8">August</option>
-                              <option value="9">September</option>
-                              <option value="10">October</option>
-                              <option value="11">November</option>
-                              <option value="12">December</option>
-                            </select>
-                          </div>
-                          <div class="styled-select yearSelect">
-                            <select name="year" id="year">
-                              <option value="na">year</option>
-                            </select>
-                          </div>
+          <div class="product-gallery">
+          	<h2>You may also like these</h2>
+          	<ul>
+            	<li><img src="images/pro-like01.jpg" alt="" />
+                	<div class="hoverProductItem">
+                    	<div class="top">
+                        	<h5>The Jaipur Express Flat Clutch</h5>
+                            <h6>Was $78, <span>Now $71</span></h6>
                         </div>
-                      </div>
-                      <div class="right width35p padLeft36">
-                        <label for="cvnum">CVV <span>*</span></label>
-                        <input type="text" id="cvnum" value="" class="width71">
-                      </div>
-                      </p>
-                      <div class="clear"></div>
-                      <p class="padLeft20">
-                        <label for="hnum">Card Holder’s Name <span>*</span></label>
-                        <input type="text" id="hnum" value="">
-                      </p>
-                    </section>
-                    <section id="section-2">
-                      <p class="padLeft20">
-                        <label for="cnum">Card Number <span>*</span></label>
-                        <input type="text" id="cnum" value="">
-                      </p>
-                      <p>
-                      <div class="left width62p">
-                        <div class="cardInput padLeft20">
-                          <label for="cexp">Card Expiration Date <span>*</span></label>
-                          <div class="styled-select monthSelect marRight5">
-                            <select name="month" onChange="changeDate(this.options[selectedIndex].value);">
-                              <option value="na">month</option>
-                              <option value="1">January</option>
-                              <option value="2">February</option>
-                              <option value="3">March</option>
-                              <option value="4">April</option>
-                              <option value="5">May</option>
-                              <option value="6">June</option>
-                              <option value="7">July</option>
-                              <option value="8">August</option>
-                              <option value="9">September</option>
-                              <option value="10">October</option>
-                              <option value="11">November</option>
-                              <option value="12">December</option>
-                            </select>
-                          </div>
-                          <div class="styled-select yearSelect">
-                            <select name="year" id="year">
-                              <option value="na">year</option>
-                            </select>
-                          </div>
+                        <div class="bottom">
+                        	<div class="price-box-main4">
+                                <div class="left">$127</div>
+                                <div class="view-product">Add to cart</div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="right width35p padLeft36">
-                        <label for="cvnum">CVV <span>*</span></label>
-                        <input type="text" id="cvnum" value="" class="width71">
-                      </div>
-                      </p>
-                      <div class="clear"></div>
-                      <p class="padLeft20">
-                        <label for="hnum">Card Holder’s Name <span>*</span></label>
-                        <input type="text" id="hnum" value="">
-                      </p>
-                    </section>
-                  </div>
-                  <!-- /content --> 
-                </div>
-                <!-- /tabs --> 
-              </div>
-              <h1 class="next" onclick="location.href='checkout02.html';">proceed to next step</h1>
-            </div>
+                    </div>
+                 </li>
+                <li><img src="images/pro-like02.jpg" alt="" />
+                	<div class="hoverProductItem">
+                    	<div class="top">
+                        	<h5>The Jaipur Express Flat Clutch</h5>
+                            <h6>Was $78, <span>Now $71</span></h6>
+                        </div>
+                        <div class="bottom">
+                        	<div class="price-box-main4">
+                                <div class="left">$127</div>
+                                <div class="view-product">Add to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                 </li>
+                <li><img src="images/pro-like03.jpg" alt="" />
+                	<div class="hoverProductItem">
+                    	<div class="top">
+                        	<h5>The Jaipur Express Flat Clutch</h5>
+                            <h6>Was $78, <span>Now $71</span></h6>
+                        </div>
+                        <div class="bottom">
+                        	<div class="price-box-main4">
+                                <div class="left">$127</div>
+                                <div class="view-product">Add to cart</div>
+                            </div>
+                        </div>
+                    </div>
+                 </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -629,10 +508,5 @@ $('.last2').live('click',function () {
     });
   });
   </script> 
-<script src="js/cbpFWTabs.js"></script> 
-<script>
-	new CBPFWTabs( document.getElementById( 'tabs' ) );
-</script>
-<!--<script src="js/nxt-progress-bar.js"></script>-->
 </body>
 </html>
