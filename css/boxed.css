@@ -9,6 +9,7 @@
   right: 0;
   width: 100%;
   z-index: 999;
+  padding-bottom:85px;
 }
 .toggle-panel.boxed[aria-expanded="false"] {
   padding-bottom: 0;
@@ -41,6 +42,8 @@
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.75);*/
   margin: 0;
   position: fixed;
+  opacity : 0.8;
+  filter: alpha(opacity=90) progid:DXImageTransform.Microsoft.Alpha(opacity=80) ;
 }
 .js .toggle-panel.boxed.apple-green > :first-child {
   background-color: #8DB600;
@@ -68,7 +71,8 @@
   height: 36px;
   margin: 0;
   padding: 0;
-  position: absolute;
+  position: fixed;
+  top:400px;
   right: 12px;
   text-align: center;
   width: 36px;

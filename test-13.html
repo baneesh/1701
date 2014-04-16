@@ -5,7 +5,6 @@
 <meta content="width=device-width" name="viewport" />
 <title>Toggle Panel</title>
 <link href="css/toggle-panel.css" rel="stylesheet" />
-<link href="css/boxed.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
 <link href="css/main_aj.css" rel="stylesheet" type="text/css" />
@@ -14,8 +13,8 @@
 
 <body>
 <div role="main">
-  <button class="toggle-all">Toggle all</button>
-  <article class="toggle-panel boxed bottom apple-green"> <span>+</span>
+  <a class="toggle2">Men</a>
+  <article class="toggle-panel2 boxed bottom apple-green"> <div>+</div>
     <div class="slider1">
       <div class="slide">
           <div class="gallery_r1">
@@ -109,12 +108,39 @@
         </div>
     </div>
   </article>
+  <a class="toggle2">Collections</a>
+  <article class="toggle-panel2 boxed bottom apple-green"> <div>+</div>
+  	<div class="main-product">
+        <div class="product-box left">
+        	<div class="left"><img src="images/g2.png" alt="" /></div>
+            <div class="info-product left">
+            	<h2>The Orient Express</h2>
+            	<p>It is 1897 and Mme. DuVerre, stares out of her window at a tall, gilded lamppost that bears a clock informing her that it is 3:25pm in the afternoon.</p>
+                <div class="link-explore">
+                	<a href="collection01.html">Explore More</a>
+                	<span class="right"><a href="collection01.html"><img src="images/lens.png" alt="" /></a></span>
+                </div>
+            </div>
+        </div>
+        <div class="product-box left">
+        	<div class="left"><img src="images/g2.png" alt="" /></div>
+            <div class="info-product left">
+            	<h2>La Grande Dame</h2>
+            	<p>It is 1897 and Mme. DuVerre, stares out of her window at a tall, gilded lamppost that bears a clock informing her that it is 3:25pm in the afternoon.</p>
+                <div class="link-explore">
+                	<a href="collection01.html">Explore More</a>
+                	<span class="right"><a href="collection01.html"><img src="images/lens.png" alt="" /></a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </article>
 </div>
 <script src="js/jquery-1.9.1.js"></script>
 <script src="js/jquery.bxslider.js"></script>
 <script src="js/jquery.toggle-panel.js"></script> 
 <script>
-	$('.toggle-panel')
+	$('.toggle-panel2')
 	.TogglePanel({
 		ajax: {
 			settings: {
@@ -128,18 +154,22 @@
 
 	$('.collapse-all').on('click', function() {
 
-		$('.toggle-panel').TogglePanel('collapse');
+		$('.toggle-panel2').TogglePanel('collapse');
 	});
 
 	$('.expand-all').on('click', function() {
 
-		$('.toggle-panel').TogglePanel('expand');
+		$('.toggle-panel2').TogglePanel('expand');
 	});
 
-	$('.toggle-all').on('click', function() {
+	/*$('.toggle3').on('click', function() {
 
 		$('.toggle-panel').TogglePanel('toggle');
-	});
+	});*/
+	$('.toggle2').on('click', function() {
+        $(this).next('.toggle-panel2').TogglePanel('toggle');
+		$('.toggle-panel2.expanded').TogglePanel('toggle');
+    });
 	</script>
 <script>
 $(document).ready(function(){

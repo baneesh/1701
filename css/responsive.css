@@ -11,6 +11,9 @@
 .main2 {
     right: 310px;
 }
+.bx-wrapper{
+	margin-left:40px !important;
+	}
 }
 
 @media only screen and (max-width : 1824px) {
@@ -34,6 +37,9 @@
 	.modal-dialog3, .modal-dialog{
 		margin-top:30px;
 		}
+	.bx-wrapper{
+	margin-left:auto !important;
+	}
 
 }
 

@@ -3720,3 +3720,12 @@ input.qtyminus2 {
 .product-gallery li:hover .hoverProductItem{
 	display:block;
 	}
+.navbar-inverse .navbar-nav > li > a.toggle1 {
+	color: #4D4D4D !important;
+	}
+.navbar-inverse .navbar-nav > li > a:hover.toggle1 {
+	color: #F26E32 !important;
+}
+.navbar-inverse .navbar-nav > li > a:active.toggle1 {
+	color: #F26E32 !important;
+}

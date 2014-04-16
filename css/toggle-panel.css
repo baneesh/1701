@@ -1,31 +1,279 @@
-.toggle-panel {
-  margin: 1.5rem 0;
+.toggle-panel1 {
+	margin: 1.5rem 0;
 }
-.js .toggle-panel[aria-expanded="false"] > :first-child + * {
-  visibility: hidden;
+.js .toggle-panel1[aria-expanded="false"] > :first-child + * {
+	visibility: hidden;
 }
-.js .toggle-panel[aria-expanded="true"] > :first-child + * {
-  visibility: visible;
+.js .toggle-panel1[aria-expanded="true"] > :first-child + * {
+	visibility: visible;
 }
-.js .toggle-panel > :first-child {
-  cursor: pointer;
+.js .toggle-panel1 > :first-child {
+	cursor: pointer;
 }
 .toggle-panel-content {
-  overflow: hidden;
+	overflow: hidden;
 }
 .toggle-panel-content > * {
-  overflow: hidden;
+	overflow: hidden;
 }
 .toggle-panel-content > * video {
-  -webkit-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
 }
 .toggle-panel-content.transition {
-  -webkit-transition-duration: 0.25s;
-  -moz-transition-duration: 0.25s;
-  -o-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-property: height, padding-bottom, padding-top, visibility;
-  -moz-transition-property: height, padding-bottom, padding-top, visibility;
-  -o-transition-property: height, padding-bottom, padding-top, visibility;
-  transition-property: height, padding-bottom, padding-top, visibility;
+	-webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-o-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+	-webkit-transition-property: height, padding-bottom, padding-top, visibility;
+	-moz-transition-property: height, padding-bottom, padding-top, visibility;
+	-o-transition-property: height, padding-bottom, padding-top, visibility;
+	transition-property: height, padding-bottom, padding-top, visibility;
 }
+.toggle-panel1.boxed {
+	background: url("../images/bg-trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	outline: none;
+	padding: 24px;
+	right: 0;
+	width: 100%;
+	z-index: 999;
+	padding-bottom: 85px;
+}
+.toggle-panel1.boxed[aria-expanded="false"] {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.toggle-panel1.boxed[aria-expanded="true"] > :first-child {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.toggle-panel1.boxed.bottom {
+	bottom: 0;
+}
+.toggle-panel1.boxed.bottom > :first-child {
+	top: -48px;
+}
+.toggle-panel1.boxed > :first-child {
+	display: none;
+}
+.toggle-panel1.boxed > :first-child + * {
+	margin-top: 0;
+}
+.toggle-panel1.boxed > :last-child {
+	margin-bottom: 0;
+}
+.js .toggle-panel1.boxed {
+	/* -webkit-box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.75);*/
+	margin: 0;
+	position: fixed;
+	/*opacity : 0.8;
+ filter: alpha(opacity=90) progid:DXImageTransform.Microsoft.Alpha(opacity=80);*/
+}
+.js .toggle-panel1.boxed.apple-green > :first-child {
+	background-color: #8DB600;
+}
+.js .toggle-panel1.boxed.avocado > :first-child {
+	background-color: #568203;
+}
+.js .toggle-panel1.boxed.azure > :first-child {
+	background-color: #007FFF;
+}
+.js .toggle-panel1.boxed.carrot-orange > :first-child {
+	background-color: #ED9121;
+}
+.js .toggle-panel1.boxed > :first-child {
+	background-color: #222222;
+	border: none;
+	border-radius: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	display: block;
+	font-size: 24px;
+	line-height: 36px;
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 400px;
+	right: 12px;
+	text-align: center;
+	width: 36px;
+	display:none;
+}
+.js .toggle-panel1.boxed > :first-child + * > * > :first-child {
+	margin-top: 0;
+}
+.js .toggle-panel1.boxed > :first-child + * > * > :last-child {
+	margin-bottom: 0;
+}
+.js .toggle-panel1.boxed.tomato > :first-child {
+	background-color: #FF6347;
+}
+.toggle-panel1.boxed.top {
+	top: 0;
+}
+.toggle-panel1.boxed.top > :first-child {
+	bottom: -48px;
+}
+.toggle-panel1.boxed.transition {
+	-webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-o-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+	-webkit-transition-property: height, padding-bottom, padding-top, visibility;
+	-moz-transition-property: height, padding-bottom, padding-top, visibility;
+	-o-transition-property: height, padding-bottom, padding-top, visibility;
+	transition-property: height, padding-bottom, padding-top, visibility;
+}
+.toggle-panel1.boxed.transition > :first-child {
+	-webkit-transition-delay: 0.25s;
+	-moz-transition-delay: 0.25s;
+	-o-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+	-webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-o-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+}
+
+
+.toggle1, .toggle2{
+	cursor:pointer;
+	}
+.toggle-panel2 {
+	margin: 1.5rem 0;
+}
+.js .toggle-panel2[aria-expanded="false"] > :first-child + * {
+	visibility: hidden;
+}
+.js .toggle-panel2[aria-expanded="true"] > :first-child + * {
+	visibility: visible;
+}
+.js .toggle-panel2 > :first-child {
+	cursor: pointer;
+}
+.toggle-panel2.boxed {
+	background: url("../images/bg-trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	outline: none;
+	padding: 24px;
+	right: 0;
+	width: 100%;
+	z-index: 999;
+	padding-bottom: 85px;
+}
+.toggle-panel2.boxed[aria-expanded="false"] {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.toggle-panel2.boxed[aria-expanded="true"] > :first-child {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.toggle-panel2.boxed.bottom {
+	bottom: 0;
+}
+.toggle-panel2.boxed.bottom > :first-child {
+	top: -48px;
+}
+.toggle-panel2.boxed > :first-child {
+	display: none;
+}
+.toggle-panel2.boxed > :first-child + * {
+	margin-top: 0;
+}
+.toggle-panel2.boxed > :last-child {
+	margin-bottom: 0;
+}
+.js .toggle-panel2.boxed {
+	/* -webkit-box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.75);*/
+	margin: 0;
+	position: fixed;
+	/*opacity : 0.8;
+ filter: alpha(opacity=90) progid:DXImageTransform.Microsoft.Alpha(opacity=80);*/
+}
+.js .toggle-panel2.boxed.apple-green > :first-child {
+	background-color: #8DB600;
+}
+.js .toggle-panel2.boxed.avocado > :first-child {
+	background-color: #568203;
+}
+.js .toggle-panel2.boxed.azure > :first-child {
+	background-color: #007FFF;
+}
+.js .toggle-panel2.boxed.carrot-orange > :first-child {
+	background-color: #ED9121;
+}
+.js .toggle-panel2.boxed > :first-child {
+	background-color: #222222;
+	border: none;
+	border-radius: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	display: block;
+	font-size: 24px;
+	line-height: 36px;
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 400px;
+	right: 12px;
+	text-align: center;
+	width: 36px;
+	display:none;
+}
+.js .toggle-panel2.boxed > :first-child + * > * > :first-child {
+	margin-top: 0;
+}
+.js .toggle-panel2.boxed > :first-child + * > * > :last-child {
+	margin-bottom: 0;
+}
+.js .toggle-panel2.boxed.tomato > :first-child {
+	background-color: #FF6347;
+}
+.toggle-panel2.boxed.top {
+	top: 0;
+}
+.toggle-panel2.boxed.top > :first-child {
+	bottom: -48px;
+}
+.toggle-panel2.boxed.transition {
+	-webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-o-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+	-webkit-transition-property: height, padding-bottom, padding-top, visibility;
+	-moz-transition-property: height, padding-bottom, padding-top, visibility;
+	-o-transition-property: height, padding-bottom, padding-top, visibility;
+	transition-property: height, padding-bottom, padding-top, visibility;
+}
+.toggle-panel2.boxed.transition > :first-child {
+	-webkit-transition-delay: 0.25s;
+	-moz-transition-delay: 0.25s;
+	-o-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+	-webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+	-o-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+}
+
