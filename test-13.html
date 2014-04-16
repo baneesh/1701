@@ -149,7 +149,7 @@
 		},
 		hashWatch: true,
 		pauseMedia: true,
-		saveState: 'session',
+		/*saveState: 'session',*/
 	});
 
 	$('.collapse-all').on('click', function() {
@@ -168,7 +168,7 @@
 	});*/
 	$('.toggle2').on('click', function() {
         $(this).next('.toggle-panel2').TogglePanel('toggle');
-		$('.toggle-panel2.expanded').TogglePanel('toggle');
+		$(this).addClass("active");
     });
 	</script>
 <script>

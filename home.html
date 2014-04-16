@@ -599,6 +599,8 @@ $( "#showRightPush" ).click(function() {
 
 		$('.toggle-panel1').TogglePanel('toggle');
 		$('.toggle-panel2.expanded').TogglePanel('toggle');
+		$(this).toggleClass("active");
+		$(".toggle2").removeClass("active");
 	});
 </script>
 <script>
@@ -638,6 +640,8 @@ $(document).ready(function(){
 
 		$('.toggle-panel2').TogglePanel('toggle');
 		$('.toggle-panel1.expanded').TogglePanel('toggle');
+		$(this).toggleClass("active");
+		$(".toggle1").removeClass("active");
 	});
 </script>
 </body>
