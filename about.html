@@ -21,6 +21,9 @@
     <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.css" />
     <link rel="stylesheet" href="css/sky-tabs.css">
     <link rel="stylesheet" href="css/sky-mega-menu.css">
+<link href="css/toggle-panel.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
+<link href="css/main_aj.css" rel="stylesheet" type="text/css" />
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 <script src="js/jquery-1.9.1.js"></script>
     <script src="js/modernizr.custom.js"></script>
@@ -263,12 +266,12 @@
   </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
     <ul class="nav navbar-nav navbar-left sky-mega-menu sky-mega-menu-pos-bottom sky-mega-menu-response-to-icons sky-mega-menu-anim-scale">
-          <li> <a href="home.html"><i class="fa fa-single fa-home"></i></a></li>
-          <li><a href="men.html" data-slidepanel="panel" class="button">Men</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="collections.html" data-slidepanel="panel" class="button">Collections</a></li>
-          <li><a href="#">Bespoke</a></li>
-          <li class="bar">&nbsp;</li>
+          <li><a href="home.html" class="active"><i class="fa fa-single fa-home"></i></a></li>
+      <li><a class="toggle1">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a class="toggle2">Collections</a></li>
+      <li><a href="#">Bespoke</a></li>
+      <li class="bar">&nbsp;</li>
           <li><a href="about.html" class="darker active">About</a></li>
           <li><a href="#" class="darker">Press</a></li>
           <li><a href="#" class="darker">Stockist</a></li>
@@ -299,13 +302,135 @@
 			</div>
           </li>
           <li class="orangeTxt marRight40"><a href="#">Follow Us</a></li>
-        </ul>
+    </ul>
   </div>
-    </nav>
-<script src="js/jquery-1.9.1.js"></script> 
-<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie --> 
+</nav>
+<div role="main">
+  <!--<span class="toggle3">Toggle all</span>-->
+  <article class="toggle-panel1 boxed bottom apple-green"> <span>+</span>
+    <div class="slider1">
+      <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><a href="product01.html"><img src="images/g1.png" /></a></div>
+            <div class="gallery_r4"><a href="product01.html">Briefcase</a></div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">Gym Bag</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">Laptop Case</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><a href="product01.html"><img src="images/g1.png" /></a></div>
+            <div class="gallery_r4"><a href="product01.html">Zip Wallet</a></div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">Weekender</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">Poker Set</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">SLR Cases</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">Briefcase1</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">Briefcase2</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">Briefcase3</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">Briefcase4</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">Briefcase5</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">Briefcase6</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><img src="images/g1.png" /></div>
+            <div class="gallery_r4">Briefcase7</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="gallery_r1">
+            <div class="gallery_r3"><a href="product01.html"><img src="images/all-products.png" /></a></div>
+            <div class="gallery_r4"><a href="product01.html">All Products</a></div>
+          </div>
+        </div>
+    </div>
+  </article>
+  <article class="toggle-panel2 boxed bottom apple-green"> <div>+</div>
+  	<div class="main-product">
+        <div class="product-box left">
+        	<div class="left"><img src="images/g2.png" alt="" /></div>
+            <div class="info-product left">
+            	<h2>The Orient Express</h2>
+            	<p>It is 1897 and Mme. DuVerre, stares out of her window at a tall, gilded lamppost that bears a clock informing her that it is 3:25pm in the afternoon.</p>
+                <div class="link-explore">
+                	<a href="collection01.html">Explore More</a>
+                	<span class="right"><a href="collection01.html"><img src="images/lens.png" alt="" /></a></span>
+                </div>
+            </div>
+        </div>
+        <div class="product-box left">
+        	<div class="left"><img src="images/g2.png" alt="" /></div>
+            <div class="info-product left">
+            	<h2>La Grande Dame</h2>
+            	<p>It is 1897 and Mme. DuVerre, stares out of her window at a tall, gilded lamppost that bears a clock informing her that it is 3:25pm in the afternoon.</p>
+                <div class="link-explore">
+                	<a href="collection01.html">Explore More</a>
+                	<span class="right"><a href="collection01.html"><img src="images/lens.png" alt="" /></a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </article>
+</div>
+<script src="js/jquery-1.9.1.js"></script> <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie --> 
 <script src="js/classie.js"></script> 
-<script>
+<!--<script>
 			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
 				showRightPush = document.getElementById( 'showRightPush' ),
 				body = document.body;
@@ -322,7 +447,7 @@
 					classie.toggle( showRightPush, 'disabled' );
 				}
 			}
-</script> 
+</script> --> 
 <script type="text/javascript" src="js/jquery.min.js"></script> 
 <script type="text/javascript" src="js/jquery.slidePanel.js"></script> 
 <script type="text/javascript">
@@ -427,5 +552,79 @@ $('.last').live('click',function () {
     });
   });
   </script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/jquery.toggle-panel.js"></script> 
+<script>
+	$('.toggle-panel1')
+	.TogglePanel({
+		ajax: {
+			settings: {
+				timeout: 1000,
+			},
+		},
+		/*hashWatch: true,
+		pauseMedia: true,
+		saveState: 'session',*/
+	});
+
+	$('.collapse-all').on('click', function() {
+
+		$('.toggle-panel1').TogglePanel('collapse');
+	});
+
+	$('.expand-all').on('click', function() {
+
+		$('.toggle-panel1').TogglePanel('expand');
+	});
+
+	$('.toggle1').on('click', function() {
+
+		$('.toggle-panel1').TogglePanel('toggle');
+		$('.toggle-panel2.expanded').TogglePanel('toggle');
+		$(this).toggleClass("active");
+		$(".toggle2").removeClass("active");
+	});
+</script>
+<script>
+$(document).ready(function(){
+  $('.slider1').bxSlider({
+    slideWidth: 146,
+    minSlides: 1,
+    maxSlides: 7,
+    slideMargin: 16
+  });
+});
+</script>
+<script>
+	$('.toggle-panel2')
+	.TogglePanel({
+		ajax: {
+			settings: {
+				timeout: 1000,
+			},
+		},
+		/*hashWatch: true,
+		pauseMedia: true,
+		saveState: 'session',*/
+	});
+
+	$('.collapse-all').on('click', function() {
+
+		$('.toggle-panel2').TogglePanel('collapse');
+	});
+
+	$('.expand-all').on('click', function() {
+
+		$('.toggle-panel2').TogglePanel('expand');
+	});
+
+	$('.toggle2').on('click', function() {
+
+		$('.toggle-panel2').TogglePanel('toggle');
+		$('.toggle-panel1.expanded').TogglePanel('toggle');
+		$(this).toggleClass("active");
+		$(".toggle1").removeClass("active");
+	});
+</script>
 </body>
 </html>
