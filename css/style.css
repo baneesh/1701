@@ -1845,11 +1845,17 @@ border-radius: 2px;
 	border-top: 1px solid #808080;
 	position: relative;
 }
+.marTop0 {
+	margin-top: 0px !important;
+}
 .marTop10 {
 	margin-top: 10px !important;
 }
 .marTop13 {
 	margin-top: 13px !important;
+}
+.padTop10 {
+	padding-top: 10px !important;
 }
 .padTop20 {
 	padding-top: 20px !important;
@@ -2785,7 +2791,7 @@ input.qtyminus2 {
 	padding-top:20px;
 	margin-bottom: 0px;
 	margin-top: 0px;
-	background:#fff !important;
+	/*background:#fff !important;*/
 }
 .checkout .product-billing label {
 	font-family: 'latolight';
@@ -3736,4 +3742,203 @@ input.qtyminus2 {
 }
 .product-gallery li:hover .hoverProductItem{
 	display:block;
+	}
+
+
+/*Stockist Page*/
+
+.floor-checkout.bg-stockist {
+	background: url(../images/map-location.jpg) no-repeat;
+	background-size: cover;
+}
+.stockist {
+	width: 100%;
+	margin: 45px auto 0px;
+}
+.stockist-right {
+	width: 417px;
+	float: right;
+}
+.stockist-right .container {
+	float: left;
+	min-width: inherit;
+	width: 50px;
+}
+.stockist-right .cbp-spmenu-vertical {
+	width: 367px !important;
+}
+.stockist-right .cart_base {
+	float: left;
+	cursor: pointer;
+}
+.stockist-right .currency {
+	float: left;
+}
+.bt_collapse{
+	background : #97C2CF;
+	width : 64px;
+	height : 21px;
+	font-family: 'latoregular';
+	font-size : 12px;
+	border-radius : 4px;
+	-moz-border-radius : 4px;
+	-webkit-border-radius : 4px;
+	text-align:center;
+	line-height:18px;
+	margin-top: 4px;
+	}
+.bt_collapse:after {
+	content: "collapse";
+	color: #FFFFFF;
+	}
+.stockist .product-billing {
+	float: right;
+	background : #FFFFFF;
+	width : 367px;
+	height : 720px;
+}
+.stockist .product-billing h1 {
+	font-family: 'latobold';
+	font-size : 18px;
+	color : #fff;
+	text-align: center;
+	line-height: 54px;
+	margin: 40px auto;
+	font-weight:normal;
+	background : #22B573;
+	width : 287px;
+	height : 54px;
+	border-radius : 6px;
+	-moz-border-radius : 6px;
+	-webkit-border-radius : 6px;
+	position:absolute;
+	bottom:60px;
+	left:40px;
+	cursor:pointer;
+}
+.stockist .product-billing h1:before{
+	height:1px;
+	background:#E6E6E6;
+	width:100%;
+	}
+.stockist .product-billing #accordion {
+	position: inherit;
+	background:#fff;
+}
+.stockist .product-billing h3 {
+	font-family: 'latolight';
+	font-size : 21px;
+	color : #000 !important;
+	text-align: left;
+	width: 100%;
+	padding-left: 40px;
+	padding-right:40px;
+	padding-top:20px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	/*background:#fff !important;*/
+}
+
+.stockist .product-billing p {
+	padding:0px 40px;
+	margin:0px;
+	font-family: 'latolight';
+	font-size : 21px;
+	line-height : 26px;
+	color : #000;
+	margin-bottom:25px;
+}
+
+.stockist .product-billing h1 span {
+	display: none;
+}
+.stockist .product-billing h3 span {
+	float: right;
+	margin-right: 0px;
+	cursor: pointer;
+}
+.stockist .product-billing h3:focus{
+	outline:none;
+	}
+.stockist .product-billing ul, .stockist .product-billing ol{
+	margin-left:40px;
+	}
+.stockist .product-billing li{
+	background: url(../images/small-bullet.png) no-repeat;
+	background-position:left center;
+	border:none;
+	/*list-style: upper-latin;*/
+	}
+.stockist .product-billing li a{
+	font-family: 'latolight';
+	font-size : 14px;
+	color : #000000;
+	text-decoration:none;
+	border:none;
+	padding-left:33px;
+	}
+.stockist .product-billing li a:hover{
+	background:none;
+	}
+
+.stockist .product-billing ol {
+    counter-reset: listStyle;
+}
+
+.stockist .product-billing ol li {
+    counter-increment: listStyle;
+	list-style:none;
+	position: relative;
+	height: 65px;
+}
+
+.stockist .product-billing ol li::before {
+    content: counter(listStyle, upper-alpha);
+	font-family: 'latobold';
+	font-size: 8px;
+	left: 8px;
+    position: absolute;
+    top: 20px;
+}
+
+.stockist .left li{
+	background: url(../images/big-bullet.png) no-repeat;
+	background-position:left center;
+	border:none;
+	/*list-style: upper-latin;*/
+	}
+.stockist .left ol {
+    counter-reset: listStyle;
+}
+.stockist .left ol li {
+    counter-increment: listStyle;
+	list-style:none;
+	list-style-position:inside;
+	position: relative;
+	height: 92px;
+	width:42px;
+}
+.stockist .left ol li::before {
+    content: counter(listStyle, upper-alpha);
+	font-family: 'latobold';
+	font-size: 16px;
+	left: 15px;
+    position: absolute;
+    top: 20px;
+}
+.stockist .left ol li:nth-child(1){
+	left:582px;
+	top:420px;
+	}
+.stockist .left ol li:nth-child(2){
+	left:846px;
+	top:215px;
+	}
+.stockist .left ol li:nth-child(3){
+	left:1010px;
+	top:300px;
+	}
+.stockist .left ol li:nth-child(4){
+	left:320px;
+	top:0px;
 	}
