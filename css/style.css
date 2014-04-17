@@ -707,12 +707,14 @@ a.active.trigger {
 	display: none;
 	background: #cccccc;
 	height: auto;
-	min-height: 75px;
 	z-index: 1;
 	border-radius: 0px;
 	border: none;
 	width: 155px;
 }
+#accordion .panel {
+	min-height: 75px;
+	}
 .panel.left {
 	left: 0;
 }
@@ -2770,6 +2772,7 @@ input.qtyminus2 {
 	}
 .checkout .product-billing #accordion {
 	position: inherit;
+	background:#fff;
 }
 .checkout .product-billing h3 {
 	font-family: 'latolight';
@@ -2782,6 +2785,7 @@ input.qtyminus2 {
 	padding-top:20px;
 	margin-bottom: 0px;
 	margin-top: 0px;
+	background:#fff !important;
 }
 .checkout .product-billing label {
 	font-family: 'latolight';
