@@ -98,7 +98,7 @@
         <div id="cbp-spmenu-s2" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right cbp-spmenu-open">
           <div class="product-billing">
             <div id="accordion">
-              <h3 class="line_bottom marTop20">India</h3>
+              <h3 class="line_bottom marTop20" id="header1">India</h3>
               <div class="line_bottom"> 
                 <p class="marTop20">New Delhi</p>
                 <ol>
@@ -547,16 +547,20 @@ $('.last2').live('click',function () {
 <script src="js/jquery-ui.js"></script> 
 <script>
   $(function() {
-    var icons = {
-      header: "bt_expand",
-      activeHeader: "bt_collapse"
-    };
-    $( "#accordion" ).accordion({
-      icons: icons,
-	  collapsible: false, 
-	  active: false
+        var icons = {
+            header: "bt_expand",
+            activeHeader: "bt_collapse"
+        };
+        $( "#accordion" ).accordion({
+            icons: icons,
+            collapsible: true
+        });
+        $( "#header1" ).click(function() {
+            $( "#accordion" ).accordion( "option", "icons", false );
+        }, function() {
+            $( "#accordion" ).accordion( "option", "icons", icons );
+        });
     });
-  });
   </script> 
 <script src="js/cbpFWTabs.js"></script> 
 <script>
