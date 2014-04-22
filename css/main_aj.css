@@ -5,6 +5,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'latoregular';
+	src: url('../fonts/lato-regular-webfont.eot');
+	src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-regular-webfont.woff') format('woff'), url('../fonts/lato-regular-webfont.ttf') format('truetype'), url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 /* Slider styles */
 .sl-intro, .sl-main {
     background-color: #BBBBBB;
@@ -234,11 +241,17 @@
 
 
 .gallery_r1{
-	width:148px;
-	height:auto;
+	width : 186px;
+	height : 176px;
 	float:left;
 	padding:0px;
+	/*background:url(../images/bg_slider.png) repeat;*/
+	border-right:1px solid #b3b3b3;
+	cursor:pointer;
 }
+.gallery_r1:hover{
+	background:#F2F2F2;
+	}
 .gallery_r12{
 	/*width:127px;*/
 	height:auto;
@@ -259,30 +272,38 @@
 .gallery_r3{
 	/*width:121px;
 	height:117px;*/
-	float:left;
+	/*float:left;*/
 	/*border:1px #ccc solid;*/
-	padding:0px;
-	margin:0px;
-	height:126px;
+	padding:20px 0px 0px 0px;
+	margin:0px auto;
+	width : 127px;
+	height : 127px;
+	/*height:126px;*/
 }
 .gallery_r4{
-	font-family: 'latohairline';
-	width:146px;
-	height:20px;
-	font-size:12px;
-	color:#fff;
+	font-family: 'latoregular';
+	font-size : 12px;
+	color : #1A1A1A;
+	width : 186px;
+	/*height:20px;
 	line-height:20px;
-	float:left;
+	float:left;*/
 	padding:0px;
 	text-align:center;
 	font-weight:normal;
-	background:#818282;
+	margin-top:16px;
+	/*background:url(../images/bg_slider.png) repeat;*/
 }
-.gallery_r4:hover{
-	color:#000
-	}
+/*.gallery_r4:hover{
+	color : #1A1A1A;
+	}*/
 .gallery_r4 a{
-	color:#fff;
+	font-family: 'latoregular';
+	font-size : 12px;
+	color : #1A1A1A;
+	}
+.gallery_r4 a:hover{
+	text-decoration:none;
 	}
 .gallery_r42{
 	font-family:Arial, Helvetica, sans-serif;

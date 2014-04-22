@@ -1,3 +1,11 @@
+@font-face {
+	font-family: 'latoregular';
+	src: url('../fonts/lato-regular-webfont.eot');
+	src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-regular-webfont.woff') format('woff'), url('../fonts/lato-regular-webfont.ttf') format('truetype'), url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .toggle-panel1 {
 	margin: 1.5rem 0;
 }
@@ -30,28 +38,23 @@
 	transition-property: height, padding-bottom, padding-top, visibility;
 }
 .toggle-panel1.boxed {
-	background: url("../images/bg-trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	/*background: url("../images/bg-trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+	background:url(../images/bg_slider.png) repeat;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #FFFFFF;
 	outline: none;
-	padding: 24px;
+	padding: 0 0 63px;
 	right: 0;
 	width: 100%;
+	/*height:239px;*/
 	z-index: 999;
-	padding-bottom: 85px;
+	/*padding-bottom: 85px;*/
 }
 .toggle-panel1.boxed[aria-expanded="false"] {
 	padding-bottom: 0;
 	padding-top: 0;
-}
-.toggle-panel1.boxed[aria-expanded="true"] > :first-child {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
 }
 .toggle-panel1.boxed.bottom {
 	bottom: 0;
@@ -89,24 +92,37 @@
 	background-color: #ED9121;
 }
 .js .toggle-panel1.boxed > :first-child {
-	background-color: #222222;
+	display:none;
+	}
+.bt-allProducts {
 	border: none;
-	border-radius: 50px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	color: #FFFFFF;
 	display: block;
-	font-size: 24px;
-	line-height: 36px;
-	height: 36px;
+	line-height: 30px;
 	margin: 0;
 	padding: 0;
-	position: fixed;
-	top: 400px;
-	right: 12px;
+	position: absolute;
+	top: -30px;
+	right: 25px;
 	text-align: center;
-	width: 36px;
+	font-family: 'latoregular';
+	font-size : 14px;
+	color : #FFFFFF;
+	background : #0071BC;
+	width : 150px;
+	height : 30px;
+}
+.bt-allProducts a{
+	color:#fff;
+	}
+.bt-allProducts a:hover{
+	text-decoration:none;
+	}
+.toggle-panel1.boxed[aria-expanded="true"] > :first-child {
+	/*-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);*/
 	display:none;
 }
 .js .toggle-panel1.boxed > :first-child + * > * > :first-child {

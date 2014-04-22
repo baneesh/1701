@@ -132,6 +132,21 @@ p {
 .navbar-inverse .navbar-nav > li > a.active {
 	color: #F26E32;
 }
+.navbar-inverse .navbar-nav > li > a.active.toggle1::after{
+	/*background: url(../images/slider-arrow.png) no-repeat;
+	width:24px;
+	height:12px;*/
+	content:url(../images/slider-arrow.png);
+	position: relative;
+    top: -77px;
+	display:block;
+	}
+.navbar-inverse .navbar-nav > li > a.active.toggle2::after{
+	content:url(../images/slider-arrow.png);
+	position: relative;
+    top: -77px;
+	display:block;
+	}
 .navbar-inverse .navbar-nav > li > a {
 	color: #4D4D4D;
 }
