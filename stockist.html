@@ -294,9 +294,9 @@
     <ul class="nav navbar-nav navbar-left sky-mega-menu sky-mega-menu-pos-bottom sky-mega-menu-response-to-icons sky-mega-menu-anim-scale">
       <li><a href="home.html"><i class="fa fa-single fa-home"></i></a></li>
       <li><a class="toggle1">Men</a></li>
-      <li><a href="#">Women</a></li>
+      <li><a class="toggle3">Women</a></li>
       <li><a class="toggle2">Collections</a></li>
-      <li><a href="#">Bespoke</a></li>
+      <li><a class="toggle4">Bespoke</a></li>
       <li class="bar">&nbsp;</li>
       <li><a href="about.html" class="darker">About</a></li>
       <li><a href="#" class="darker">Press</a></li>
@@ -415,6 +415,12 @@
         </div>
     </div>
   </article>
+  <article class="toggle-panel3 boxed bottom"><span>&nbsp;</span>
+	<div class="sliderW" style="height:176px;"></div>
+  </article>
+  <article class="toggle-panel4 boxed bottom"><span>&nbsp;</span>
+	<div class="sliderB" style="height:176px;"></div>
+  </article>
 </div>
 <script src="js/jquery-1.9.1.js"></script> <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie --> 
 <script src="js/classie.js"></script> 
@@ -530,84 +536,7 @@ $('.last2').live('click',function () {
 	new CBPFWTabs( document.getElementById( 'tabs' ) );
 </script>
 <script src="js/jquery.bxslider.js"></script>
-<script src="js/jquery.toggle-panel.js"></script> 
-<script>
-	$('.toggle-panel1')
-	.TogglePanel({
-		ajax: {
-			settings: {
-				timeout: 1000,
-			},
-		},
-		/*hashWatch: true,
-		pauseMedia: true,
-		saveState: 'session',*/
-	});
-
-	$('.collapse-all').on('click', function() {
-
-		$('.toggle-panel1').TogglePanel('collapse');
-	});
-
-	$('.expand-all').on('click', function() {
-
-		$('.toggle-panel1').TogglePanel('expand');
-	});
-
-	$('.toggle1').on('click', function() {
-
-		$('.toggle-panel1').TogglePanel('toggle');
-		$('.toggle-panel2.expanded').TogglePanel('toggle');
-		$(this).toggleClass("active");
-		$(".toggle2").removeClass("active");
-	});
-</script>
-<script>
-$(document).ready(function(){
-  $('.slider1').bxSlider({
-    slideWidth: 186,
-    minSlides: 1,
-    maxSlides: 7,
-    slideMargin: 0
-  });
-  $('.slider2').bxSlider({
-    slideWidth: 396,
-    minSlides: 1,
-    maxSlides: 7,
-    slideMargin: 0
-  });
-});
-</script>
-<script>
-	$('.toggle-panel2')
-	.TogglePanel({
-		ajax: {
-			settings: {
-				timeout: 1000,
-			},
-		},
-		/*hashWatch: true,
-		pauseMedia: true,
-		saveState: 'session',*/
-	});
-
-	$('.collapse-all').on('click', function() {
-
-		$('.toggle-panel2').TogglePanel('collapse');
-	});
-
-	$('.expand-all').on('click', function() {
-
-		$('.toggle-panel2').TogglePanel('expand');
-	});
-
-	$('.toggle2').on('click', function() {
-
-		$('.toggle-panel2').TogglePanel('toggle');
-		$('.toggle-panel1.expanded').TogglePanel('toggle');
-		$(this).toggleClass("active");
-		$(".toggle1").removeClass("active");
-	});
-</script>
+<script src="js/jquery.toggle-panel.js"></script>
+<script src="js/custom-toggle-panel.js"></script> 
 </body>
 </html>

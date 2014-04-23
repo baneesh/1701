@@ -132,25 +132,21 @@
             <form action="#" method="post" accept-charset="utf-8" id="sign-in-form" class="kissmetrics-login">
               <h3>Sign In</h3>
               <p>---using email---</p>
-              <div class="input">
-              	<span class="icon-mail"></span>
+              <div class="input"> <span class="icon-mail"></span>
                 <input id="id_username" type="text" placeholder="enter your email address" name="email" maxlength="75">
-                <!--<div class="email_suggestion"></div>-->
+                <!--<div class="email_suggestion"></div>--> 
               </div>
-              <div class="input">
-              	<span class="icon-lock"></span>
+              <div class="input"> <span class="icon-lock"></span>
                 <input type="password" placeholder="enter your password" name="password" id="id_password">
               </div>
               <div class="action floatRight">
                 <input type="hidden" name="next" value="#">
                 <input type="submit" value="Sign In" class="btn btn-green">
               </div>
-              <div class="left marLeft20"> 
-                    <span>
-                        <input type="checkbox" checked="checked" onchange="handleInput(this);" tabindex="4" value="Keep me logged in" class="field checkbox" name="Field2" id="Field2">
-                        <label for="Field2" class="choice">Keep me logged in</label>
-                    </span> 
-                </div>
+              <div class="left marLeft20"> <span>
+                <input type="checkbox" checked="checked" onchange="handleInput(this);" tabindex="4" value="Keep me logged in" class="field checkbox" name="Field2" id="Field2">
+                <label for="Field2" class="choice">Keep me logged in</label>
+                </span> </div>
               <div class="right marRight40"> <a href="">Forgot Password <span class="iconQ"></span></a> </div>
             </form>
             <!--<form class="connect-button" name="login" method="post" action="#" id="twitter-connect-form">
@@ -198,62 +194,57 @@
             <h3>Sign Up</h3>
             <p>Dont have an account? <strong>Sign Up below</strong></p>
             <div class="all-errors"> </div>
-            <div class="input">
-            	<span class="icon-mail"></span>
+            <div class="input"> <span class="icon-mail"></span>
               <input id="id_email" type="text" placeholder="enter your email address" name="username" maxlength="30">
             </div>
             <!--<div class="input">
               <input id="id_username" type="text" placeholder="enter username*" name="email" maxlength="75">
               <div class="email_suggestion"></div>
             </div>-->
-            <div class="input">
-            	<span class="icon-lock"></span>
+            <div class="input"> <span class="icon-lock"></span>
               <input type="password" placeholder="enter your password" name="password" id="id_password">
             </div>
-            <div class="input">
-            	<span class="icon-lock"></span>
+            <div class="input"> <span class="icon-lock"></span>
               <input type="password" placeholder="re-enter your password" name="password2" id="id_password2">
             </div>
             <div class="">
-              	<label>Gender</label>
-                <span class="">
-                    <input id="Field1_0" name="Field1" type="radio" class="field radio" value="M" checked="checked">
-                    <label class="choice" for="Field1_0">M</label>
-				</span>
-                <span class="marLeft7">
-                    <input id="Field1_1" name="Field1" type="radio" class="field radio" value="F">
-                    <label class="choice" for="Field1_1">F</label>
-				</span>
-              </div>
+              <label>Gender</label>
+              <span class="">
+              <input id="Field1_0" name="Field1" type="radio" class="field radio" value="M" checked="checked">
+              <label class="choice" for="Field1_0">M</label>
+              </span> <span class="marLeft7">
+              <input id="Field1_1" name="Field1" type="radio" class="field radio" value="F">
+              <label class="choice" for="Field1_1">F</label>
+              </span> </div>
             <div class="ageInput">
-                <label>Date of Birth</label>
-                <div class="styled-select dateSelect marRight10">
-                    <select name="day" id="day">
-                    	<option value="na">Day</option>
-                    </select>
-                </div>
-                <div class="styled-select monthSelect marRight10">
-                    <select name="month" onChange="changeDate(this.options[selectedIndex].value);">
-                        <option value="na">Month</option>
-                        <option value="1">January</option>
-                        <option value="2">February</option>
-                        <option value="3">March</option>
-                        <option value="4">April</option>
-                        <option value="5">May</option>
-                        <option value="6">June</option>
-                        <option value="7">July</option>
-                        <option value="8">August</option>
-                        <option value="9">September</option>
-                        <option value="10">October</option>
-                        <option value="11">November</option>
-                        <option value="12">December</option>
-                    </select>
-                </div>
-                <div class="styled-select yearSelect">
-                    <select name="year" id="year">
-                    	<option value="na">Year</option>
-                    </select>
-                </div>
+              <label>Date of Birth</label>
+              <div class="styled-select dateSelect marRight10">
+                <select name="day" id="day">
+                  <option value="na">Day</option>
+                </select>
+              </div>
+              <div class="styled-select monthSelect marRight10">
+                <select name="month" onChange="changeDate(this.options[selectedIndex].value);">
+                  <option value="na">Month</option>
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </div>
+              <div class="styled-select yearSelect">
+                <select name="year" id="year">
+                  <option value="na">Year</option>
+                </select>
+              </div>
             </div>
             <div class="action floatRight">
               <input type="hidden" name="next" value="#">
@@ -274,9 +265,9 @@
     <ul class="nav navbar-nav navbar-left sky-mega-menu sky-mega-menu-pos-bottom sky-mega-menu-response-to-icons sky-mega-menu-anim-scale">
       <li><a href="home.html" class="active"><i class="fa fa-single fa-home"></i></a></li>
       <li><a class="toggle1">Men</a></li>
-      <li><a href="#">Women</a></li>
+      <li><a class="toggle3">Women</a></li>
       <li><a class="toggle2">Collections</a></li>
-      <li><a href="#">Bespoke</a></li>
+      <li><a class="toggle4">Bespoke</a></li>
       <li class="bar">&nbsp;</li>
       <li><a href="about.html" class="darker">About</a></li>
       <li><a href="#" class="darker">Press</a></li>
@@ -299,59 +290,59 @@
     </ul>
   </div>
 </nav>
-<div role="main">
+<div role="main"> 
   <!--<span class="toggle3">Toggle all</span>-->
   <article class="toggle-panel1 boxed bottom"><span>&nbsp;</span>
-  <div class="bt-allProducts"><a href="product01.html">view all products</a></div>
+    <div class="bt-allProducts"><a href="product01.html">view all products</a></div>
     <div class="slider1">
       <div class="slide">
-          <div class="gallery_r1">
-            <div class="gallery_r3"><a href="product01.html"><img src="images/pro-men01.png" /></a></div>
-            <div class="gallery_r4"><a href="product01.html">Briefcase</a></div>
-          </div>
+        <div class="gallery_r1">
+          <div class="gallery_r3"><a href="product01.html"><img src="images/pro-men01.png" /></a></div>
+          <div class="gallery_r4"><a href="product01.html">Briefcase</a></div>
         </div>
-        <div class="slide">
-          <div class="gallery_r1">
-            <div class="gallery_r3"><img src="images/pro-men02.png" /></div>
-            <div class="gallery_r4">Gym Bag</div>
-          </div>
+      </div>
+      <div class="slide">
+        <div class="gallery_r1">
+          <div class="gallery_r3"><img src="images/pro-men02.png" /></div>
+          <div class="gallery_r4">Gym Bag</div>
         </div>
-        <div class="slide">
-          <div class="gallery_r1">
-            <div class="gallery_r3"><img src="images/pro-men03.png" /></div>
-            <div class="gallery_r4">Laptop Case</div>
-          </div>
+      </div>
+      <div class="slide">
+        <div class="gallery_r1">
+          <div class="gallery_r3"><img src="images/pro-men03.png" /></div>
+          <div class="gallery_r4">Laptop Case</div>
         </div>
-        <div class="slide">
-          <div class="gallery_r1">
-            <div class="gallery_r3"><a href="product01.html"><img src="images/pro-men04.png" /></a></div>
-            <div class="gallery_r4"><a href="product01.html">Zip Wallet</a></div>
-          </div>
+      </div>
+      <div class="slide">
+        <div class="gallery_r1">
+          <div class="gallery_r3"><a href="product01.html"><img src="images/pro-men04.png" /></a></div>
+          <div class="gallery_r4"><a href="product01.html">Zip Wallet</a></div>
         </div>
-        <div class="slide">
-          <div class="gallery_r1">
-            <div class="gallery_r3"><img src="images/pro-men05.png" /></div>
-            <div class="gallery_r4">Weekender</div>
-          </div>
+      </div>
+      <div class="slide">
+        <div class="gallery_r1">
+          <div class="gallery_r3"><img src="images/pro-men05.png" /></div>
+          <div class="gallery_r4">Weekender</div>
         </div>
-        <div class="slide">
-          <div class="gallery_r1">
-            <div class="gallery_r3"><img src="images/pro-men06.png" /></div>
-            <div class="gallery_r4">Poker Set</div>
-          </div>
+      </div>
+      <div class="slide">
+        <div class="gallery_r1">
+          <div class="gallery_r3"><img src="images/pro-men06.png" /></div>
+          <div class="gallery_r4">Poker Set</div>
         </div>
-        <div class="slide">
-          <div class="gallery_r1">
-            <div class="gallery_r3"><img src="images/pro-men07.png" /></div>
-            <div class="gallery_r4">SLR Cases</div>
-          </div>
+      </div>
+      <div class="slide">
+        <div class="gallery_r1">
+          <div class="gallery_r3"><img src="images/pro-men07.png" /></div>
+          <div class="gallery_r4">SLR Cases</div>
         </div>
-        <div class="slide">
-          <div class="gallery_r1">
-            <div class="gallery_r3"><a href="product01.html"><img src="images/all-products.png" /></a></div>
-            <div class="gallery_r4"><a href="product01.html">All Products</a></div>
-          </div>
+      </div>
+      <div class="slide">
+        <div class="gallery_r1">
+          <div class="gallery_r3"><a href="product01.html"><img src="images/all-products.png" /></a></div>
+          <div class="gallery_r4"><a href="product01.html">All Products</a></div>
         </div>
+      </div>
     </div>
   </article>
   <article class="toggle-panel2 boxed bottom"><span>&nbsp;</span>
@@ -383,6 +374,12 @@
         </div>
         </div>
     </div>
+  </article>
+  <article class="toggle-panel3 boxed bottom"><span>&nbsp;</span>
+	<div class="sliderW" style="height:176px;"></div>
+  </article>
+  <article class="toggle-panel4 boxed bottom"><span>&nbsp;</span>
+	<div class="sliderB" style="height:176px;"></div>
   </article>
 </div>
 <script src="js/jquery-1.9.1.js"></script> 
@@ -490,7 +487,7 @@ $( "#showRightPush" ).click(function() {
   $( ".container" ).toggleClass( "cbp-spmenu-push-toleft" );
 });
 });
-</script>
+</script> 
 <script language="JavaScript" type="text/javascript">
 	function changeDate(i){
 	var e = document.getElementById('day');
@@ -532,86 +529,9 @@ $( "#showRightPush" ).click(function() {
 	e.add(s,null);}
 	catch(ex){
 	e.add(s);}}
-</script>
+</script> 
 <script src="js/jquery.bxslider.js"></script>
-<script src="js/jquery.toggle-panel.js"></script> 
-<script>
-	$('.toggle-panel1')
-	.TogglePanel({
-		ajax: {
-			settings: {
-				timeout: 1000,
-			},
-		},
-		/*hashWatch: true,
-		pauseMedia: true,
-		saveState: 'session',*/
-	});
-
-	$('.collapse-all').on('click', function() {
-
-		$('.toggle-panel1').TogglePanel('collapse');
-	});
-
-	$('.expand-all').on('click', function() {
-
-		$('.toggle-panel1').TogglePanel('expand');
-	});
-
-	$('.toggle1').on('click', function() {
-
-		$('.toggle-panel1').TogglePanel('toggle');
-		$('.toggle-panel2.expanded').TogglePanel('toggle');
-		$(this).toggleClass("active");
-		$(".toggle2").removeClass("active");
-	});
-</script>
-<script>
-$(document).ready(function(){
-  $('.slider1').bxSlider({
-    slideWidth: 186,
-    minSlides: 1,
-    maxSlides: 7,
-    slideMargin: 0
-  });
-  $('.slider2').bxSlider({
-    slideWidth: 396,
-    minSlides: 1,
-    maxSlides: 7,
-    slideMargin: 0
-  });
-});
-</script>
-<script>
-	$('.toggle-panel2')
-	.TogglePanel({
-		ajax: {
-			settings: {
-				timeout: 1000,
-			},
-		},
-		/*hashWatch: true,
-		pauseMedia: true,
-		saveState: 'session',*/
-	});
-
-	$('.collapse-all').on('click', function() {
-
-		$('.toggle-panel2').TogglePanel('collapse');
-	});
-
-	$('.expand-all').on('click', function() {
-
-		$('.toggle-panel2').TogglePanel('expand');
-	});
-
-	$('.toggle2').on('click', function() {
-
-		$('.toggle-panel2').TogglePanel('toggle');
-		$('.toggle-panel1.expanded').TogglePanel('toggle');
-		$(this).toggleClass("active");
-		$(".toggle1").removeClass("active");
-	});
-</script>
+<script src="js/jquery.toggle-panel.js"></script>
+<script src="js/custom-toggle-panel.js"></script> 
 </body>
 </html>
