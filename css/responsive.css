@@ -8,12 +8,19 @@
 
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
+	
 .main2 {
-    right: 310px;
+	right: 310px;
 }
-.bx-wrapper{
+.toggle-panel1 .bx-wrapper{
 	margin-left:66px !important;
-	}
+}
+.toggle-panel2 .bx-wrapper{
+	margin-left:66px !important;
+}
+.toggle-panel2 .bx-wrapper{
+	max-width:1316px !important;
+}
 }
 
 @media only screen and (max-width : 1824px) {
@@ -34,15 +41,22 @@
 
 @media screen and (max-width: 1400px) {
 	
-	.modal-dialog3, .modal-dialog{
-		margin-top:30px;
-		}
-	.bx-wrapper{
-	margin-left:auto !important;
-	}
-	.width365 {
-    margin-left: 14px;
+.modal-dialog3, .modal-dialog{
+	margin-top:30px;
 }
+.toggle-panel1 .bx-wrapper{
+	margin-left:66px !important;
+}
+.toggle-panel2 .bx-wrapper{
+	margin-left:66px !important;
+}
+.toggle-panel2 .bx-wrapper{
+	max-width:auto !important;
+}
+.width365 {
+	margin-left: 14px;
+}
+
 
 }
 

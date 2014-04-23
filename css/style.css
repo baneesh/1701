@@ -1081,14 +1081,16 @@ a.active.trigger {
 	background: #fff;
 	width: 364px;
 	height: 146px;
-	margin-right: 50px;
+	/*margin-right: 16px;
+	margin-left:16px;*/
+	margin:15px 16px;
 }
 .info-product {
 	width: 218px;
 	padding: 12px 20px;
 }
 .info-product h2 {
-	font-family: 'latobold';
+	font-family: 'latolight';
 	font-size : 14px;
 	color: #1a1a1a;
 	line-height: 18px;
@@ -1109,7 +1111,7 @@ a.active.trigger {
 	padding-bottom: 8px;
 }
 .info-product a {
-	font-family: 'latobold';
+	font-family: 'latolight';
 	font-size : 12px;
 	color: #1a1a1a;
 }
@@ -3956,4 +3958,7 @@ input.qtyminus2 {
 .stockist .left ol li:nth-child(4){
 	left:320px;
 	top:0px;
+	}
+.toggle-panel2 .slider2 .slide{
+	border-right:1px solid #B3B3B3;
 	}

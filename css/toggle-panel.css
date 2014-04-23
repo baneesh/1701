@@ -178,17 +178,18 @@
 	cursor: pointer;
 }
 .toggle-panel2.boxed {
-	background: url("../images/bg-trans.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("../images/bg_slider.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #FFFFFF;
 	outline: none;
-	padding: 24px;
+	/*padding: 24px;*/
 	right: 0;
 	width: 100%;
 	z-index: 999;
-	padding-bottom: 85px;
+	/*padding-bottom: 85px;*/
+	padding: 0 0 63px;
 }
 .toggle-panel2.boxed[aria-expanded="false"] {
 	padding-bottom: 0;
@@ -244,7 +245,7 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #FFFFFF;
-	display: block;
+	display: none;
 	font-size: 24px;
 	line-height: 36px;
 	height: 36px;
