@@ -66,7 +66,7 @@
     <div class="clear"></div>
     <div class="mainSection">
       <div class="all-product-main">
-        <h2>clear all selections <i class="fa fa-times-circle"></i></h2>
+        <h2 id="uncheck-all">clear all selections <i class="fa fa-times-circle"></i></h2>
         <div class="left">
         <div class="barNav">
         <div class="productCategory">
@@ -617,7 +617,7 @@
       </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-left sky-mega-menu sky-mega-menu-pos-bottom sky-mega-menu-response-to-icons sky-mega-menu-anim-scale">
-          <li><a href="home.html" class="active"><i class="fa fa-single fa-home"></i></a></li>
+          <li><a href="home.html"><i class="fa fa-single fa-home"></i></a></li>
           <li><a class="toggle1">Men</a></li>
           <li><a class="toggle3">Women</a></li>
           <li><a class="toggle2">Collections</a></li>
@@ -764,6 +764,16 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/jquery.toggle-panel.js"></script>
-    <script src="js/custom-toggle-panel.js"></script> 
+    <script src="js/custom-toggle-panel.js"></script>
+    <script>
+		$(document).ready(function() {
+		  $('#check-all').click(function(){
+			$("input:checkbox").attr('checked', true);
+		  });
+		  $('#uncheck-all').click(function(){
+			$("input:checkbox").attr('checked', false);
+		  });
+		});
+    </script>
   </body>
 </html>
