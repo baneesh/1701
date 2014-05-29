@@ -35,6 +35,17 @@
 	font-style: normal;
 }
 @font-face {
+    font-family: 'latoblack_italic';
+    src: url('../fonts/lato-blackitalic-webfont.eot');
+    src: url('../fonts/lato-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-blackitalic-webfont.woff') format('woff'),
+         url('../fonts/lato-blackitalic-webfont.ttf') format('truetype'),
+         url('../fonts/lato-blackitalic-webfont.svg#latoblack_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
 	font-family: 'ciclefina';
 	src: url('../fonts/cicle_fina-webfont.eot');
 	src: url('../fonts/cicle_fina-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/cicle_fina-webfont.woff') format('woff'), url('../fonts/cicle_fina-webfont.ttf') format('truetype'), url('../fonts/cicle_fina-webfont.svg#ciclefina') format('svg');
@@ -2132,6 +2143,15 @@ a.active.trigger {
 }
 .width40p {
 	width: 40%;
+}
+.marBottom116 {
+	margin-bottom: 116px !important;
+}
+.marBottom77 {
+	margin-bottom: 77px !important;
+}
+.marBottom75 {
+	margin-bottom: 75px !important;
 }
 .marBottom40 {
 	margin-bottom: 40px !important;
@@ -4474,3 +4494,116 @@ input.qtyminus2 {
 	text-indent: -9999px;
 	z-index: 9999;
 }
+
+/*Journal Page Css Begin*/
+
+
+.journal-main {
+	width: 924px;
+	margin: 0 auto;
+}
+.journal-main li{
+	list-style:none;
+	float:left;
+	margin-bottom:34px;
+	}
+.txt-jn{
+	width:400px;
+	}
+.txt-jn h2 {
+	font-family: 'latolight';
+	font-size : 24px;
+	color : #000;
+	line-height: 28px;
+	margin-top:0px;
+	margin-bottom:13px;
+}
+.txt-jn p {
+	font-family: 'latolight';
+    font-size: 14px;
+	color : #000;
+    padding-bottom: 36px;
+	margin:0px;
+	line-height: 17px;
+}
+.txt-jn p a {
+	font-family: 'latoblack_italic';
+	color:#000;
+	text-decoration:none;
+	}
+.date-jn {
+	width : 52px;
+	height : 52px;
+	background : #E6E6E6;
+	margin-right:8px;
+}
+.date-jn p{
+	font-family: 'latoregular';
+	font-size : 28px;
+	color : #000;
+	line-height: 28px;
+	padding-left:10px;
+	padding-top:5px;
+	}
+.date-jn p span{
+	font-family: 'latoregular';
+	font-size : 14px;
+	color : #000;
+	line-height: 14px;
+	float:left;
+	width:100%;
+	}
+.img-jn{
+	margin-right:15px;
+	}
+.bg-body3 {
+	background: #fff;
+}
+.bg-body3 a.trigger {
+	background: #fff;
+}
+.bg-body3 nav {
+	left: 0px;
+}
+.bg-body3 .navbar {
+	margin-bottom: 0px;
+	z-index: 1030;
+}
+.bg-body3 .navbar-collapse {
+	padding-left: 0px;
+	padding-right: 0px;
+	border-top:1px solid #E6E6E6;
+}
+.bg-body3 .navbar-nav.navbar-right:last-child {
+	margin-right: 0px;
+}
+.bg-body3 .orangeTxt.marRight40 a {
+	padding-right: 0px;
+}
+.tag-jn li{
+	margin-right:11px;
+	font-family: 'latolight';
+    font-size: 14px;
+	margin-bottom:24px;
+	}
+.tag-jn li a{
+  font-family: 'latolight';
+  font-size : 12px;
+  color : #B3B3B3;
+  text-decoration : underline;
+}
+.share-jn{
+	margin-left:17px;
+	}
+.share-jn li{
+	margin-right:5px;
+	display:flex;
+	}
+.share-jn li a{
+	font-family: 'latolight';
+	font-size : 12px;
+	color : #7F7F7F;;
+	}
+.bold-txt{
+	font-family: 'latobold' !important;
+	}
