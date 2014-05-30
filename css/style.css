@@ -1897,6 +1897,9 @@ a.active.trigger {
 .marBottom20 {
 	margin-bottom: 20px !important;
 }
+.marBottom30 {
+	margin-bottom: 30px !important;
+}
 .formRadio li {
 	float: left;
 	width: 62px;
@@ -1928,6 +1931,12 @@ a.active.trigger {
 }
 .padRight40 {
 	padding-right: 40px !important;
+}
+.marLeft60 {
+	margin-left: 60px !important;
+}
+.marRight60 {
+	margin-right: 60px !important;
 }
 .marLeft40 {
 	margin-left: 40px !important;
@@ -4518,6 +4527,10 @@ input.qtyminus2 {
 	margin-top:0px;
 	margin-bottom:13px;
 }
+.txt-jn h2 a{
+	text-decoration:none;
+	color:#000;
+	}
 .txt-jn p {
 	font-family: 'latolight';
     font-size: 14px;
@@ -4606,4 +4619,103 @@ input.qtyminus2 {
 	}
 .bold-txt{
 	font-family: 'latobold' !important;
+	}
+	
+	
+/*Journal Post Css Begin*/
+
+.journal-main2 {
+	width: 732px;
+	margin: 0 auto;
+}
+.journal-main2 li{
+	list-style:none;
+	float:left;
+	margin-bottom:34px;
+	}
+.journal-main2 hr{
+	background: #808080;
+	height:1px;
+	}
+.txt-jn2{
+	width:654px;
+	}
+.txt-jn2 h2 {
+	font-family: 'latolight';
+	font-size : 24px;
+	color : #000;
+	line-height: 28px;
+	margin-top:0px;
+	margin-bottom:13px;
+}
+.txt-jn2 h2 a, .txt-jn2 h3 a{
+	text-decoration:none;
+	color:#000;
+	}
+.txt-jn2 p {
+	font-family: 'latolight';
+    font-size: 14px;
+	color : #000;
+    padding-bottom: 25px;
+	margin:0px;
+	line-height: 17px;
+}
+.txt-jn2 p a {
+	font-family: 'latoblack_italic';
+	color:#000;
+	text-decoration:none;
+	}
+.date-jn2 {
+	width : 52px;
+	height : 52px;
+	background : #E6E6E6;
+	margin-right:26px;
+}
+.date-jn2 p{
+	font-family: 'latoregular';
+	font-size : 28px;
+	color : #000;
+	line-height: 28px;
+	padding-left:10px;
+	padding-top:5px;
+	}
+.date-jn2 p span{
+	font-family: 'latoregular';
+	font-size : 14px;
+	color : #000;
+	line-height: 14px;
+	float:left;
+	width:100%;
+	}
+.similar-pro div{
+	margin-top:88px;
+	float:left;
+	}
+.similar-pro h2{
+	font-family: 'latolight';
+	font-size : 18px;
+	color : #B3B3B3;;
+	line-height: 21px;
+	margin-top:0px;
+	margin-bottom:13px;
+	}
+.similar-pro li{
+	list-style:none;
+	float:left;
+	margin-right:8px;
+	}
+.txt-jn2 h3, .txt-jn2 h3 a{
+	font-family: 'latolight';
+	font-size : 18px;
+	color : #000;
+	line-height: 21px;
+	margin-top:0px;
+	margin-bottom:13px;
+	}
+.relatedArticle li{
+	margin-right:12px;
+	float:left;
+	}
+.relatedArticle li:last-child{
+	margin-right:0px;
 	}
