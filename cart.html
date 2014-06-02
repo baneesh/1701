@@ -18,27 +18,24 @@
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" href="css/jquery.slidepanel.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/component2.css" />
-    <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.css" />
+    <link href="css/perfect-scrollbar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/sky-mega-menu.css">
     <link href="css/toggle-panel.css" rel="stylesheet" />
-<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
-<link href="css/main_aj.css" rel="stylesheet" type="text/css" />
-<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-<script src="js/jquery-1.9.1.js"></script>
+	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
+	<link href="css/main_aj.css" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<script src="js/jquery-1.9.1.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
-    <script src="js/perfect-scrollbar.js"></script>
+	<script src="js/perfect-scrollbar.js"></script>
     <script type="text/javascript">
       $(document).ready(function ($) {
         $('#description').perfectScrollbar({
           wheelSpeed: 20,
-          wheelPropagation: true,
-		  minScrollbarLength: 20
+          wheelPropagation: false
         });
-		$("#description").scrollTop(0);
-		$("#description").perfectScrollbar('update');
       });
-    </script>
+	</script>
     <script type="text/javascript" >
 		$(document).ready(function(){
 			$(".account").click(function(){var X=$(this).attr('id');

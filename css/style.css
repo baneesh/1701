@@ -1697,10 +1697,16 @@ a.active.trigger {
 	;
 }
 #description {
+	max-height:366px;
+	overflow:hidden;
+	position:relative;
 /*height: 320px;
 	width: 462px;
 	overflow: hidden;
 	position: relative;*/
+}
+.modal-dialog4 .modal-content3 #description{
+	max-height:504px;
 }
 /*.modal-footer {
 	padding-left: 31px;
