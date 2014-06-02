@@ -2881,7 +2881,7 @@ input.qtyminus2 {
 	-webkit-border-radius : 3px;
 	margin-top: 5px;
 }
-.checkout .product-billing #address {
+.checkout .product-billing #address, .checkout .product-billing #address1, .checkout .product-billing #address2, .checkout .product-billing #address3, .checkout .product-billing #address4, .checkout .product-billing #address5 {
 	font-family: 'latolight';
 	font-size : 14px;
 	color : #CCCCCC;
@@ -3420,7 +3420,7 @@ input.qtyminus2 {
 	-webkit-border-radius : 3px;
 	margin-top: 5px;
 }
-.checkout03 .product-billing #address {
+.checkout03 .product-billing #address1, .checkout03 .product-billing #address2, .checkout03 .product-billing #address3, .checkout03 .product-billing #address4, .checkout03 .product-billing #address5, .checkout03 .product-billing #address {
 	font-family: 'latolight';
 	font-size : 14px;
 	color : #CCCCCC;
@@ -4724,4 +4724,83 @@ input.qtyminus2 {
 	}
 .relatedArticle li:last-child{
 	margin-right:0px;
+	}
+	
+	
+/*Billing Address Changes Css*/
+
+.select-style2 {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #FFFFFF;
+	border: 1px solid #f2f2f2;
+	border-radius: 3px;
+	border-color: #F2F2F2;
+	color: #CCCCCC;
+    font-family: 'latolight';
+	font-size: 14px;
+	height: 33px;
+    line-height: 33px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: left;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background: #FFFFFF url("../images/icon-select.png") no-repeat 96% 50%;
+	float: left;
+	margin-right: 4px;
+	margin-left:40px;
+	margin-top:5px;
+	width: 288px;
+	
+
+   /* background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #F2F2F2;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #CCCCCC;
+    font-family: 'latolight';
+    font-size: 14px;
+    font-weight: normal;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: left;
+    width: 288px;*/
+
+}
+.select-style2 select {
+	/*padding: 5px 0px;*/
+	width: 110%;
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	background-image: none;
+	-webkit-appearance: none;
+	color: #CCCCCC;
+	padding-left:13px;
+}
+.select-style2 select:focus {
+	outline: none;
+}
+.shipCheckBox{
+	text-align:center;
+	}
+.shipCheckBox span {
+    border: medium none;
+    color: #666666;
+    font-family: 'latolight';
+    font-size: 14px;
+    line-height: 12px;
+    margin: 25px 0 40px 6px;
+    padding: 0;
+    text-align: left;
+	vertical-align: text-top;
+    text-decoration: underline;
+}
+.shipCheckBox input[type="radio"], input[type="checkbox"]{
+	margin-top:6px;
 	}
