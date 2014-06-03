@@ -34,13 +34,18 @@
       $(document).ready(function ($) {
         $('#description').perfectScrollbar({
           wheelSpeed: 20,
-          wheelPropagation: true,
-		  minScrollbarLength: 20
+          wheelPropagation: false
         });
-		$("#description").scrollTop(0);
-		$("#description").perfectScrollbar('update');
       });
-    </script>
+</script>
+<script type="text/javascript">
+      $(document).ready(function ($) {
+        $('.product-gallery').perfectScrollbar({
+          wheelSpeed: 20,
+          wheelPropagation: false
+        });
+      });
+</script>
     <script type="text/javascript" >
 		$(document).ready(function(){
 			$(".account").click(function(){var X=$(this).attr('id');

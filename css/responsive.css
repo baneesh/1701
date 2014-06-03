@@ -68,8 +68,38 @@
 .width365 {
 	margin-left: 14px;
 }
-
-
+.modal-dialog5 .modal-content3 #description {
+    max-height: 150px;
+}
+.modal-dialog3 .modal-content3 #description {
+    max-height: 366px;
+}
+.modal-dialog4 .modal-content3 #description {
+    max-height: 251px;
+}
+#accordion{
+	height:600px;
+	overflow:hidden;
+	}
+.ps-container .ps-scrollbar-y-rail span{
+	display:none;
+	}
+.ps-container .ps-scrollbar-x-rail{
+	height:8px !important;
+	}
+.product-gallery {
+    height: 706px;
+    overflow: hidden;
+}
+/*.bx-wrapper .bx-next{
+	right:0px !important;
+	}*/
+.bx-wrapper{
+	width:81.7%;
+	}
+.pressSlider .bx-wrapper .bx-next {
+    right: -206px;
+}
 }
 
 @media screen and (max-width: 1351px) {
