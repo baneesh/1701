@@ -241,7 +241,161 @@
 .container {
     width: 100%;
 }
-
-
-
+.navbar{
+	height:auto;
+	opacity:1;
+	}
+.navbar-inverse .navbar-toggle {
+ border-color: transparent; 
+}
+.navbar-toggle{
+	background:indianred;
+	border:none;
+	float:left;
+	margin-left:15px;
+	}
+.navbar-inverse{
+	background: #F2F2F2;
+	}
+.navbar-fixed-bottom{
+	top:0px;
+	bottom: auto;
+	z-index:2;
+	}
+.currency{
+	display:none;
+	}
+.main{
+	margin-top:3px;
+	}
+.cart_base {
+	background-image: url(../images/cart_icon_small.png);
+	background-repeat: no-repeat;
+	background-position:5px bottom;
+	height:42px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #F36E34;
+}
+.navbar-toggle .icon-bar {
+display: block;
+width: 26px;
+height: 3px;
+border-radius: 2px;
+}
+.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle {
+	background-color: transparent;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background-color: transparent;
+}
+button{
+	outline:none;
+	}
+.header-elements {
+	top: 2px; 
+	left: 0px;
+	right: 0px;
+	margin:0 auto;
+	text-align:center;
+	width:82px;
+	height: 47px;
+	overflow: hidden;
+}
+nav .next {
+	bottom: 26px;
+}
+nav .prev {
+	top: 62px;
+}
+.floor-1 {
+	background-position: 44% bottom;
+}
+.floor-2 {
+	background-position: 82% bottom;
+}
+.floor-3 {
+	background-position: 24% bottom;
+}
+.floor-4 {
+	background-position: 100% bottom;
+}
+.floor-5 {
+	background-position: 92% bottom;
+}
+.floor-6 {
+	background-position: 100% bottom;
+}
+.sky-mega-menu-response-to-icons li{
+	font-size:14px !important;
+	}
+.sky-mega-menu li{
+	text-align:left !important;
+	width:100%;
+	border-bottom:1px solid #E6E6E6;
+	padding:0px !important;
+	line-height:30px !important;
+	}
+.fa-home:before {
+	font-family: 'latoregular';
+	content: "Home" !important;
+	font-size:14px !important;
+}
+.navbar-nav {
+	margin: auto;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #F26E32 !important;
+}
+.navbar-nav a[role="button"] {
+	font-family: 'latobold';
+	font-size: 14px;
+	font-weight: normal;
+	color: #F26E32 !important;
+	background: #fff;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	line-height: 37px !important;
+	padding: 0px 10px !important;
+	cursor: pointer;
+	text-decoration: none;
+	margin-top: 0px;
+}
+.nav > li > a {
+	padding: 10px 10px !important;
+}
+.navbar-nav a:hover[role="button"], .navbar-nav a:focus[role="button"] {
+	color: #F26E32 !important;
+	background: #fff !important;
+}
+.navbar-collapse{
+	padding-left:0px;
+	padding-right:0px;
+	}
+.sky-mega-menu{
+	background:#fff !important;
+	}
+.main section{
+	display:none;
+	}
+.main2{
+	top:0px;
+	}
+.orangeTxt.marRight40{
+	display:none;
+	}
+.orangeTxt.marRight25{
+	margin-right:0px !important;
+	}
+.rb-grid li:nth-child(1):after {
+    background: url("../images/sprite-circle.png") no-repeat;
+	background-position: top left;
+    content: "+";
+    display: block;
+    font-size: 0;
+    height: 45px;
+    position: absolute;
+    width: 45px;
+}
 }
