@@ -72,7 +72,7 @@
 	margin-right:40px;
 	border:1px solid #99C2D2;
 	border-radius:4px;
-	padding:0px 31px;
+	padding:0px 30px;
 	background: transparent;
 	transition: background 0.4s, color 0.4s;
 	-o-transition: background 0.4s, color 0.4s;
@@ -689,7 +689,7 @@ label[for=sky-tab3]{
 	}
 @media screen and (max-width: 1024px) {
 label[for=sky-tab1]{
-	right:312px;
+	right:311px;
 	}
 label[for=sky-tab2]{
 	right:162px;
