@@ -249,7 +249,6 @@
  border-color: transparent; 
 }
 .navbar-toggle{
-	background:indianred;
 	border:none;
 	float:left;
 	margin-left:15px;
@@ -283,17 +282,29 @@ width: 26px;
 height: 3px;
 border-radius: 2px;
 }
-.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle {
+/*.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle {
 	background-color: transparent;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
 	background-color: transparent;
+}*/
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background-color: #fff;
 }
+.navbar-inverse .navbar-toggle.collapsed{
+	background-color: #f2f2f2;
+	border-right:0px solid #ccc;
+}
+.navbar-inverse .navbar-toggle{
+	background-color: #fff;
+	border-right:1px solid #ccc;
+}
+
 button{
 	outline:none;
 	}
 .header-elements {
-	top: 2px; 
+	top: 5px; 
 	left: 0px;
 	right: 0px;
 	margin:0 auto;
@@ -332,7 +343,6 @@ nav .prev {
 .sky-mega-menu li{
 	text-align:left !important;
 	width:100%;
-	border-bottom:1px solid #E6E6E6;
 	padding:0px !important;
 	line-height:30px !important;
 	}
@@ -356,11 +366,12 @@ nav .prev {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	line-height: 37px !important;
+	line-height: 50px !important;
 	padding: 0px 10px !important;
 	cursor: pointer;
 	text-decoration: none;
 	margin-top: 0px;
+	height:50px;
 }
 .nav > li > a {
 	padding: 10px 10px !important;
@@ -380,7 +391,15 @@ nav .prev {
 	display:none;
 	}
 .main2{
-	top:0px;
+	top:220px;
+	right:-20px;
+	}
+.rb-close{
+	right:15px;
+	z-index:10;
+	}
+.rb-grid li, .rb-grid li.rb-span-2, .rb-grid li.rb-span-4{
+	height:auto !important;
 	}
 .orangeTxt.marRight40{
 	display:none;
@@ -397,5 +416,22 @@ nav .prev {
     height: 45px;
     position: absolute;
     width: 45px;
+}
+.sky-mega-menu li a{
+	border-bottom:1px solid #E6E6E6;
+	}
+.sky-mega-menu li a.darker{
+	display:none;
+	}
+.navbar-nav.navbar-right:last-child {
+	margin-right: 0px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border-color: #ccc;
+}
+.navbar-toggle {
+	padding: 20px 20px 20px 20px;
+	margin:0px;
+	border-radius:0px;
 }
 }
