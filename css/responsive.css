@@ -320,22 +320,28 @@ nav .prev {
 	top: 62px;
 }
 .floor-1 {
-	background-position: 44% bottom;
+	background: url(../images/bg-floor-m-1.jpg) no-repeat;
+	background-position: 51% top;
 }
 .floor-2 {
-	background-position: 82% bottom;
+	background: url(../images/bg-floor-m-2.jpg) no-repeat;
+	background-position: 81% top;
 }
 .floor-3 {
-	background-position: 24% bottom;
+	background: url(../images/bg-floor-m-3.jpg) no-repeat;
+	background-position: 26% top;
 }
 .floor-4 {
-	background-position: 100% bottom;
+	background: url(../images/bg-floor-m-4.jpg) no-repeat;
+	background-position: 98% top;
 }
 .floor-5 {
-	background-position: 92% bottom;
+	background: url(../images/bg-floor-m-5.jpg) no-repeat;
+	background-position: 88% top;
 }
 .floor-6 {
-	background-position: 100% bottom;
+	background: url(../images/bg-floor-m-6.jpg) no-repeat;
+	background-position: 80% top;
 }
 .sky-mega-menu-response-to-icons li{
 	font-size:14px !important;
@@ -434,4 +440,7 @@ nav .prev {
 	margin:0px;
 	border-radius:0px;
 }
+.sky-mega-menu li a.mobileNav{
+	display:block;
+	}
 }

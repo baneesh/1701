@@ -4804,3 +4804,6 @@ input.qtyminus2 {
 .shipCheckBox input[type="radio"], input[type="checkbox"]{
 	margin-top:6px;
 	}
+.sky-mega-menu li a.mobileNav{
+	display:none;
+	}
