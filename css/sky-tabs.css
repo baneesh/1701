@@ -638,7 +638,7 @@
 	}
 .sky-tabs label{
 	position:fixed !important;
-	bottom:50px ;
+	bottom:65px ;
 	}
 label[for=sky-tab1]{
 	right:420px;
@@ -654,7 +654,7 @@ label[for=sky-tab3]{
 	}
 .sky-tabs > label{
 	background:#fff;
-	padding:20px 20px !important;
+	/*padding:20px 20px !important;*/
 	}
 	
 /**/
@@ -684,7 +684,7 @@ label[for=sky-tab3]{
 	height:100px;
 }
 .sky-tabs > label{
-	padding:20px;
+	/*padding:20px;*/
 	}
 	}
 @media screen and (max-width: 1024px) {
