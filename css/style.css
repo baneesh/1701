@@ -3821,6 +3821,9 @@ input.qtyminus2 {
 .stockist-right .currency {
 	float: left;
 }
+.stockist-right #accordion{
+	height:auto;
+	}
 .bt_collapse {
 	background : #97C2CF;
 	width : 64px;
