@@ -26,6 +26,17 @@
 <script src="js/jquery-1.9.1.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/modernizr.custom.js"></script>
+<script>
+function jqUpdateSize(){
+    // Get the dimensions of the viewport
+    var width = $(window).width();
+    var height = $(window).height();
+	$("ul.bg img").css("height", height - 120);
+	$("ul.bg img").css("width", width);
+};
+$(document).ready(jqUpdateSize);    // When the page first loads
+$(window).resize(jqUpdateSize);     // When the browser changes size
+</script>
 </head>
 <body>
 <header class="clearfix white-link">

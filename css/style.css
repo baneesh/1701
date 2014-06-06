@@ -4868,12 +4868,10 @@ ul.bg li{
 	}
 ul.bg img {
   /* Set rules to fill background */
-  min-height: 76%;
+  /*min-height: 76%;
   min-width: 100%;
-	
-  /* Set up proportionate scaling */
   width: 100%;
-  height: auto;
+  height: auto;*/
 	
   /* Set up positioning */
   position: relative;
