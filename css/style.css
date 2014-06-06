@@ -4841,3 +4841,72 @@ label.width45p img {
     margin-right:4px;
 	vertical-align: bottom;
 }
+
+
+
+/*Mobile Phone Css*/
+
+.mainSectionMobile{
+	display:none;
+	}
+.mainSectionMobile .main {
+    position: fixed;
+	right:6px;
+    z-index: 9;
+}
+ul.bg {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	margin-top: 56px;
+	text-align:center;
+}
+ul.bg li{
+	float:left;
+	width:100%;
+	margin-bottom:50px;
+	}
+ul.bg img {
+  /* Set rules to fill background */
+  min-height: 76%;
+  min-width: 100%;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: relative;
+  top: 0;
+  left: 0;
+}
+ul.bg h2{
+	font-family: 'latohairline';
+	font-size:30px;
+	color : #F36E34;
+	line-height:30px;
+	margin-left:20px;
+	text-align:left;
+	}
+ul.bg p{
+	font-family: 'latohairline';
+	font-size:24px;
+	color : #1A1A1A;
+	line-height:28px;
+	margin-left:20px;
+	text-align:left;
+	}
+ul.bg a{
+	background: none repeat scroll 0 0 #F26E32;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'latoregular';
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 53px;
+    margin-top: 0px;
+    padding: 18px 83px;
+	height:53px;
+    text-decoration: none;
+	}

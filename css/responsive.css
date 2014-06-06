@@ -214,7 +214,12 @@
 /* Tabled Portrait */
 @media screen and (max-width: 768px) {
 	
-	
+.mainSectionMobile{
+	display:block;
+	}
+.mainSection{
+	display:none;
+	}
 .nav li.bar{
 	display:none;
 	}
@@ -439,6 +444,12 @@ nav .prev {
 	display:block;
 	}
 	
+.navbar-collapse {
+	max-height: 362px;
+	border-bottom:1px solid #ccc;
+}
+
+
 }
 
 
@@ -518,8 +529,9 @@ nav .prev {
 .cart_base {
 	background-image: url(../images/cart_icon_small.png);
 	background-repeat: no-repeat;
-	background-position:5px bottom;
-	height:42px;
+	background-position:8px bottom;
+	height:40px;
+	background-size:60%;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
 	background-color: #F36E34;
