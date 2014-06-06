@@ -4843,6 +4843,32 @@ label.width45p img {
 }
 
 
+/*subtotal, shipping charges, tax charges, discount Css*/
+
+#mainID{
+	overflow:hidden;
+	}
+.subtotalMain{
+	height:40px;
+	}
+.subtotalMain .left{
+	width:150px;
+	text-align:right;
+	}
+.subtotalMain .right{
+	width:150px;
+	text-align:right;
+	}
+.subtotalMain.grandTxt {
+    color: #000000;
+    font-family: 'latobold';
+    font-size: 18px;
+    line-height: 33px;
+    margin: 0 0 17px;
+    padding: 0;
+    text-align: center;
+}
+
 
 /*Mobile Phone Css*/
 

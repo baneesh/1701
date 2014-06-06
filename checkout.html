@@ -46,6 +46,14 @@
         });
       });
 </script>
+<script type="text/javascript">
+      $(document).ready(function ($) {
+        $('#mainID').perfectScrollbar({
+          wheelSpeed: 20,
+          wheelPropagation: false
+        });
+      });
+</script>
 <script type="text/javascript" >
 	$(document).ready(function(){
 			$(".account").click(function(){var X=$(this).attr('id');
@@ -65,6 +73,16 @@
 			});
 		});
 </script>
+<script>
+function jqUpdateSize(){
+    // Get the dimensions of the viewport
+    var width = $(window).width();
+    var height = $(window).height();
+	$("#mainID").css("height", height);
+};
+$(document).ready(jqUpdateSize);    // When the page first loads
+$(window).resize(jqUpdateSize);     // When the browser changes size
+</script>
 </head>
 <body class="cbp-spmenu-push">
 <header class="clearfix white-link">
@@ -75,7 +93,7 @@
   <div id="ascensorBuilding">
     <div class="floor-checkout">
       <div class="checkout">
-        <div class="left">
+        <div class="left" id="mainID">
           <div class="checkout-bar">
             <ul id="progressbar">
               <li class="active">Review Cart</li>
@@ -165,6 +183,33 @@
                           <div class="view-product5">$ 20 (extra)</div>
                         </div>
                       </div>
+                    </li>
+                    <li>
+                    	<div class="subtotalMain right">
+                             <div class="left">Subtotal</div>
+                             <div class="right">$ 550.00</div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subtotalMain right">
+                             <div class="left">Discount</div>
+                             <div class="right">$ -55.00</div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subtotalMain right">
+                             <div class="left">Shipping & Handling</div>
+                             <div class="right">$ 6.58</div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subtotalMain right">
+                             <div class="left">Tax</div>
+                             <div class="right">$ 45.92</div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="subtotalMain right grandTxt">
+                             <div class="left">Grand Total</div>
+                             <div class="right">$ 547.50</div>
+                        </div>
+                        <div class="clear"></div>
                     </li>
                   </ul>
                 </div>
