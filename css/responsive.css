@@ -28,7 +28,7 @@
 	max-width:1316px !important;
 }
 .floor-bespoke .left2 {
-    padding-left: 10%;
+    padding-left: 5%;
     padding-top: 5%;
 }
 .floor-bespoke .left2 {
@@ -77,6 +77,7 @@
 .floor-bespoke .left2 {
     width: 60%;
 }
+
 }
 
 @media screen and (max-width: 1400px) {
@@ -178,6 +179,22 @@
 	
 .navbar-nav.navbar-right:last-child {
     margin-right: 10px;
+}
+.floor-bespoke .left2 {
+    width: 50%;
+}
+.dropdown {
+    width: 62px !important;
+	margin-right: 14px !important;
+}
+.marRight40 {
+    margin-right: 10px !important;
+}
+a.account {
+    width: 80px;
+}
+.submenu {
+    width: 80px;
 }
 }
 
