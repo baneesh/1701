@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+	
+	<title>Megazoom Image Viewer</title>
+	<link rel="stylesheet" type="text/css"  href="css/page.css"/>
+</head>
+
+<body>
+	<!-- product holder -->
+	<div id="mainProductHolder">
+		<div id="productHolder"></div>
+	</div>
+    <div id="megazoomPlayList" style="display:none;"></div>
+    <script type="text/javascript" src="js/FWDPage.js"></script>
+	<script type="text/javascript" src="js/FWDMegazoom.js"></script>
+	
+
+	<script type="text/javascript">
+		
+		var megazoom;
+	
+		FWDUtils.onReady(function(){
+			init();
+		});
+		
+		function setupMegazoom(){
+			megazoom =  new FWDMegazoom({
+				//----main----//
+				parentId:"productHolder",
+				playListAndSkinId:"megazoomPlayList",
+				displayType:"responsive",
+				skinPath:"images/skin/",
+				imagePath:"images/imageToZoom.jpg",
+				preloaderText:"Loading image...",
+				useEntireScreen:"yes",
+				addKeyboardSupport:"yes",
+				addDoubleClickSupport:"yes",
+				imageWidth:3000,
+				imageHeight:3857,
+				zoomFactor:1.1,
+				doubleClickZoomFactor:1,
+				startZoomFactor:"default",
+				panSpeed:8,
+				zoomSpeed:.1,
+				backgroundColor:"#020204",
+				preloaderFontColor:"#a2a3a3",
+				preloaderBackgroundColor:"#000000",
+				//----lightbox-----//
+				lightBoxWidth:800,
+				lightBoxHeight:550,
+				lightBoxBackgroundOpacity:.8,
+				lightBoxBackgroundColor:"#000000",
+				//----controller----//
+				buttons:"scrollbar",
+				buttonsToolTips:"",
+				controllerPosition:"top",
+				inversePanDirection:"yes",
+				startSpaceBetweenButtons:10,
+				spaceBetweenButtons:10,
+				startSpaceForScrollBarButtons:20,
+				startSpaceForScrollBar:6,
+				hideControllerDelay:3,
+				controllerMaxWidth:385,
+				controllerBackgroundOpacity:1,
+				controllerOffsetY:3,
+				scrollBarOffsetX:0,
+				scrollBarHandlerToolTipOffsetY:4,
+				zoomInAndOutToolTipOffsetY:-4,
+				buttonsToolTipOffsetY:0,
+				hideControllerOffsetY:7,
+				buttonToolTipFontColor:"#a2a3a3",
+				//----navigator----//
+				showNavigator:"no",
+				navigatorImagePath:"images/navigatorImage.jpg",
+				navigatorPosition:"topright",
+				navigatorOffsetX:6,
+				navigatorOffsetY:6,
+				navigatorHandlerColor:"#FF0000",
+				navigatorBorderColor:"#AAAAAA",
+				//----info window----//
+				infoWindowBackgroundOpacity:.6,
+				infoWindowBackgroundColor:"#000000",
+				infoWindowScrollBarColor:"#999999",
+				//----markers-----//
+				showMarkersInfo:"no",
+				markerToolTipOffsetY:0,
+				//----context menu----//
+				showScriptDeveloper:"no",
+				contextMenuLabels:"",
+				contextMenuBackgroundColor:"#4c4c4c",
+				contextMenuBorderColor:"#727272",
+				contextMenuSpacerColor:"#727272",
+				contextMenuItemNormalColor:"#a2a3a3",
+				contextMenuItemSelectedColor:"#FFFFFF",
+				contextMenuItemDisabledColor:"#595b5b"
+			});
+		}
+	</script>
+</body>
+</html>

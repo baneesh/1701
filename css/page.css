@@ -1,0 +1,56 @@
+
+/* Product holder */
+#mainProductHolder{
+	overflow:hidden;
+	position:relative;
+	width:100%;
+	margin-top:12px;
+	padding-bottom:26px;
+}
+
+#productHolder{
+	position:relative;
+	background-color:#f2f2f2;
+	height:700px;
+}
+
+#productHolderBackground{
+	position:absolute;
+}
+#productHolder > div{
+	background:#f2f2f2 !important;
+	}
+#productHolder > div > div:nth-child(1){
+	background:#f2f2f2 !important;
+	}
+#productHolder > div > div:nth-child(1) > div:nth-child(1){
+	background:#f2f2f2 !important;
+	}
+#productHolder > div > div:nth-child(2) > div{
+	transform:rotate(-90deg);
+	top:350px !important;
+	left:-135px !important;
+	width:310px !important;
+	/*background:url(../images/skin/bg-zoom.png) no-repeat !important;*/
+	}
+#productHolder > div > div:nth-child(2) > div > img:nth-child(2){
+	left:310px !important;
+	}
+#productHolder > div > div:nth-child(2) > div > img:nth-child(3){
+	width:300px !important;
+	}
+#productHolder > div > div:nth-child(2) > div > div:nth-child(4){
+	left:320px !important;
+	z-index:2 !important;
+	}
+#productHolder > div > div:nth-child(2) > div > div:nth-child(5){
+	transform:rotate(-90deg);
+	left: -28px !important;
+	}
+#productHolder > div > div:nth-child(2) > div > div:nth-child(6){
+	width:252px !important;
+	left: 22px !important;
+	}
+#productHolder > div > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2){
+	width:252px !important;
+	}
