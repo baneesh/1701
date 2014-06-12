@@ -27,13 +27,23 @@
 	background:#f2f2f2 !important;
 	}
 #productHolder > div > div:nth-child(2) > div{
-	transform:rotate(-90deg);
+	transform:rotate(-90deg) !important;
+	-ms-transform:rotate(-90deg) !important; /* IE 9 */
+	-webkit-transform:rotate(-90deg) !important; /* Opera, Chrome, and Safari */
 	top:350px !important;
 	left:-135px !important;
 	width:310px !important;
 	/*background:url(../images/skin/bg-zoom.png) no-repeat !important;*/
 	}
-#productHolder > div > div:nth-child(2) > div > img:nth-child(2){
+#productHolder > div > div:nth-child(2) > div > div:nth-child(5){
+	transform:rotate(-90deg) !important;
+	-ms-transform:rotate(-90deg) !important; /* IE 9 */
+	-webkit-transform:rotate(-90deg) !important; /* Opera, Chrome, and Safari */
+	left: -28px !important;
+	}
+	
+@-moz-document url-prefix() { 
+  #productHolder > div > div:nth-child(2) > div > img:nth-child(2){
 	left:310px !important;
 	}
 #productHolder > div > div:nth-child(2) > div > img:nth-child(3){
@@ -43,10 +53,6 @@
 	left:320px !important;
 	z-index:2 !important;
 	}
-#productHolder > div > div:nth-child(2) > div > div:nth-child(5){
-	transform:rotate(-90deg);
-	left: -28px !important;
-	}
 #productHolder > div > div:nth-child(2) > div > div:nth-child(6){
 	width:252px !important;
 	left: 22px !important;
@@ -54,3 +60,4 @@
 #productHolder > div > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2){
 	width:252px !important;
 	}
+}

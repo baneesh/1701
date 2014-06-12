@@ -181,7 +181,7 @@
     margin-right: 10px;
 }
 .floor-bespoke .left2 {
-    width: 50%;
+    width: 52%;
 }
 .dropdown {
     width: 62px !important;
@@ -193,8 +193,23 @@
 a.account {
     width: 80px;
 }
+a.account img {
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 2px;
+    width: 30%;
+}
 .submenu {
     width: 80px;
+}
+#productHolder > div > div:nth-child(2) > div{
+	left:-135px !important;
+	}
+.floor-bespoke .right {
+    padding-right: 20px;
+}
+.floor-bespoke .left2 {
+	padding-top: 1%;
 }
 }
 
