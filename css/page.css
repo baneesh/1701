@@ -33,7 +33,6 @@
 	top:350px !important;
 	left:-135px !important;
 	width:310px !important;
-	/*background:url(../images/skin/bg-zoom.png) no-repeat !important;*/
 	}
 #productHolder > div > div:nth-child(2) > div > div:nth-child(5){
 	transform:rotate(90deg) !important;
@@ -42,20 +41,25 @@
 	left: -29px !important;
 	top:6px !important;
 	}
+#productHolder > div > div:nth-child(2) > div > div:nth-child(6){
+	left:-43px !important;
+	}
 #productHolder > div > div:nth-child(2) > div > img:nth-child(3){
-	width:380px !important;
+	width:280px !important;
 	}
 #productHolder > div > div:nth-child(2) > div > img:nth-child(2) {
-    left: 15px !important;
+    left: -86px !important;
 }
 #productHolder > div > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2){
 	width:252px !important;
 	}
 #productHolder > div > div:nth-child(2) > div > div:nth-child(4){
-	left:76px !important;
+	left:-28px !important;
 	z-index:2 !important;
 	}
-
+#productHolder > div > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(4){
+	top: 1px !important;
+	}
 	
 @-moz-document url-prefix() { 
   #productHolder > div > div:nth-child(2) > div > img:nth-child(2){
