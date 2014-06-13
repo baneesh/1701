@@ -36,21 +36,36 @@
 	/*background:url(../images/skin/bg-zoom.png) no-repeat !important;*/
 	}
 #productHolder > div > div:nth-child(2) > div > div:nth-child(5){
-	transform:rotate(-90deg) !important;
-	-ms-transform:rotate(-90deg) !important; /* IE 9 */
-	-webkit-transform:rotate(-90deg) !important; /* Opera, Chrome, and Safari */
-	left: -28px !important;
+	transform:rotate(90deg) !important;
+	-ms-transform:rotate(90deg) !important; /* IE 9 */
+	-webkit-transform:rotate(90deg) !important; /* Opera, Chrome, and Safari */
+	left: -29px !important;
+	top:6px !important;
 	}
+#productHolder > div > div:nth-child(2) > div > img:nth-child(3){
+	width:380px !important;
+	}
+#productHolder > div > div:nth-child(2) > div > img:nth-child(2) {
+    left: 15px !important;
+}
+#productHolder > div > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2){
+	width:252px !important;
+	}
+#productHolder > div > div:nth-child(2) > div > div:nth-child(4){
+	left:76px !important;
+	z-index:2 !important;
+	}
+
 	
 @-moz-document url-prefix() { 
   #productHolder > div > div:nth-child(2) > div > img:nth-child(2){
-	left:310px !important;
+	left:290px !important;
 	}
 #productHolder > div > div:nth-child(2) > div > img:nth-child(3){
-	width:300px !important;
+	width:280px !important;
 	}
 #productHolder > div > div:nth-child(2) > div > div:nth-child(4){
-	left:320px !important;
+	left:302px !important;
 	z-index:2 !important;
 	}
 #productHolder > div > div:nth-child(2) > div > div:nth-child(6){
@@ -59,5 +74,11 @@
 	}
 #productHolder > div > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2){
 	width:252px !important;
+	}
+#productHolder > div > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(4){
+	top: 8px !important;
+	}
+#productHolder > div > div:nth-child(2) > div > div:nth-child(5){
+	top:7px !important;
 	}
 }
