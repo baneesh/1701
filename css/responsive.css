@@ -46,6 +46,10 @@
 }
 
 @media screen and (max-width: 1600px) {
+	
+.checkout .product-billing h1 {
+    bottom: 35px;
+}
 
 }
 
@@ -156,6 +160,11 @@
 .sky-tabs > label {
     /*padding: 0 20px 20px !important;*/
 }
+.checkout .product-billing h1 {
+    bottom: auto;
+    position: relative;
+	left:auto;
+}
 }
 
 @media screen and (max-width: 1351px) {
@@ -211,6 +220,7 @@ a.account img {
 .floor-bespoke .left2 {
 	padding-top: 1%;
 }
+
 }
 
 /* -------------------------- Small screens -------------------------------------- */
