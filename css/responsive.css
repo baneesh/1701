@@ -165,6 +165,9 @@
     position: relative;
 	left:auto;
 }
+.checkout-bar {
+    margin: 40px auto;
+}
 }
 
 @media screen and (max-width: 1351px) {
