@@ -168,6 +168,9 @@
 .checkout-bar {
     margin: 40px auto;
 }
+.checkout03 .left {
+    width: auto;
+}
 }
 
 @media screen and (max-width: 1351px) {

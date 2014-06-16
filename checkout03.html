@@ -46,7 +46,15 @@
         });
       });
 </script>
-    <script type="text/javascript" >
+<script type="text/javascript">
+      $(document).ready(function ($) {
+        $('#mainID').perfectScrollbar({
+          wheelSpeed: 20,
+          wheelPropagation: false
+        });
+      });
+</script>
+<script type="text/javascript" >
 		$(document).ready(function(){
 			$(".account").click(function(){var X=$(this).attr('id');
 			if(X==1){$(".submenu").hide();
@@ -64,7 +72,17 @@
 			$(".account").attr('id', '');
 			});
 		});
-	</script>
+</script>
+<script>
+function jqUpdateSize(){
+    // Get the dimensions of the viewport
+    var width = $(window).width();
+    var height = $(window).height();
+	$("#mainID").css("height", height - 110);
+};
+$(document).ready(jqUpdateSize);    // When the page first loads
+$(window).resize(jqUpdateSize);     // When the browser changes size
+</script>
 </head>
 <body class="cbp-spmenu-push">
 <header class="clearfix white-link">
@@ -75,7 +93,7 @@
   <div id="ascensorBuilding">
     <div class="floor-checkout03">
       <div class="checkout03">
-        <div class="left">
+        <div class="left" id="mainID">
           <div class="checkout03-bar">
             <ul id="progressbar">
               <li class="active">Review Cart</li>
