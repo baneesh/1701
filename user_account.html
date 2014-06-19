@@ -59,13 +59,31 @@
 			});
 		});
 	</script>
+    <script type="text/javascript">
+      $(document).ready(function ($) {
+        $('#mainID').perfectScrollbar({
+          wheelSpeed: 20,
+          wheelPropagation: false
+        });
+      });
+	</script>
+    <script>
+		function jqUpdateSize(){
+			// Get the dimensions of the viewport
+			var width = $(window).width();
+			var height = $(window).height();
+			$("#mainID").css("height", height - 200);
+		};
+		$(document).ready(jqUpdateSize);    // When the page first loads
+		$(window).resize(jqUpdateSize);     // When the browser changes size
+	</script>
     </head>
     <body class="bg-body3">
-<header class="clearfix white-link">
+	<header class="clearfix white-link">
       <div class="header-elements"> <a href="home.html" class="logo"> <img src="images/logo.png" alt="" /> </a> </div>
     </header>
-<div class="clear"></div>
-<div class="mainSection">
+	<div class="clear"></div>
+	<div class="mainSection">
       <div id="ascensorBuilding">
     <div class="overlay-bg user-account">
           <div class="left">Purchase History</div>
@@ -335,9 +353,9 @@
         </li>
         <li class="sky-tab-content-3">
               <div class="typography">
-            <div class="txt2">
+            <div class="txt2 width800" id="mainID">
                   <h2>Some text about saved billing and shipping details</h2>
-                <p class="marBottom40">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque massa scelerisque blandit fringilla. Fusce in feugiat nisi. Suspendisse vel ligula id velit sodales tristique ac eu mi.</p>
+                <p class="marBottom40 width780">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque massa scelerisque blandit fringilla. Fusce in feugiat nisi. Suspendisse vel ligula id velit sodales tristique ac eu mi.</p>
                 <div class="mainBillForm">
               		<div class="left">
                       <h3 class="line_bottom marTop0">Billing Details</h3>

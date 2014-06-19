@@ -181,6 +181,9 @@
     width: 108px;
 	margin-left: 20px;
 }
+#mainID.width800 {
+    width: 75% !important;
+}
 
 }
 
