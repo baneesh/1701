@@ -2401,7 +2401,8 @@ a.active.trigger {
 	margin-top: 13px;
 	margin-right: 24px;
 	width : 162px;
-	height : 37px;/*background : #F36E34;
+	height : 37px;
+	/*background : #F36E34;
   	border-radius : 4px;
   	-moz-border-radius : 4px;
   	-webkit-border-radius : 4px;*/
@@ -5957,4 +5958,97 @@ ul.bg a{
 #mainID.width800 {
 	width: 85% !important;
 	position:relative;
+}
+
+
+
+/*Follow Us Page Css*/
+
+a.account2 {
+	cursor:pointer;
+	text-decoration:none;
+}
+a.account2:hover {
+	text-decoration:none;
+}
+.submenu2 {
+	background : #F2F2F2;
+	width : 495px;
+	height : 204px;
+	box-shadow : 7px 7px 5px rgba(0, 0, 0, 0.15);
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=7, OffY=7, Color='#000000') ;
+	position: absolute;
+	top: -220px;
+	left: -424px;
+	z-index: 100;
+	display: none;
+	margin-left: 10px;
+	border-radius: 6px;
+}
+.submenu2:before {
+    border-color: #f26e32 transparent;
+    border-style: solid solid none;
+    border-width: 10px 10px medium;
+    bottom: auto;
+    top: 100%;
+}
+.submenu2:before {
+    border-bottom: 10px solid rgba(255, 255, 255, 0.9);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: 100%;
+    content: "";
+    left: 88%;
+    position: absolute;
+}
+.submenu2:after {
+    bottom: auto;
+    top: 100%;
+}
+.submenu2:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 100%;
+    content: "";
+    height: 8px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.dropdown2 {
+	position: relative;
+	text-align: left;
+	margin-top: 15px;
+	margin-right: 24px;
+	width : 77px !important;
+	height : 37px;
+	margin-left:15px;
+}
+.dropdown2 li a {
+	color: #666666 !important;
+	display: block;
+	font-family: 'latolight';
+	font-weight: normal;
+	padding: 0px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.dropdown2 li a:hover {
+	background: #F36E34;
+	color: #FFFFFF !important;
+	text-decoration: none;
+}
+.root2 {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'latolight';
+	font-size: 12px;/*padding: 11px 0 0 0px;*//*border-bottom: 1px solid #dedede;*/
+}
+.root2 li {
+	float:left;
+	margin-right:22px;
+	font-family: 'latoregular';
+	font-size : 14px;
+	color : #333333;
+	line-height:40px;
 }
