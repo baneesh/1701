@@ -1950,6 +1950,12 @@ a.active.trigger {
 .marRight40 {
 	margin-right: 40px !important;
 }
+.marLeft36 {
+	margin-left: 36px !important;
+}
+.marRight36 {
+	margin-right: 36px !important;
+}
 .marLeft30 {
 	margin-left: 30px !important;
 }
@@ -6033,7 +6039,7 @@ a.account2:hover {
 	text-decoration: none;
 }
 .dropdown2 li a:hover {
-	background: #F36E34;
+	background: none;
 	color: #FFFFFF !important;
 	text-decoration: none;
 }
@@ -6052,3 +6058,72 @@ a.account2:hover {
 	color : #333333;
 	line-height:40px;
 }
+.bottomFollow {
+    background: none repeat scroll 0 0 #f26e32;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding-bottom: 5px;
+	position:relative;
+	top:100px;
+}
+.h-line{
+	display:block;
+	margin:0 26px;
+	width : 450px;
+	height : 1px;
+	background:#ccc;
+	clear:both;
+	}
+.topFollow p{
+	color: #333333;
+    float: left;
+    font-family: 'latoregular';
+    font-size: 14px;
+    line-height: 40px;
+	margin-left:36px;
+	width:100%;
+	padding:0px;
+	margin-bottom:0px;
+	}
+.inputFollow input[type=text]{
+	background : #FFFFFF;
+	border-style : Solid;
+	border-color : #CCCCCC;
+	border-width : 1px;
+	width : 337px;
+	height : 38px;
+	border-radius : 6px;
+	-moz-border-radius : 6px;
+	-webkit-border-radius : 6px;
+	font-family: 'latolight';
+	font-size : 14px;
+	color : #CCCCCC;
+	padding-left:16px;
+	float:left;
+	margin-left:20px;
+	margin-right:6px;
+	}
+.inputFollow a {
+    color: #fff !important;
+    display: block;
+    font-family: 'latolight';
+    font-size: 14px;
+    line-height: 38px !important;
+    text-align: center;
+    text-decoration: none !important;
+	background : #F26E32;
+	width : 113px;
+	height : 38px !important;
+	border-radius : 6px;
+	-moz-border-radius : 6px;
+	-webkit-border-radius : 6px;
+	float:left;
+}
+.topFollow{
+	margin-bottom:20px;
+	float:left;
+	}
+.middleFollow{
+	float:left;
+	margin-top:20px;
+	}

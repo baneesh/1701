@@ -86,25 +86,25 @@ a.account {
 <script src="js/jquery.mousewheel.js"></script>
 <script src="js/perfect-scrollbar.js"></script>
 
-<script type="text/javascript" >
-$(document).ready(function(){
-	$(".account").click(function(){var X=$(this).attr('id');
-	if(X==1){$(".submenu").hide();
-	$(this).attr('id', '0'); 
-		}
-		else{$(".submenu").show();$(this).attr('id', '1');
-		}
-	});
-	//Mouse click on sub menu
-	$(".submenu").mouseup(function(){return false});
-	//Mouse click on my account link
-	$(".account").mouseup(function(){return false});
-	//Document Click
-	$(document).mouseup(function(){$(".submenu").hide();
-	$(".account").attr('id', '');
-	});
-});
-</script>
+    <script type="text/javascript" >
+		$(document).ready(function(){
+			$(".account2").click(function(){var X=$(this).attr('id');
+			if(X==1){$(".submenu2").hide();
+			$(this).attr('id', '0'); 
+				}
+				else{$(".submenu2").show();$(this).attr('id', '1');
+				}
+			});
+			//Mouse click on sub menu
+			$(".submenu2").mouseup(function(){return false});
+			//Mouse click on my account link
+			$(".account2").mouseup(function(){return false});
+			//Document Click
+			$(document).mouseup(function(){$(".submenu2").hide();
+			$(".account2").attr('id', '');
+			});
+		});
+	</script>
 </head>
 <body>
 <div class="dropdown">

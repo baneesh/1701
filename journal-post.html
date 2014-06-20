@@ -22,25 +22,25 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
     <script src="js/jquery-1.9.1.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script type="text/javascript" >
-      $(document).ready(function(){
-      	$(".account").click(function(){var X=$(this).attr('id');
-      	if(X==1){$(".submenu").hide();
-      	$(this).attr('id', '0'); 
-      		}
-      		else{$(".submenu").show();$(this).attr('id', '1');
-      		}
-      	});
-      	//Mouse click on sub menu
-      	$(".submenu").mouseup(function(){return false});
-      	//Mouse click on my account link
-      	$(".account").mouseup(function(){return false});
-      	//Document Click
-      	$(document).mouseup(function(){$(".submenu").hide();
-      	$(".account").attr('id', '');
-      	});
-      });
-    </script>
+        <script type="text/javascript" >
+		$(document).ready(function(){
+			$(".account2").click(function(){var X=$(this).attr('id');
+			if(X==1){$(".submenu2").hide();
+			$(this).attr('id', '0'); 
+				}
+				else{$(".submenu2").show();$(this).attr('id', '1');
+				}
+			});
+			//Mouse click on sub menu
+			$(".submenu2").mouseup(function(){return false});
+			//Mouse click on my account link
+			$(".account2").mouseup(function(){return false});
+			//Document Click
+			$(document).mouseup(function(){$(".submenu2").hide();
+			$(".account2").attr('id', '');
+			});
+		});
+	</script>
   </head>
   <body class="bg-body3">
     <header class="clearfix white-link">
@@ -223,18 +223,43 @@ You have to ring a bell outside a metal door, and venture up a tiled stairway in
         <ul class="nav navbar-nav navbar-right">
           <li class="orangeTxt">
             <div class="dropdown">
-              <a class="account"><img src="images/user.jpg" alt="" />My Account</a>
-              <div class="submenu">
-                <ul class="root">
-                  <li ><a href="#Dashboard">Dashboard</a></li>
-                  <li ><a href="#Profile" >Profile</a></li>
-                  <li ><a href="#settings">Settings</a></li>
-                  <li ><a href="#feedback">Send Feedback</a></li>
-                </ul>
-              </div>
+              <a href="user_account.html" class="account"><img src="images/user.jpg" alt="" />My Account</a>
+              <!--<div class="submenu">
+                    <ul class="root">
+                      <li ><a href="#Dashboard">Dashboard</a></li>
+                      <li ><a href="#Profile" >Profile</a></li>
+                      <li ><a href="#settings">Settings</a></li>
+                      <li ><a href="#feedback">Send Feedback</a></li>
+                    </ul>
+                  </div>-->
             </div>
           </li>
-          <li class="orangeTxt marRight40"><a href="#">Follow Us</a></li>
+          <li class="orangeTxt">
+          	<div class="dropdown2">
+            	<a class="account2">Follow Us</a>
+                  <div class="submenu2">
+                  <div class="topFollow">
+                  	<p>Subscribe to our Newsletter</p>
+                    <div class="inputFollow">
+                    <input type="text" placeholder="enter email address" value="" id="address3">
+                    <a href="#">subscribe</a>
+                    </div>
+                  </div>
+                  <div class="h-line"></div>
+                  <div class="middleFollow">
+                    <ul class="root2">
+                      <li class="marLeft36 marRight36">Follow us on</li>
+                      <li><a href="#"><img src="images/icon-facebook-fl.png" alt="" /></a></li>
+                      <li><a href="#"><img src="images/icon-twitter-fl.png" alt="" /></a></li>
+                      <li><a href="#"><img src="images/icon-pinterest-fl.png" alt="" /></a></li>
+                      <li><a href="#"><img src="images/icon-instagram-fl.png" alt="" /></a></li>
+                      <li><a href="#"><img src="images/icon-google-plus-fl.png" alt="" /></a></li>
+                    </ul>
+                    </div>
+                  <div class="bottomFollow"></div>
+                  </div>
+			</div>
+          </li>
         </ul>
       </div>
     </nav>
