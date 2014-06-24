@@ -742,7 +742,7 @@ nav .prev {
 .rb-grid li, .rb-grid li.rb-span-2, .rb-grid li.rb-span-4{
 	height:auto !important;
 	}
-.orangeTxt.marRight40{
+.orangeTxt.marRight40, .orangeTxt.marRight15{
 	display:none;
 	}
 .orangeTxt.marRight25{
