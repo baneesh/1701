@@ -6004,11 +6004,11 @@ ul.bg li{
 	width:100%;
 	margin-bottom:50px;
 	}
-ul.bg li:last-child{
+/*ul.bg li:last-child{
 	border-bottom:1px solid #ccc;
 	padding-bottom:40px;
 	margin-bottom:0px;
-	}
+	}*/
 ul.bg img {
   /* Set rules to fill background */
   /*min-height: 76%;
@@ -6175,8 +6175,8 @@ ul.bg a{
 	}
 #contentM01, #contentM02, #contentM03, #contentM04, #contentM05, #contentM06{
 	float:left;
-	border-bottom:1px solid #ccc;
-	padding-bottom:40px;
+	/*border-bottom:1px solid #ccc;
+	padding-bottom:40px;*/
 	margin-bottom:0px;
 	display:none;
 	}
@@ -6186,4 +6186,11 @@ ul.bg a{
 	}
 .mobile-right-pro-images li a{
 	padding:0px;
+	}
+.h_line{
+	display:block;
+	width : 100%;
+	height : 1px;
+	background:#ccc;
+	clear:both;
 	}
