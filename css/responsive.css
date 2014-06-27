@@ -171,13 +171,13 @@
 .checkout03 .left {
     width: auto;
 }
-.sky-tabs.user-account .txt2 {
+.infoTabs .sky-tabs.user-account .txt2 {
     width: 75%;
 }
-.sky-tabs.user-account .sky-tab-content-1 .txt2 {
+.infoTabs .sky-tabs.user-account .sky-tab-content-1 .txt2 {
     width: 69%;
 }
-.sky-tabs.user-account .sky-tab-content-1 .txt2.left2 {
+.infoTabs .sky-tabs.user-account .sky-tab-content-1 .txt2.left2 {
     width: 108px;
 	margin-left: 20px;
 }
