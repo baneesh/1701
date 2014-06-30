@@ -203,11 +203,18 @@
               <h2>Name of the Story</h2>
               <p class="padBottom0">$234</p>
               <div class="sliderMobile">
-              	<ul class="bxslider">
-                  <li><img src="images/pro-top-slider01.png" /></li>
-                  <li><img src="images/pro-top-slider02.png" /></li>
-                  <li><img src="images/pro-top-slider03.png" /></li>
+              <div class="bx-viewport">
+              	<ul id="slider1">
+                  <li><img src="images/pro-top-slider01.png" alt="" /></li>
+                  <li><img src="images/pro-top-slider02.png" alt="" /></li>
+                  <li><img src="images/pro-top-slider03.png" alt="" /></li>
                 </ul>
+                </div>
+                <div id="bx-pager1">
+                  <a data-slide-index="0">&nbsp;</a>
+                  <a data-slide-index="1">&nbsp;</a>
+                  <a data-slide-index="2">&nbsp;</a>
+                </div>
               </div>
               <div class="clear"></div>
               <div class="mainPrice left">
@@ -225,16 +232,23 @@
               <a href="#" class="marTop20">add to cart</a>
               <p class="padBottom0 marTop20">You have to ring a bell outside a metal door, and venture up a tiled stairway into this tiny den of a shop… and you’re immediately hit with nostalgia. Old soda bottles, plastic figurines, briefcases, bags, board game boxes, sunglasses, ties, clocks, phones, dresses, leather jackets, shoes – there was just stuff everywhere. On shelves, lining the floor, in these crazy cabinets, hanging from the ceiling (and a ridiculous old fan from Holland). And it was all beautiful, vintage (not retro “styled), and mostly in pristine condition. There was certainly a lot of product on display, but somehow it made sense</p>
               <h2>View Similar Products</h2>
-              <div class="sliderMobile">
-              	<ul class="bxslider">
-                  <li><img src="images/pro-slider01.png" /></li>
-                  <li><img src="images/pro-slider02.png" /></li>
-                  <li><img src="images/pro-slider03.png" /></li>
+              <div class="sliderMobile2">
+              <div class="bx-viewport">
+              	<ul id="slider2">
+                  <li><img src="images/pro-slider01.png" alt="" /></li>
+                  <li><img src="images/pro-slider02.png" alt="" /></li>
+                  <li><img src="images/pro-slider03.png" alt="" /></li>
                 </ul>
+                </div>
+                <div id="bx-pager2">
+                  <a data-slide-index="0">&nbsp;</a>
+                  <a data-slide-index="1">&nbsp;</a>
+                  <a data-slide-index="2">&nbsp;</a>
+                </div>
               </div>
           </li>
           </ul>
-          <div class="h_line"></div>
+          <div class="h_line marTop20"></div>
           <div class="mobileFollowUS">
             <h2>Follow Us</h2>
             <ul>
@@ -735,9 +749,37 @@ jQuery(document).ready(function(){
 <script src="js/jquery.toggle-panel.js"></script>
 <script src="js/custom-toggle-panel.js"></script> 
 <script>
-$('.bxslider').bxSlider({
-  infiniteLoop: false,
-  hideControlOnEnd: true
+ $(document).ready(function(){
+	$('#slider1').bxSlider({
+		infiniteLoop: true,
+		controls: false,
+		touchEnabled: true,
+		swipeThreshold: 50,
+		oneToOneTouch: true,
+		preventDefaultSwipeX: true,
+		preventDefaultSwipeY: false,
+		pager: true,
+		pagerType: 'full',
+		pagerShortSeparator: ' / ',
+		pagerSelector: null,
+		buildPager: null,
+		pagerCustom: '#bx-pager1',
+	});
+	$('#slider2').bxSlider({
+		infiniteLoop: true,
+		controls: false,
+		touchEnabled: true,
+		swipeThreshold: 50,
+		oneToOneTouch: true,
+		preventDefaultSwipeX: true,
+		preventDefaultSwipeY: false,
+		pager: true,
+		pagerType: 'full',
+		pagerShortSeparator: ' / ',
+		pagerSelector: null,
+		buildPager: null,
+		pagerCustom: '#bx-pager2',
+	});
 });
 </script>
 </body>
