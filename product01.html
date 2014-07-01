@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/jquery.slidepanel.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/component2.css" />
     <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.vegas.min.css">
     <link rel="stylesheet" href="css/sky-mega-menu.css">
     <link href="css/toggle-panel.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
@@ -59,7 +60,7 @@
 		});
 	</script>
     </head>
-    <body class="cbp-spmenu-push">
+    <body class="cbp-spmenu-push" id="demo">
 <header class="clearfix white-link">
       <div class="header-elements"> <a href="home.html" class="logo"> <img src="images/logo.png" alt="" /> </a> </div>
     </header>
@@ -70,10 +71,14 @@
     	<div class="lt-edition">Limited Edition <span>24/99</span></div>
         <div id="container">
             <ul id="menu">
-                  <li><a href="#" data-valign="top"><i class="fa fa-camera" style="border: 1px solid rgb(255, 255, 255);"></i></a></li>
+                  <!--<li><a href="#" data-valign="top"><i class="fa fa-camera" style="border: 1px solid rgb(255, 255, 255);"></i></a></li>
                   <li><a href="#" data-valign="top"><i class="fa fa-camera"></i></a></li>
                   <li><a href="#" data-valign="top"><i class="fa fa-camera"></i></a></li>
-                  <li><a href="#" data-valign="top"><i class="fa fa-play"></i></a></li>
+                  <li><a href="#" data-valign="top"><i class="fa fa-play"></i></a></li>-->
+                  <li><a href="images/product01/background-1.jpg" data-valign="top"><img src="images/product01/thumbnail-1.jpg"></a></li>
+                  <li><a href="images/product01/background-2.jpg" data-valign="top"><img src="images/product01/thumbnail-2.jpg"></a></li>
+                  <li><a href="images/product01/background-3.jpg" data-valign="top"><img src="images/product01/thumbnail-3.jpg"></a></li>
+                  <li><a href="images/product01/background-4.jpg" data-valign="top"><img src="images/product01/thumbnail-4.jpg"></a></li>
             </ul>
       </div>
         </div>
@@ -139,7 +144,7 @@
          </div>
       </div>
     </div>
-    <div id="cbp-spmenu-s2" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right cbp-spmenu-open">
+    <div id="cbp-spmenu-s2" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right cbp-spmenu-open boxShadow">
           <div class="breadcrumbs1">
         <ul class="breadcrumb">
               <li><a href="#">Men</a></li>
@@ -648,8 +653,94 @@ $(document).ready(function(){
 
 			});
 		</script> 
-<script src="js/jquery-ui.js"></script> 
-<script src="js/jquery.ascensor.js"></script> 
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.vegas.js"></script>
+<script>
+$( function() { 
+    var slideshowRunning = false,
+		backgroundList = [];
+
+    // Build the background list with href of links
+    $( '#menu a' ).each( function() { 
+        backgroundList.push( { 
+            src: $( this ).attr( 'href' ),
+            valign: $( this ).data( 'valign' ),
+			fade: 1000
+         } );
+     } );
+		
+    // Define a slideshow with overlay and pause it
+	$.vegas( backgroundList[0] )
+	( 'overlay', {
+		opacity: 0.5
+	})
+	( 'pause' );
+
+    // A short demo
+    $( '#menu a' ).click( function() { 
+	
+        // If the SlideShow link is clicked
+        if ( $( this ).is( '#slideshow' ) ) { 
+		
+            // Start the SlideShow
+            if ( slideshowRunning == false ) { 
+                slideshowRunning = true;
+				
+                $( '#pause' )
+					.show()
+					.css( 'opacity', 0.5 )
+					.html( 'PAUSE' );
+					
+				$.vegas( 'slideshow', { 
+					delay: 1000,
+					backgrounds: backgroundList,
+				})
+				
+            // Pause the SlideShow
+             } else { 
+                slideshowRunning = false;
+				
+                $( '#pause' )
+					.show()
+					.css( 'opacity', 0.5 )
+					.html( 'PLAY' );
+					
+                $.vegas( 'pause' );  
+             }
+            
+       	// If a standard Thumbnail is clicked
+         } else { 
+			slideshowRunning = false;
+			
+            $( '#pause' ).hide();
+			$( '#thumbnail' ).attr( 'src', 'images/product01/slideshow.gif' );
+
+			var idx = $( this ).parent( 'li' ).index();
+			$.vegas( 'stop' )( backgroundList[idx] );
+         }
+		 
+         return false;
+     } );
+	 
+	// Apply a border to the right thumbnail when a background is loaded
+	$( 'body' ).bind( 'vegasload', function( e, bg ) {	    
+	    var src = $( bg ).attr( 'src' ).replace( 'background', 'thumbnail' );
+		
+		$( '#menu img' )
+			.css( 'border', '1px solid #000' ); 
+		$( 'img[src="' + src + '"]' )
+			.css( 'border', '1px solid #ccc' );
+	});
+	
+	// Display the right thumbnail instead of the slideshow animated gif when the slideshow is running
+	$( 'body' ).bind( 'vegaswalk', function( e, bg ) {
+	    var src = $( bg ).attr( 'src' ).replace( 'background', 'thumbnail' );
+		
+		$( '#thumbnail' ).attr( 'src', src );
+	});
+ } );
+</script>
+<!--<script src="js/jquery.ascensor.js"></script> 
 <script>
 			var ascensor = $('#ascensorBuilding').ascensor();
 			var floorAdded = false;
@@ -668,12 +759,11 @@ $(document).ready(function(){
 			$(".next").click(function() {
 				ascensor.trigger("next");
 				$("#d_clickable").removeClass("hide");
-				/*console.log(windowsOn);*/
 			});
 			
 			ascensor.on("scrollEnd", function(event, floor){
-			  console.log(floor.from)  // Return the origin floor
-			  console.log(floor.to)    // Return the targeted floor
+			  console.log(floor.from)
+			  console.log(floor.to)
 			    $(".prev").show({easing: 'easeOutBack'});
 			    $(".next").show({easing: 'easeOutBack'});
 			    $(".nextStory").show({easing: 'easeOutBack'});			
@@ -691,7 +781,7 @@ $(document).ready(function(){
 			  
 			});
 			
-</script> 
+</script> -->
 <script>
 $(document).ready(function(){  
 	$('.collapse').on('shown.bs.collapse', function(){
