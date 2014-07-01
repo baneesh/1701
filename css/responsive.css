@@ -523,7 +523,12 @@ nav .prev {
 	max-height: 362px;
 	border-bottom:1px solid #ccc;
 }
-
+.mobileHide{
+	display:none !important;
+	}
+.mobileShow{
+	display:block !important;
+	}
 
 }
 

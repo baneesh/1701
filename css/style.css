@@ -6216,9 +6216,6 @@ ul.bg a{
 	background:#ccc;
 	clear:both;
 	}
-.mobileHide{
-	display:none !important;
-	}
 .bg-yellow{
 	background:#FFF100 !important;
 	color:#666666 !important;
@@ -6307,3 +6304,6 @@ ul.bg a{
 	border-width: 1px;
 	background:#fff !important;
 }
+.mobileShow{
+	display:none !important;
+	}
