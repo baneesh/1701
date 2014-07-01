@@ -6307,8 +6307,13 @@ ul.bg a{
 .mobileShow{
 	display:none !important;
 	}
-.boxShadow{
+.boxShadowLeft{
 	-webkit-box-shadow: -2px 0px 10px 0px rgba(50, 50, 50, 0.05);
 	-moz-box-shadow:    -2px 0px 10px 0px rgba(50, 50, 50, 0.05);
 	box-shadow:         -2px 0px 10px 0px rgba(50, 50, 50, 0.05);
+	}
+.boxShadowTop{
+	-webkit-box-shadow: 0px -2px 10px 0px rgba(50, 50, 50, 0.05);
+	-moz-box-shadow:    0px -2px 10px 0px rgba(50, 50, 50, 0.05);
+	box-shadow:         0px -2px 10px 0px rgba(50, 50, 50, 0.05);
 	}
