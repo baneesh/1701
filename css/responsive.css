@@ -120,6 +120,17 @@
 	height:600px;
 	overflow:hidden;
 	}
+.product-billing #accordion{
+	height:600px;
+	overflow:hidden;
+	}
+#ascensorBuilding #accordion{
+	height:auto;
+	overflow:visible;
+}
+.cbp-spmenu-vertical {
+    height: 96% !important;
+}
 .ps-container .ps-scrollbar-y-rail span{
 	display:none;
 	}

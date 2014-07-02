@@ -49,7 +49,7 @@
 	right: 0;
 	width: 100%;
 	/*height:239px;*/
-	z-index: 999;
+	z-index: 1000;
 	/*padding-bottom: 85px;*/
 }
 .toggle-panel1.boxed[aria-expanded="false"] {
@@ -191,7 +191,7 @@
 	/*padding: 24px;*/
 	right: 0;
 	width: 100%;
-	z-index: 999;
+	z-index: 1000;
 	/*padding-bottom: 85px;*/
 	padding: 0 0 63px;
 }
@@ -322,7 +322,7 @@
 	/*padding: 24px;*/
 	right: 0;
 	width: 100%;
-	z-index: 999;
+	z-index: 1000;
 	/*padding-bottom: 85px;*/
 	padding: 0 0 63px;
 }
