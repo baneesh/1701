@@ -6318,11 +6318,82 @@ ul.bg a{
 	-moz-box-shadow:    0px -2px 10px 0px rgba(50, 50, 50, 0.05);
 	box-shadow:         0px -2px 10px 0px rgba(50, 50, 50, 0.05);
 	}
+ul.bg li .mobileCartList ul{
+	width: 87%;
+	margin: 0 auto;
+	}
 ul.bg li .mobileCartList li{
-	list-style:none;
+	list-style: none;
+	border-bottom: 1px solid #B3B3B3;
+	padding-bottom: 16px;
+	padding-top: 15px;
+	margin-bottom:0px;
+	}
+ul.bg li .mobileCartList li:first-child{
+	border-top: 1px solid #B3B3B3;
 	}
 ul.bg li .mobileCartList li div{
 	width:20%;
 	float:left;
 	text-align:left;
+	font-size:12px;
+	color:#666666;
+	}
+ul.bg li .mobileCartList li .pro-items img{
+	border:1px solid #ccc;
+	width:48px;
+	height:auto;
+	}
+.dark{
+	font-family: 'latobold' !important;
+	}
+.pro-del2 i{
+	color:#f14950 !important;
+	font-size:16px !important;
+	cursor:pointer;
+	}
+.pro-del2{
+	text-align:center !important;
+	width: 19% !important;
+	}
+.borderBox{
+	border:1px solid #ccc;
+	width:40px !important;
+	height:48px;
+	text-align:center !important;
+	line-height:48px;
+	margin:0px 15px 0px 1px;
+	}
+.lineHeight48{
+	line-height:48px;
+	}
+ul.bg li .mobileCartList a{
+	background: #fff;
+    border-radius: 5px;
+    color: #F26E32;
+    cursor: pointer;
+    font-family: 'latoregular';
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 53px;
+	height:53px;
+	width:281px !important;
+	padding:0px;
+	margin:20px auto 0px;
+	display:block;
+    text-decoration: none;
+	border:1px solid #F26E32;
+	text-align:center;
+	}
+.mobileContinue{
+	text-align:center;
+	margin:0 auto;
+	}
+.mobileContinue a{
+	font-family: 'latohairline';
+	font-size : 30px;
+	color : #F26E32;
+	}
+.mobileContinue a:hover{
+	text-decoration:none;
 	}
