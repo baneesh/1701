@@ -6397,3 +6397,63 @@ ul.bg li .mobileCartList a{
 .mobileContinue a:hover{
 	text-decoration:none;
 	}
+.txtCenter{
+	text-align:center !important;
+	margin-left:0px !important;
+	margin-right:0px !important;
+	padding-left:0px !important;
+	padding-right:0px !important;
+	}
+ul.bg li .mobileContinue a {
+	font-family: 'latohairline';
+	font-size: 30px;
+	color: #F26E32;
+	background:none;
+	width:100% !important;
+}
+.mob-Login{
+	width:100%;
+	}
+.mob-Login input {
+	padding-left: 20px !important;
+	width:90% !important;
+}
+.mob-Login .mob-social{
+	width:133px !important;
+	border-radius:5px !important;
+	height:53px !important;
+	line-height:53px !important;
+	float:left;
+	}
+.mob-Login .mob-social i{
+	padding-top:0px !important;
+	height:53px !important;
+	line-height:53px !important;
+	}
+ul.bg .mob-Login p{
+	text-align:center;
+	font-family: 'latolight';
+	font-size:14px;
+	margin-left:0px;
+	width: 276px !important;
+	margin-bottom:0px !important;
+	padding-bottom:0px !important;
+	}
+ul.bg .mob-Login p a{
+	font-family: 'latoregular';
+	background:none;
+	font-size : 12px;
+	color : #666666;
+	text-decoration : underline;
+	text-align:left;
+	width:auto;
+	height:auto;
+	display:inline !important;
+	cursor:pointer;
+	}
+.mob-Login input.btn {
+	padding-left: 0px !important;
+}
+.et-wrapper{
+	min-height:500px;
+	}

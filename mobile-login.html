@@ -23,8 +23,10 @@
     <link href="css/toggle-panel.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
 	<link href="css/main_aj.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/elementTransitions.css" />
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 	<script src="js/jquery-1.9.1.js"></script>
+    <script src="js/elementTransitions.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
 	<script src="js/perfect-scrollbar.js"></script>
@@ -249,35 +251,92 @@
         </div>
       </div>
       <div class="container">
-          <ul class="bg">
-          <li class="marBottom0">
-              <h2>What’s in your cart</h2>
-              <p class="padBottom0">$234</p>
-              <div class="clear"></div>
-              <div class="mobileCartList">
-              	<ul>
-                	<li>
-                        <div class="pro-items">Item(s)</div>
-                        <div class="pro-quantity">Quantity</div>
-                        <div class="pro-price">Price</div>
-                        <div class="pro-subtotal">Subtotal</div>
-                        <div class="pro-del2 last2">Remove</div>
-                      </li>
-                      <li>
-                        <div class="pro-items"><img src="images/mobile-cart-product01.png" alt="" /></div>
-                        <div class="pro-quantity borderBox">1</div>
-                        <div class="pro-price lineHeight48">$234</div>
-                        <div class="pro-subtotal dark lineHeight48">$234</div>
-                        <div class="pro-del2 last2 lineHeight48"><i class="fa fa-times"></i></div>
-                      </li>
-                </ul>
+          <ul class="bg et-wrapper">
+          	<li class="mob-Login marBottom0 et-page">
+                <h2 class="txtCenter marBottom20">Sign in or Sign Up</h2>
+                <div class="">
+              <div>
+                <form class="kissmetrics-login" id="sign-in-form" accept-charset="utf-8" method="post" action="user_account.html">
+                  <div class="input">
+                    <input type="text" maxlength="75" name="email" placeholder="enter your email address" id="id_username">
+                    <!--<div class="email_suggestion"></div>--> 
+                  </div>
+                  <div class="input">
+                    <input type="password" id="id_password" name="password" placeholder="enter your password">
+                  </div>
+                  <div class="clear"></div>
+                  <div class="action">
+                    <input type="hidden" value="#" name="next">
+                    <input type="submit" class="btn btn-green" value="sign in">
+                  </div>
+                </form>
+                <div class="mobileContinue"><a href="#" class="txtCenter">or sign in through</a></div>
                 <div class="clear"></div>
-                <a href="#">proceed as guest</a>
-                <a href="mobile-login.html">sign in to proceed</a>
+                <div class="marLeft20 marTop20">
+                  <form action="user_account.html" name="login" method="post" accept-charset="utf-8" id="facebook-connect-form" class="connect-button marRight10 left">
+                    <div style="display:none">
+                      <input type="hidden" name="csrfmiddlewaretoken" value="#">
+                    </div>
+                    <input type="hidden" name="next" value="/welcome/">
+                    <a href="#" onclick="$('#facebook-connect-form').submit(); return false;" class="btn mob-social" id="facebook_button"><i class="fa fa-facebook"></i> Facebook</a>
+                  </form>
+                  <form class="connect-button" name="login" method="post" action="#" id="twitter-connect-form">
+                    <div style="display:none">
+                      <input type="hidden" name="token" value="#">
+                    </div>
+                    <input type="hidden" name="next" value="/welcome/">
+                    <a href="#" onclick="$('#twitter-connect-form').submit(); return false;" class="btn mob-social" id="twitter_button"><i class="fa fa-twitter"></i> Twitter</a>
+                  </form>
+                  <p>Dont have an account? <a class="et-rotate" et-in="moveFromRightFade" et-out="moveToLeftFade">Sign Up</a></p>
+                </div>
               </div>
-          </li>
+            </div>
+           </li>
+            <li class="mob-Login marBottom0 et-page">
+                <h2 class="txtCenter marBottom20">Sign in or Sign Up</h2>
+                <div class="">
+              <div>
+                <form class="kissmetrics-login" id="sign-in-form" accept-charset="utf-8" method="post" action="cart.html">
+                  <div class="input">
+                    <input type="text" maxlength="75" name="email" placeholder="enter your email address" id="id_username">
+                    <!--<div class="email_suggestion"></div>--> 
+                  </div>
+                  <div class="input">
+                    <input type="password" id="id_password" name="password" placeholder="enter your password">
+                  </div>
+                  <div class="input">
+                    <input type="password" id="id_password" name="password" placeholder="re-enter your password">
+                  </div>
+                  <div class="clear"></div>
+                  <div class="action">
+                    <input type="hidden" value="#" name="next">
+                    <input type="submit" class="btn btn-green" value="sign up">
+                  </div>
+                </form>
+                <div class="mobileContinue"><a href="#" class="txtCenter">or sign up through</a></div>
+                <div class="clear"></div>
+                <div class="marLeft20 marTop20">
+                  <form action="user_account.html" name="login" method="post" accept-charset="utf-8" id="facebook-connect-form" class="connect-button marRight10 left">
+                    <div style="display:none">
+                      <input type="hidden" name="csrfmiddlewaretoken" value="#">
+                    </div>
+                    <input type="hidden" name="next" value="/welcome/">
+                    <a href="#" onclick="$('#facebook-connect-form').submit(); return false;" class="btn mob-social" id="facebook_button"><i class="fa fa-facebook"></i> Facebook</a>
+                  </form>
+                  <form class="connect-button" name="login" method="post" action="#" id="twitter-connect-form">
+                    <div style="display:none">
+                      <input type="hidden" name="token" value="#">
+                    </div>
+                    <input type="hidden" name="next" value="/welcome/">
+                    <a href="#" onclick="$('#twitter-connect-form').submit(); return false;" class="btn mob-social" id="twitter_button"><i class="fa fa-twitter"></i> Twitter</a>
+                  </form>
+                  <p>Already have an account? <a class="et-rotate" et-in="moveFromRightFade" et-out="moveToLeftFade">Sign In</a></p>
+                </div>
+              </div>
+            </div>
+           </li>
           </ul>
-          <div class="mobileContinue"><a href="#">continue browsing</a></div>
+          <!--<div class="mobileContinue"><a href="#">continue browsing</a></div>
           <div class="h_line marTop10"></div>
           <div class="mobileFollowUS">
             <h2>Follow Us</h2>
@@ -320,7 +379,7 @@
                 <span>1701. 2014 All rights reserved</span></a>
             </div>
             <div class="clear"></div>
-          </div>
+          </div>-->
        </div>
 </div>
 <div class="clear"></div>
