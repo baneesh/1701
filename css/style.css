@@ -6347,12 +6347,12 @@ ul.bg li .mobileCartList li .pro-items img{
 .dark{
 	font-family: 'latobold' !important;
 	}
-.pro-del2 i{
+ul.bg li .mobileCartList .pro-del2 i{
 	color:#f14950 !important;
 	font-size:16px !important;
 	cursor:pointer;
 	}
-.pro-del2{
+ul.bg li .mobileCartList .pro-del2{
 	text-align:center !important;
 	width: 19% !important;
 	}
@@ -6414,9 +6414,9 @@ ul.bg li .mobileContinue a {
 .mob-Login{
 	width:100%;
 	}
-.mob-Login input {
-	padding-left: 20px !important;
-	width:90% !important;
+.mob-Login #sign-in-form input {
+	padding-left: 20px;
+	width:90%;
 }
 .mob-Login .mob-social{
 	width:133px !important;
@@ -6457,6 +6457,72 @@ ul.bg .mob-Login p a{
 .et-wrapper{
 	min-height:500px;
 	}
-.txtRight{
+ul.bg li .mobileCartList .pro-del2.txtRight{
 	text-align:right !important;
+	}
+.bgGreen{
+	background : #39B54A !important;
+	}
+.bgTrans{
+	background:none !important;
+	color : #F26E32 !important;
+	border-style : Solid !important;
+	border-color : #F26E32 !important;
+	border-width : 1px !important;
+	}
+.mob-Login .select-style2 {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #FFFFFF;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	border-color: #ccc;
+	color: #CCCCCC;
+    font-family: 'latolight';
+	font-size: 14px;
+	height: 53px;
+    line-height: 53px;
+    padding-left: 3px;
+    padding-right: 7px;
+    text-align: left;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background: #FFFFFF url("../images/mob-arrow_down_black.png") no-repeat 96% 50%;
+	float: left;
+	margin-right: 4px;
+	margin-left:16px;
+	margin-top:5px;
+	width: 288px;
+}
+.mob-Login .select-style2 select {
+	/*padding: 5px 0px;*/
+	width: 90%;
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	background-image: none;
+	-webkit-appearance: none;
+	color: #CCCCCC;
+	padding-left:13px;
+	height: 53px;
+	line-height:53px;
+}
+.mob-Login .select-style2 select:focus {
+	outline: none;
+}
+.mob-Login #sign-in-form input[type=checkbox] {
+	width:16px;
+	height:16px;
+}
+.mob-Login #sign-in-form .shipCheckBox{
+	width:100% !important;
+	margin-top:12px;
+	}
+.mob-Login #sign-in-form .shipCheckBox span{
+	text-decoration:none;
+	line-height: 8px;
+	}
+.mob-Login #sign-in-form .btn{
+	font-family: 'latoregular';
 	}

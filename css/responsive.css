@@ -465,9 +465,9 @@ nav .prev {
 	margin-top: 0px;
 	height:50px;
 }
-.nav > li > a {
+/*.nav > li > a {
 	padding: 10px 10px !important;
-}
+}*/
 .navbar-nav a:hover[role="button"], .navbar-nav a:focus[role="button"] {
 	color: #F26E32 !important;
 	background: #fff !important;
@@ -493,6 +493,17 @@ nav .prev {
 .rb-grid li, .rb-grid li.rb-span-2, .rb-grid li.rb-span-4{
 	height:auto !important;
 	}
+.navbar-inverse .navbar-nav > li > a {
+	color: #F26E32 !important;
+	font-size:30px !important;
+	font-family: 'latohairline' !important;
+}
+.navbar-inverse .navbar-nav > .orangeTxt a{
+	font-family: 'latolight' !important;
+	}
+.nav > li > a {
+padding: 15px 17px !important;
+}
 .orangeTxt.marRight40{
 	display:none;
 	}
@@ -716,9 +727,6 @@ nav .prev {
 .navbar-nav {
 	margin: auto;
 }
-.navbar-inverse .navbar-nav > li > a {
-	color: #F26E32 !important;
-}
 .navbar-nav a[role="button"] {
 	font-family: 'latobold';
 	font-size: 14px;
@@ -735,9 +743,9 @@ nav .prev {
 	margin-top: 0px;
 	height:50px;
 }
-.nav > li > a {
+/*.nav > li > a {
 	padding: 10px 10px !important;
-}
+}*/
 .navbar-nav a:hover[role="button"], .navbar-nav a:focus[role="button"] {
 	color: #F26E32 !important;
 	background: #fff !important;
