@@ -6362,7 +6362,7 @@ ul.bg li .mobileCartList li .pro-items img{
 	height:48px;
 	text-align:center !important;
 	line-height:48px;
-	margin:0px 15px 0px 1px;
+	margin:0px 12px 0px 1px;
 	}
 .lineHeight48{
 	line-height:48px;
@@ -6456,4 +6456,7 @@ ul.bg .mob-Login p a{
 }
 .et-wrapper{
 	min-height:500px;
+	}
+.txtRight{
+	text-align:right !important;
 	}

@@ -799,4 +799,24 @@ nav .prev {
 .sky-mega-menu li a.mobileNav{
 	display:block;
 	}
+ul.bg li .mobileCartList li div:nth-child(1){
+	width:59px;
+	}
+ul.bg li .mobileCartList li div:nth-child(2){
+	width:58px;
+	}
+ul.bg li .mobileCartList li div:nth-child(3){
+	width:48px;
+	}
+ul.bg li .mobileCartList li div:nth-child(4){
+	width:48px;
+	}
+ul.bg li .mobileCartList li div:nth-child(5){
+	width:48px;
+	}
+.borderBox{
+	margin:0px 17px 0px 1px;
+	}
+	
+
 }
