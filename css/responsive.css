@@ -450,7 +450,7 @@ nav .prev {
 	color: #F26E32 !important;
 }
 .navbar-nav a[role="button"] {
-	font-family: 'latobold';
+	/*font-family: 'latobold';*/
 	font-size: 14px;
 	font-weight: normal;
 	color: #F26E32 !important;
@@ -458,12 +458,12 @@ nav .prev {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	line-height: 50px !important;
-	padding: 0px 10px !important;
+	line-height: 60px !important;
+	padding: 0px 20px !important;
 	cursor: pointer;
 	text-decoration: none;
 	margin-top: 0px;
-	height:50px;
+	height:60px;
 }
 /*.nav > li > a {
 	padding: 10px 10px !important;
@@ -728,7 +728,7 @@ nav .prev {
 	margin: auto;
 }
 .navbar-nav a[role="button"] {
-	font-family: 'latobold';
+	/*font-family: 'latobold';*/
 	font-size: 14px;
 	font-weight: normal;
 	color: #F26E32 !important;
@@ -736,12 +736,12 @@ nav .prev {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	line-height: 50px !important;
-	padding: 0px 10px !important;
+	line-height: 60px !important;
+	padding: 0px 20px !important;
 	cursor: pointer;
 	text-decoration: none;
 	margin-top: 0px;
-	height:50px;
+	height:60px;
 }
 /*.nav > li > a {
 	padding: 10px 10px !important;
