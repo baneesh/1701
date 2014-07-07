@@ -57,6 +57,18 @@
 			});
 		});
 	</script>
+    <script>
+		function jqUpdateHeight(){
+			// Get the dimensions of the viewport
+			var sum = 0;
+			var height = $(".et-page-current .mobileHeight").each(function() {
+						   sum += $(this).height(); 
+						});
+			$(".et-wrapper").css("height", sum + 130);
+		};
+		$(document).ready(jqUpdateHeight);    // When the page first loads
+		$(window).resize(jqUpdateHeight);     // When the browser changes size
+	</script>
     </head>
     <body class="cbp-spmenu-push">
 <header class="clearfix white-link">
@@ -254,85 +266,85 @@
           <ul class="bg et-wrapper">
           	<li class="mob-Login marBottom0 et-page">
                 <h2 class="txtCenter marBottom20">Sign in or Sign Up</h2>
-                <div class="">
-              <div>
-                <form class="kissmetrics-login" id="sign-in-form" accept-charset="utf-8" method="post" action="checkout.html">
-                  <div class="input">
-                    <input type="text" maxlength="75" name="email" placeholder="enter your email address" id="id_username">
-                    <!--<div class="email_suggestion"></div>--> 
-                  </div>
-                  <div class="input">
-                    <input type="password" id="id_password" name="password" placeholder="enter your password">
-                  </div>
-                  <div class="clear"></div>
-                  <div class="action">
-                    <input type="hidden" value="#" name="next">
-                    <input type="submit" class="btn btn-green" value="sign in">
-                  </div>
-                </form>
-                <div class="mobileContinue"><a href="#" class="txtCenter">or sign in through</a></div>
-                <div class="clear"></div>
-                <div class="marLeft20 marTop20">
-                  <form action="user_account.html" name="login" method="post" accept-charset="utf-8" id="facebook-connect-form" class="connect-button marRight10 left">
-                    <div style="display:none">
-                      <input type="hidden" name="csrfmiddlewaretoken" value="#">
+                <div class="mobileHeight">
+                  <div>
+                    <form class="kissmetrics-login" id="sign-in-form" accept-charset="utf-8" method="post" action="checkout.html">
+                      <div class="input">
+                        <input type="text" maxlength="75" name="email" placeholder="enter your email address" id="id_username">
+                        <!--<div class="email_suggestion"></div>--> 
+                      </div>
+                      <div class="input">
+                        <input type="password" id="id_password" name="password" placeholder="enter your password">
+                      </div>
+                      <div class="clear"></div>
+                      <div class="action">
+                        <input type="hidden" value="#" name="next">
+                        <input type="submit" class="btn btn-green" value="sign in">
+                      </div>
+                    </form>
+                    <div class="mobileContinue"><a href="#" class="txtCenter">or sign in through</a></div>
+                    <div class="clear"></div>
+                    <div class="marLeft20 marTop20">
+                      <form action="user_account.html" name="login" method="post" accept-charset="utf-8" id="facebook-connect-form" class="connect-button marRight10 left">
+                        <div style="display:none">
+                          <input type="hidden" name="csrfmiddlewaretoken" value="#">
+                        </div>
+                        <input type="hidden" name="next" value="/welcome/">
+                        <a href="#" onclick="$('#facebook-connect-form').submit(); return false;" class="btn mob-social" id="facebook_button"><i class="fa fa-facebook"></i> Facebook</a>
+                      </form>
+                      <form class="connect-button" name="login" method="post" action="#" id="twitter-connect-form">
+                        <div style="display:none">
+                          <input type="hidden" name="token" value="#">
+                        </div>
+                        <input type="hidden" name="next" value="/welcome/">
+                        <a href="#" onclick="$('#twitter-connect-form').submit(); return false;" class="btn mob-social" id="twitter_button"><i class="fa fa-twitter"></i> Twitter</a>
+                      </form>
+                      <p>Dont have an account? <a class="et-rotate" et-in="moveFromRightFade" et-out="moveToLeftFade">Sign Up</a></p>
                     </div>
-                    <input type="hidden" name="next" value="/welcome/">
-                    <a href="#" onclick="$('#facebook-connect-form').submit(); return false;" class="btn mob-social" id="facebook_button"><i class="fa fa-facebook"></i> Facebook</a>
-                  </form>
-                  <form class="connect-button" name="login" method="post" action="#" id="twitter-connect-form">
-                    <div style="display:none">
-                      <input type="hidden" name="token" value="#">
-                    </div>
-                    <input type="hidden" name="next" value="/welcome/">
-                    <a href="#" onclick="$('#twitter-connect-form').submit(); return false;" class="btn mob-social" id="twitter_button"><i class="fa fa-twitter"></i> Twitter</a>
-                  </form>
-                  <p>Dont have an account? <a class="et-rotate" et-in="moveFromRightFade" et-out="moveToLeftFade">Sign Up</a></p>
-                </div>
-              </div>
+                  </div>
             </div>
            </li>
             <li class="mob-Login marBottom0 et-page">
                 <h2 class="txtCenter marBottom20">Sign in or Sign Up</h2>
-                <div class="">
-              <div>
-                <form class="kissmetrics-login" id="sign-in-form" accept-charset="utf-8" method="post" action="cart.html">
-                  <div class="input">
-                    <input type="text" maxlength="75" name="email" placeholder="enter your email address" id="id_username">
-                    <!--<div class="email_suggestion"></div>--> 
-                  </div>
-                  <div class="input">
-                    <input type="password" id="id_password" name="password" placeholder="enter your password">
-                  </div>
-                  <div class="input">
-                    <input type="password" id="id_password" name="password" placeholder="re-enter your password">
-                  </div>
-                  <div class="clear"></div>
-                  <div class="action">
-                    <input type="hidden" value="#" name="next">
-                    <input type="submit" class="btn btn-green" value="sign up">
-                  </div>
-                </form>
-                <div class="mobileContinue"><a href="#" class="txtCenter">or sign up through</a></div>
-                <div class="clear"></div>
-                <div class="marLeft20 marTop20">
-                  <form action="user_account.html" name="login" method="post" accept-charset="utf-8" id="facebook-connect-form" class="connect-button marRight10 left">
-                    <div style="display:none">
-                      <input type="hidden" name="csrfmiddlewaretoken" value="#">
+                <div class="mobileHeight">
+                  <div>
+                    <form class="kissmetrics-login" id="sign-in-form" accept-charset="utf-8" method="post" action="cart.html">
+                      <div class="input">
+                        <input type="text" maxlength="75" name="email" placeholder="enter your email address" id="id_username">
+                        <!--<div class="email_suggestion"></div>--> 
+                      </div>
+                      <div class="input">
+                        <input type="password" id="id_password" name="password" placeholder="enter your password">
+                      </div>
+                      <div class="input">
+                        <input type="password" id="id_password" name="password" placeholder="re-enter your password">
+                      </div>
+                      <div class="clear"></div>
+                      <div class="action">
+                        <input type="hidden" value="#" name="next">
+                        <input type="submit" class="btn btn-green" value="sign up">
+                      </div>
+                    </form>
+                    <div class="mobileContinue"><a href="#" class="txtCenter">or sign up through</a></div>
+                    <div class="clear"></div>
+                    <div class="marLeft20 marTop20">
+                      <form action="user_account.html" name="login" method="post" accept-charset="utf-8" id="facebook-connect-form" class="connect-button marRight10 left">
+                        <div style="display:none">
+                          <input type="hidden" name="csrfmiddlewaretoken" value="#">
+                        </div>
+                        <input type="hidden" name="next" value="/welcome/">
+                        <a href="#" onclick="$('#facebook-connect-form').submit(); return false;" class="btn mob-social" id="facebook_button"><i class="fa fa-facebook"></i> Facebook</a>
+                      </form>
+                      <form class="connect-button" name="login" method="post" action="#" id="twitter-connect-form">
+                        <div style="display:none">
+                          <input type="hidden" name="token" value="#">
+                        </div>
+                        <input type="hidden" name="next" value="/welcome/">
+                        <a href="#" onclick="$('#twitter-connect-form').submit(); return false;" class="btn mob-social" id="twitter_button"><i class="fa fa-twitter"></i> Twitter</a>
+                      </form>
+                      <p>Already have an account? <a class="et-rotate" et-in="moveFromLeftFade" et-out="moveToRightFade">Sign In</a></p>
                     </div>
-                    <input type="hidden" name="next" value="/welcome/">
-                    <a href="#" onclick="$('#facebook-connect-form').submit(); return false;" class="btn mob-social" id="facebook_button"><i class="fa fa-facebook"></i> Facebook</a>
-                  </form>
-                  <form class="connect-button" name="login" method="post" action="#" id="twitter-connect-form">
-                    <div style="display:none">
-                      <input type="hidden" name="token" value="#">
-                    </div>
-                    <input type="hidden" name="next" value="/welcome/">
-                    <a href="#" onclick="$('#twitter-connect-form').submit(); return false;" class="btn mob-social" id="twitter_button"><i class="fa fa-twitter"></i> Twitter</a>
-                  </form>
-                  <p>Already have an account? <a class="et-rotate" et-in="moveFromLeftFade" et-out="moveToRightFade">Sign In</a></p>
-                </div>
-              </div>
+                  </div>
             </div>
            </li>
           </ul>
@@ -527,8 +539,10 @@
   </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
     <ul class="nav navbar-nav navbar-left sky-mega-menu sky-mega-menu-pos-bottom sky-mega-menu-response-to-icons sky-mega-menu-anim-scale">
-          <li><a href="home.html" class="active"><i class="fa fa-single fa-home"></i></a></li>
-      <li><a class="toggle1">Men</a></li>
+          <li class="mobileHide"><a href="home.html" class="active"><i class="fa fa-single fa-home"></i></a></li>
+      <li><a href="home.html" class="mobileNav">Home (Stories)</a></li>
+      <li class="mobileHide"><a class="toggle1">Men</a></li>
+      <li><a href="mobile-men.html" class="mobileNav">Men</a></li>
       <li><a class="toggle3">Women</a></li>
       <li><a class="toggle2">Collections</a></li>
       <li><a href="bespoke.html">Bespoke</a></li>

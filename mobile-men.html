@@ -23,8 +23,10 @@
     <link href="css/toggle-panel.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
 	<link href="css/main_aj.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/elementTransitions.css" />
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 	<script src="js/jquery-1.9.1.js"></script>
+    <script src="js/elementTransitions.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
 	<script src="js/perfect-scrollbar.js"></script>
@@ -54,6 +56,18 @@
 			$(".account2").attr('id', '');
 			});
 		});
+	</script>
+    <script>
+		function jqUpdateHeight(){
+			// Get the dimensions of the viewport
+			var sum = 0;
+			var height = $(".et-page-current .mobileMenSlider").each(function() {
+						   sum += $(this).height(); 
+						});
+			$(".et-wrapper").css("height", sum);
+		};
+		$(document).ready(jqUpdateHeight);    // When the page first loads
+		$(window).resize(jqUpdateHeight);     // When the browser changes size
 	</script>
     </head>
     <body class="cbp-spmenu-push">
@@ -117,7 +131,6 @@
                     <p>$250</p>
                   </div>
                 <div class="pro-del last2">
-                <!--<div class="line_v"></div>-->
                 <img src="images/icon-cross.png" alt="" />
                 </div>
               </li>
@@ -145,7 +158,6 @@
                     <p>$250</p>
                   </div>
                 <div class="pro-del last2">
-                <!--<div class="line_v"></div>-->
                 <img src="images/icon-cross.png" alt="" />
                 </div>
               </li>
@@ -170,7 +182,6 @@
     <div class="container cbp-spmenu-push">
       <div class="main">
         <div class="cart_base" data-toggle="modal" data-target="#myModal2"> <span class="cart_txt circleOrange">3</span><br />
-          <!--<div class="cart_icon"></div>--> 
         </div>
         <div class="currency"><a href="#" id="trigger2" class="trigger right">USD</a></div>
         <div id="panel2" class="panel right">
@@ -201,7 +212,6 @@
           <p>1701's currency folios are designed to carry up to four currencies in separate sections. Zippered and flap-magnet pockets provide storage space for your Dollars, Pounds, Reals, or Rupees, and the color distinctions help you remember where you kept what! </p>
           <p>The Jaipur Express is inspired by the kitschy HORN OK PLEASE colours you see on Rajasthani journeys - next stop Jaipur.</p>
           <p>A visual riot of threads, beads, mirrors, striking turquoise, a funky yellow back, and 1701's signature quilted suede interiors complete the look. </p>
-          <!--<p>The body is made of fine Italian Turquoise Leather and Italian Lemon Leather. Entirely hand-embroidered thread, bead and mirror-work adorn the top and front flap.The interiors are lined with quilted suede and a silk paisley print fabric.</p>-->
           <div class="clear"></div>
           <div class="line_h2"></div>
           <div class="clear"></div>
@@ -235,92 +245,59 @@
           <div class="clear"></div>
         </div>
   </div>
-      <!--<div class="nextStory"><a>NEXT STORY</a></div>
-  <nav>
-    <ul class="prev-next-links">
-      <li class="prev hide" id="d_clickable" ><a><img src="images/up-arrow.png" alt="" /></a></li>
-      <li class="next" ><a><img src="images/down-arrow.png" alt="" /></a></li>
-    </ul>
-  </nav>--> 
     </div>
 <div class="mainSectionMobile">
 	<div class="main">
-        <div class="cart_base"> <span class="cart_txt">1</span><br>
+        <div class="cart_base"> <span class="cart_txt">0</span><br>
         </div>
       </div>
       <div class="container">
-          <ul class="bg">
-          <li class="marBottom0">
-              <h2>What’s in your cart</h2>
-              <p class="padBottom0">$234</p>
-              <div class="clear"></div>
-              <div class="mobileCartList">
-              	<ul>
-                	<li>
-                        <div class="pro-items">Item(s)</div>
-                        <div class="pro-quantity">Quantity</div>
-                        <div class="pro-price">Price</div>
-                        <div class="pro-subtotal">Subtotal</div>
-                        <div class="pro-del2 last2 txtRight">Remove</div>
-                      </li>
-                      <li>
-                        <div class="pro-items"><img src="images/mobile-cart-product01.png" alt="" /></div>
-                        <div class="pro-quantity borderBox">1</div>
-                        <div class="pro-price lineHeight48">$234</div>
-                        <div class="pro-subtotal dark lineHeight48">$234</div>
-                        <div class="pro-del2 last2 lineHeight48"><i class="fa fa-times"></i></div>
-                      </li>
-                </ul>
-                <div class="clear"></div>
-                <a href="guest-checkout.html">proceed as guest</a>
-                <a href="mobile-login.html">sign in to proceed</a>
-              </div>
-          </li>
-          </ul>
-          <div class="mobileContinue"><a href="#">continue browsing</a></div>
-          <div class="h_line marTop10"></div>
-          <div class="mobileFollowUS">
-            <h2>Follow Us</h2>
-            <ul>
-                <li><a href="#"><img src="images/icon-m-facebook.png" alt="" /></a></li>
-                <li><a href="#"><img src="images/icon-m-twitter.png" alt="" /></a></li>
-                <li><a href="#"><img src="images/icon-m-pinterest.png" alt="" /></a></li>
-            </ul>
-            <div class="clear"></div>
-            <h2>Subscribe to newsletter</h2>
-            <form>
-                <div id="mainContent">
-                    <input placeholder="enter your email address" type="text"> <br>
+          <ul class="bg2 et-wrapper">
+          	<li class="et-page et-rotate" et-in="moveFromRightFade" et-out="moveToLeftFade">
+            	<div class="mobileMenSlider">
+                    <h2>Briefcase</h2>
+                    <a href="#"><img src="images/mobile-men01.jpg" alt="" /></a>
                 </div>
-            </form>
-          </div>
-          <div class="mobileFooterNav">
-            <ul class="left">
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Colletions</a></li>
-                <li><a href="#">Bespoke</a></li>
-            </ul>
-            <ul class="right">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Stockist</a></li>
-                <li><a href="#">Journal</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="clear line_bottom"></div>
-            <ul class="center">
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Return Policy</a></li>
-                <li><a href="#">Delivery</a></li>
-            </ul>
-            <div class="clear"></div>
-            <div class="mobileLogoFooter">
-                <a href="#"><img src="images/mobile-footer-logo.png" alt="" /><br />
-                <span>1701. 2014 All rights reserved</span></a>
+                <div class="mobileMenSlider">
+                    <h2>Gym Bag</h2>
+                    <a href="#"><img src="images/mobile-men02.jpg" alt="" /></a>
+                </div>
+                <div class="mobileMenSlider">
+                    <h2>Laptop Cases</h2>
+                    <a href="#"><img src="images/mobile-men03.jpg" alt="" /></a>
+                </div>
+                <div class="mobileMenSlider">
+                    <h2>Weekender</h2>
+                    <a href="#"><img src="images/mobile-men04.jpg" alt="" /></a>
+                </div>
+                <div class="mobileMenSlider">
+                    <h2>SLR Cases</h2>
+                    <a href="#"><img src="images/mobile-men05.jpg" alt="" /></a>
+                </div>
+           </li>
+           <li class="et-page">
+           	<div class="mobileMenSlider">
+                <div class="borderBox2"><a href="product01.html"><img src="images/product-all01.jpg" alt="" /></a></div>
+                <h1 class="black">Name of the Product</h1>
+                <h1>$ 125</h1>
             </div>
-            <div class="clear"></div>
-          </div>
+            <div class="mobileMenSlider">
+                <div class="borderBox2"><a href="product01.html"><img src="images/product-all02.jpg" alt="" /></a></div>
+                <h1 class="black">Name of the Product</h1>
+                <h1>$ 125</h1>
+            </div>
+            <div class="mobileMenSlider">
+                <div class="borderBox2"><a href="product01.html"><img src="images/product-all03.jpg" alt="" /></a></div>
+                <h1 class="black">Name of the Product</h1>
+                <h1>$ 125</h1>
+            </div>
+            <div class="mobileMenSlider">
+                <div class="borderBox2"><a href="product01.html"><img src="images/product-all04.jpg" alt="" /></a></div>
+                <h1 class="black">Name of the Product</h1>
+                <h1>$ 125</h1>
+            </div>
+           </li>
+          </ul>
        </div>
 </div>
 <div class="clear"></div>
@@ -338,7 +315,6 @@
                   <p>---using email---</p>
                   <div class="input"> <span class="icon-mail"></span>
                 <input id="id_username" type="text" placeholder="enter your email address" name="email" maxlength="75">
-                <!--<div class="email_suggestion"></div>--> 
               </div>
                   <div class="input"> <span class="icon-lock"></span>
                 <input type="password" placeholder="enter your password" name="password" id="id_password">
@@ -353,23 +329,6 @@
                     </span> </div>
                   <div class="right marRight40"> <a href="">Forgot Password <span class="iconQ"></span></a> </div>
                 </form>
-            <!--<form class="connect-button" name="login" method="post" action="#" id="twitter-connect-form">
-              <h3>Sign In</h3>
-              <p>---using email---</p>
-              <div style="display:none">
-                <input type="hidden" name="csrfmiddlewaretoken" value="#">
-              </div>
-              <input type="hidden" name="next" value="/welcome/">
-              <a href="#" onclick="$('#facebook-connect-form').submit(); return false;" class="btn" id="facebook_button">Facebook</a>
-            </form>--> 
-            <!--<form class="connect-button" name="login" method="post" action="#" id="facebook-connect-form">
-              <div style="display:none">
-                <input type="hidden" name="token" value="#">
-              </div>
-              <input type="hidden" name="next" value="/welcome/">
-              <a href="#" onclick="$('#twitter-connect-form').submit(); return false;" class="btn" id="twitter_button">Twitter</a>
-              
-            </form>-->
             <div class="marLeft30 marTop20">
                   <p>---or sign in through---</p>
                   <form class="connect-button" name="login" method="post" action="#" id="facebook-connect-form">
@@ -401,10 +360,6 @@
             <div class="input"> <span class="icon-mail"></span>
                   <input id="id_email" type="text" placeholder="enter your email address" name="username" maxlength="30">
                 </div>
-            <!--<div class="input">
-              <input id="id_username" type="text" placeholder="enter username*" name="email" maxlength="75">
-              <div class="email_suggestion"></div>
-            </div>-->
             <div class="input"> <span class="icon-lock"></span>
                   <input type="password" placeholder="enter your password" name="password" id="id_password">
                 </div>
@@ -492,18 +447,10 @@
       </li>
         </ul>
     	<ul class="nav navbar-nav navbar-right mobileNav">
-          <li class="orangeTxt marRight25 mobileShow"><a href="user_account.html" role="button" data-toggle="modal">My Account</a></li>
+          <li class="orangeTxt marRight25 mobileShow"><a href="mobile-login.html">Sign In</a></li>
           <li class="orangeTxt mobileHide">
           	<div class="dropdown">
             	<a href="user_account.html" class="account"><img src="images/user.jpg" alt="" />My Account</a>
-                  <!--<div class="submenu">
-                    <ul class="root">
-                      <li ><a href="#Dashboard">Dashboard</a></li>
-                      <li ><a href="#Profile" >Profile</a></li>
-                      <li ><a href="#settings">Settings</a></li>
-                      <li ><a href="#feedback">Send Feedback</a></li>
-                    </ul>
-                  </div>-->
 			</div>
           </li>
           <li class="orangeTxt mobileHide">
@@ -536,7 +483,6 @@
   </div>
 </nav>
 <div role="main">
-  <!--<span class="toggle3">Toggle all</span>-->
   <article class="toggle-panel1 boxed bottom"><span>&nbsp;</span>
   <div class="bt-allProducts"><a href="product-all.html">view all products</a></div>
     <div class="slider1">
@@ -600,7 +546,6 @@
             	<p>It is 1897 and Mme. DuVerre, stares out of her window at a tall, gilded lamppost that bears a clock informing her that it is 3:25pm in the afternoon.</p>
                 <div class="link-explore">
                 	<a href="collection01.html">Explore More</a>
-                	<!--<span class="right"><a href="collection01.html"><img src="images/lens.png" alt="" /></a></span>-->
                 </div>
             </div>
         </div>
@@ -613,7 +558,6 @@
             	<p>It is 1897 and Mme. DuVerre, stares out of her window at a tall, gilded lamppost that bears a clock informing her that it is 3:25pm in the afternoon.</p>
                 <div class="link-explore">
                 	<a href="collection01.html">Explore More</a>
-                	<!--<span class="right"><a href="collection01.html"><img src="images/lens.png" alt="" /></a></span>-->
                 </div>
             </div>
         </div>
@@ -627,26 +571,8 @@
 	<div class="sliderB" style="height:176px;"></div>
   </article>
 </div>
-<script src="js/jquery-1.9.1.js"></script> <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie --> 
-<script src="js/classie.js"></script> 
-<!--<script>
-			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-				showRightPush = document.getElementById( 'showRightPush' ),
-				body = document.body;
-
-			showRightPush.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'cbp-spmenu-push-toleft' );
-				classie.toggle( menuRight, 'cbp-spmenu-open' );
-				disableOther( 'showRightPush' );
-			};
-
-			function disableOther( button ) {
-				if( button !== 'showRightPush' ) {
-					classie.toggle( showRightPush, 'disabled' );
-				}
-			}
-</script> --> 
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/classie.js"></script>  
 <script type="text/javascript" src="js/jquery.min.js"></script> 
 <script type="text/javascript" src="js/jquery.slidePanel.js"></script> 
 <script type="text/javascript">

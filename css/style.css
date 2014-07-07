@@ -6308,6 +6308,9 @@ ul.bg a{
 .mobileShow{
 	display:none !important;
 	}
+.mobileShow a{
+	background:#fff;
+	}
 .boxShadowLeft{
 	-webkit-box-shadow: -2px 0px 10px 0px rgba(50, 50, 50, 0.05);
 	-moz-box-shadow:    -2px 0px 10px 0px rgba(50, 50, 50, 0.05);
@@ -6454,9 +6457,9 @@ ul.bg .mob-Login p a{
 .mob-Login input.btn {
 	padding-left: 0px !important;
 }
-.et-wrapper{
+/*ul.bg.et-wrapper{
 	min-height:500px;
-	}
+	}*/
 ul.bg li .mobileCartList .pro-del2.txtRight{
 	text-align:right !important;
 	}
@@ -6525,4 +6528,56 @@ ul.bg li .mobileCartList .pro-del2.txtRight{
 	}
 .mob-Login #sign-in-form .btn{
 	font-family: 'latoregular';
+	}
+	
+/*Mobile Men Page Css*/
+
+
+ul.bg2 {
+	width: 100%;
+	overflow-x: hidden;
+	margin-top: 56px;
+	margin-bottom:0px;
+}
+.bg2 .mobileMenSlider{
+	position:relative;
+	width:100%;
+	}
+.bg2 .mobileMenSlider h2{
+	font-family: 'latoregular';
+	font-size : 24px;
+	color : #FFFFFF;
+	position:absolute;
+	bottom:20px;
+	left:20px;
+  }
+.bg2 .mobileMenSlider img{
+	width:100%;
+	}
+.bg2 .mobileMenSlider li{
+	list-style:none;
+	}
+.mobileHeight{
+	position:relative;
+	}
+.borderBox2{
+	border:1px solid #ccc;
+	text-align:center !important;
+	width: 90%;
+	margin: 10px auto;
+	padding: 40px 40px 20px 40px;
+	}
+ul.bg2 h1 {
+	font-family: 'latolight';
+	font-size: 30px;
+	color: #F36E34;
+	line-height: 30px;
+	margin-left: 20px;
+	text-align: left;
+	margin-top:10px;
+	margin-bottom:30px;
+}
+ul.bg2 h1.black{
+	color:#000;
+	margin-bottom:0px;
 	}
