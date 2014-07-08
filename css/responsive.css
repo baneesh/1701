@@ -554,9 +554,31 @@ padding: 15px 17px !important;
 .vegas-background{
 	display:none !important;
 	}
-	
-	
+.navbar-default{
+	position:fixed;
+	top:0px;
+}
+.header-elements {
+	z-index: 1032;
+}
+.cart03 .cart_base {
+	position: fixed;
+	z-index: 1031;
+	right:6px;
+}
+.bg-body {
+	background: #fff;
+}
+.navbar-inverse{
+	background: #F2F2F2;
+	width:100%;
+}
+#sizeImage {
+	margin-bottom: 30px;
+}
 
+
+	
 }
 
 
