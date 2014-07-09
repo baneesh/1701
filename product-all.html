@@ -40,6 +40,7 @@
 			});
 		});
 	</script>
+    
   </head>
   <body class="bg-body">
     <header class="clearfix white-link">
@@ -612,23 +613,38 @@
     </div>
     <div class="mainSectionMobile">
       <div class="container">
-      	<!--<div class="product-filters">
+      	  <div class="product-filters">
             <div id="accordion">
               <h3 class="line_bottom marTop20">Show Filters</h3>
-              <div class="line_bottom"> 
-                <p class="marTop20">
-                  <input type="text" id="fname" value="" placeholder="First Name">
-                </p>
-                <p>
-                  <input type="text" id="email" value="" placeholder="shadmanahmed@letsthinksimple.com">
-                </p>
-                <p>
-                  <input type="text" id="tel" value="" placeholder="+91 9812345 67890">
-                </p>
+              <div class="line_bottom mob-Login"> 
+                <div class="select-style2">
+					<select id="d4" name="d4">
+    				  <option selected="" value="1">women</option>
+                      <option value="2">Men</option>
+                  </select>
+                 </div>
+                <div class="select-style2">
+					<select id="d4" name="d4">
+    				  <option selected="" value="1">all products</option>
+                      <option value="2">Accessories</option>
+                      <option value="3">Bags</option>
+                      <option value="4">Clutches</option>
+                  </select>
+                 </div>
+                  <div class="select-style2">
+					<select id="d4" name="d4">
+    				  <option selected="" value="1">--select color--</option>
+                      <option value="2">Red</option>
+                      <option value="3">Orange</option>
+                      <option value="4">Yellow</option>
+                  </select>
+                 </div>
+                 <p><a href="#">clear all selections</a></p>
               </div>
             </div>
-          </div>-->
-          <ul class="bg">
+          </div>
+          <div class="clear"></div>
+          <ul class="bg marTop35">
           <li id="sizeImage">
               <h2>Clutches</h2>
               <div class="sliderMobile2">
@@ -975,5 +991,28 @@
 			});
 		});
 	</script>
+    <script src="js/jquery-ui.js"></script> 
+	<script>
+      $(function() {
+        var icons = {
+          header: "bt_expand",
+          activeHeader: "bt_save"
+        };
+        $( "#accordion" ).accordion({
+          icons: icons,
+          collapsible: true, 
+          active: false
+        });
+      });
+  </script>
+  <script>
+	$(document).ready(function(){  
+		$('.collapse').on('shown.bs.collapse', function(){
+		$(this).parent().find(".fa-sort-desc").removeClass("fa-sort-desc").addClass("fa-sort-asc");
+		}).on('hidden.bs.collapse', function(){
+		$(this).parent().find(".fa-sort-asc").removeClass("fa-sort-asc").addClass("fa-sort-desc");
+		});
+	});
+  </script> 
   </body>
 </html>
