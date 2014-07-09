@@ -318,7 +318,7 @@ a.account img {
   }
 .container {
 	min-width:inherit;
-    width: 64%;
+    width: 100%;
 }
 .social > div{
 	border:none;
