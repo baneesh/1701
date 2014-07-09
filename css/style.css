@@ -6674,49 +6674,59 @@ ul.bg .view-details span img{
 .product-filters #accordion h3 {
 	/* font-family: 'latohairline'; */
 	font-family: 'latolight';
-	font-size: 30px;
-	color: #F36E34;
+	font-size: inherit;
+	/*color: #F36E34;
 	line-height: 30px;
 	padding-left: 20px;
 	text-align: left;
 	float:left;
 	width:100%;
-	padding-bottom:15px;
+	padding-bottom:15px;*/
 }
 .product-filters #accordion h3 span{
-	float:right;
+	float:left;
+	padding-left:20px;
 	}
 .product-filters #accordion .bt_expand {
-	background: #FFFFFF url("../images/mob-arrow_down_black.png") no-repeat 50% 50%;
-	width : 64px;
-	height : 21px;
+	background: #FFFFFF url("../images/mob-arrow_down_black.png") no-repeat 90% 50%;
+	width : 100%;
+	height : 30px;
 	font-family: 'latoregular';
 	font-size : 12px;
 	border-radius : 4px;
 	-moz-border-radius : 4px;
 	-webkit-border-radius : 4px;
-	text-align: center;
+	text-align: left;
 	line-height: 18px;
 	margin-top: 4px;
 }
 .product-filters #accordion .bt_expand:after {
-	content: "";
-	color: #FFFFFF;
+	content: "Show Filters";
+	font-family: 'latolight';
+	font-size: 30px;
+	color: #F36E34;
+	line-height: 30px;
 }
 .product-filters #accordion .bt_save {
-	background: #FFFFFF url("../images/mob-arrow_up_black.png") no-repeat 50% 50%;
-	width : 64px;
-	height : 21px;
+	background: #FFFFFF url("../images/mob-arrow_up_black.png") no-repeat 90% 50%;
+	width : 100%;
+	height : 30px;
 	font-family: 'latoregular';
 	font-size : 12px;
 	border-radius : 4px;
 	-moz-border-radius : 4px;
 	-webkit-border-radius : 4px;
-	text-align: center;
+	text-align: left;
 	line-height: 18px;
 	margin-top: 4px;
 }
 .product-filters #accordion .bt_save:after {
-	content: "";
-	color: #FFFFFF;
+	content: "Hide Filters";
+	font-family: 'latolight';
+	font-size: 30px;
+	color: #F36E34;
+	line-height: 30px;
+}
+.marTop16 {
+	margin-top: 16px !important;
 }
