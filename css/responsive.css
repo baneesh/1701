@@ -363,10 +363,10 @@ a.account img {
 	background-color: #F36E34;
 }
 .navbar-toggle .icon-bar {
-display: block;
-width: 26px;
-height: 3px;
-border-radius: 2px;
+	display: block;
+	width: 26px;
+	height: 3px;
+	border-radius: 2px;
 }
 /*.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle {
 	background-color: transparent;
@@ -502,7 +502,7 @@ nav .prev {
 	font-family: 'latolight' !important;
 	}
 .nav > li > a {
-padding: 15px 17px !important;
+	padding: 15px 17px !important;
 }
 .orangeTxt.marRight40{
 	display:none;
@@ -576,7 +576,10 @@ padding: 15px 17px !important;
 #sizeImage {
 	margin-bottom: 30px;
 }
-
+ul.bg p {
+	width: 100%;
+	padding-right: 40px;
+}
 
 	
 }

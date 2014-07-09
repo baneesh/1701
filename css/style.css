@@ -206,6 +206,7 @@ a.darker.active {
 .floor-1 {
 	/*background: #F9B233;*/
 	background: url(../images/bg-floor-1.jpg) no-repeat;
+	/*background: url(../images/bg-floor-1-high3.jpg) no-repeat;*/
 	background-size: cover;
 	position: relative;
 }
@@ -6008,7 +6009,10 @@ a.account2:hover {
 .mainSectionMobile .main {
     position: fixed;
 	right:6px;
-    z-index: 9;
+    z-index: 1031;
+}
+.mainSectionMobile .container {
+	background:#fff;
 }
 ul.bg {
 	width: 100%;
@@ -6047,6 +6051,19 @@ ul.bg h2{
 	line-height:30px;
 	margin-left:20px;
 	text-align:left;
+	}
+ul.bg h6{
+	/*font-family: 'latohairline';*/
+	font-family: 'latolight';
+	font-size:30px;
+	color : #F26E32;
+	line-height:72px;
+	text-align:center;
+	background : #FFFF00;
+	width:100%;
+	height:72px;
+	margin-top: 20px;
+	margin-bottom: 0px;
 	}
 ul.bg p{
 	font-family: 'latolight';
@@ -6175,6 +6192,7 @@ ul.bg a{
 	border-radius : 8px;
 	-moz-border-radius : 8px;
 	-webkit-border-radius : 8px;
+	position:relative;
 }
 .mobile-right-pro-images li:last-child{
 	margin-bottom:0px !important;
@@ -6210,6 +6228,23 @@ ul.bg a{
 .mobile-right-pro-images li a{
 	padding:0px;
 	background:none;
+	}
+.mobile-right-pro-images li a span{
+	position:absolute;
+	bottom:20px;
+	text-align:center;
+	font-family : 'latoregular';
+	font-size : 20px;
+	color : #666666;
+	width: 82%;
+	left: 9%;
+	background : #FFF100;
+	opacity : 0.9;
+	height : 55px;
+	border-radius : 5px;
+	-moz-border-radius : 5px;
+	-webkit-border-radius : 5px;
+	filter: alpha(opacity=90) progid:DXImageTransform.Microsoft.Alpha(opacity=90) ;
 	}
 .h_line{
 	display:block;
@@ -6729,4 +6764,24 @@ ul.bg .view-details span img{
 }
 .marTop16 {
 	margin-top: 16px !important;
+}
+.selectColor{
+	font-family: 'latohairline';
+	font-size : 30px;
+	color : #F26E32;
+	text-align:left;
+	padding-left:20px;
+	}
+ul.bg li .barNav .productAll li{
+	margin-bottom: 3px;
+	width:88%;
+	}
+ul.bg li .barNav .productAll li span{
+	float:left;
+	}
+ul.bg li .barNav .productAll li span.right {
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	float:right;
 }

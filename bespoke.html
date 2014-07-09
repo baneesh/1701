@@ -84,6 +84,17 @@
 		$(document).ready(jqUpdateSize);    // When the page first loads
 		$(window).resize(jqUpdateSize);     // When the browser changes size
 	</script>
+    <script>
+		function jqUpdateSize2(){
+			// Get the dimensions of the viewport
+			var width = $(window).width();
+			var height = $(window).height();
+			$("#sizeImage img").css("height", height - 120);
+			$("#sizeImage img").css("width", width);
+		};
+		$(document).ready(jqUpdateSize2);    // When the page first loads
+		$(window).resize(jqUpdateSize2);     // When the browser changes size
+	</script>
     </head>
     <body class="bg-body4">
     <header class="clearfix white-link">
@@ -106,22 +117,16 @@
                 <div class="pcss3t pcss3t-effect-slide-bottom pcss3t-theme-1">
                     <input type="radio" name="pcss3t" checked  id="tab1"class="tab-content-first">
                     <label for="tab1"><img src="images/bs-tab01.png" alt="" /></label>
-                    
                     <input type="radio" name="pcss3t" id="tab2" class="tab-content-2">
                     <label for="tab2"><img src="images/bs-tab02.png" alt="" /></label>
-                    
                     <input type="radio" name="pcss3t" id="tab3" class="tab-content-3">
                     <label for="tab3"><img src="images/bs-tab03.png" alt="" /></label>
-                    
                     <input type="radio" name="pcss3t" id="tab4" class="tab-content-4">
                     <label for="tab4"><img src="images/bs-tab04.png" alt="" /></label>
-                    
                     <input type="radio" name="pcss3t" id="tab5" class="tab-content-5">
                     <label for="tab5"><img src="images/bs-tab05.png" alt="" /></label>
-                    
                     <input type="radio" name="pcss3t" id="tab6" class="tab-content-last">
                     <label for="tab6"><img src="images/bs-tab06.png" alt="" /></label>
-                    
                     <ul>
                         <li class="tab-content tab-content-first typography">
                             <h1>Select Base Leather</h1>
@@ -152,7 +157,6 @@
                                 <a href="#">save for later</a>
                             </div>
                         </li>
-                        
                         <li class="tab-content tab-content-2 typography">
                             <h1>Select Base Leather</h1>
                             <div class="leather">
@@ -182,7 +186,6 @@
                                 <a href="#">save for later</a>
                             </div>
                         </li>
-                        
                         <li class="tab-content tab-content-3 typography">
                             <h1>Select Base Leather</h1>
                             <div class="leather">
@@ -212,7 +215,6 @@
                                 <a href="#">save for later</a>
                             </div>				
                         </li>
-                        
                         <li class="tab-content tab-content-4 typography">
                             <h1>Select Base Leather</h1>
                             <div class="leather">
@@ -242,7 +244,6 @@
                                 <a href="#">save for later</a>
                             </div>
                         </li>
-                        
                         <li class="tab-content tab-content-5 typography">
                             <h1>Select Base Leather</h1>
                             <div class="leather">
@@ -272,7 +273,6 @@
                                 <a href="#">save for later</a>
                             </div>			
                         </li>
-                        
                         <li class="tab-content tab-content-last typography">
                             <h1>Add Monogram</h1>
                             <div class="leather line_bottom0">
@@ -306,8 +306,7 @@ will have the monogram or any other info that you would like to provide</span></
                             <div class="saveLater">
                                 <a href="#">save for later</a>
                             </div>		
-                            </div>
-                        </li>
+                          </li>
                     </ul>
                 </div>
                 <!--/ tabs -->
@@ -322,11 +321,80 @@ will have the monogram or any other info that you would like to provide</span></
                     </ul>
                   </div>
 				</div>
-                
             </div>
         </div>
 	</div>
     </div>
+    <div class="mainSectionMobile">
+	<div class="main">
+        <div class="cart_base"> <span class="cart_txt">0</span><br>
+        </div>
+      </div>
+  <div class="container">
+  <ul class="bg">
+  <li id="sizeImage">
+      <img src="images/mobile-bespoke01.png" alt="" />
+      <h2>An Introductory Title</h2>
+      <p class="marBottom0 padBottom0">Description about bespoke, what s bespoke, the idea behind it etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi dui, rutrum nec pharetra et, lobortis quis quam. Vestibulum molestie massa mauris, ut blandit nunc eleifend eu. Mauris sodales elit turpis, ac faucibus enim facilisis eget. Aliquam lobortis hendrerit scelerisque.</p>
+  </li>
+  <li id="sizeImage">
+      <img src="images/mobile-bespoke02.png" alt="" />
+      <h2>An Introductory Title</h2>
+      <p class="marBottom0 padBottom0">Description about bespoke, what s bespoke, the idea behind it etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi dui, rutrum nec pharetra et, lobortis quis quam. Vestibulum molestie massa mauris, ut blandit nunc eleifend eu. Mauris sodales elit turpis, ac faucibus enim facilisis eget. Aliquam lobortis hendrerit scelerisque. </p>
+      <h6>Bespoke Products</h6>
+      <div class="mobile-right-pro-images">
+        <ul>
+          <li class="padTop10"><img src="images/m-pro-vintage02.jpg" alt="" /><a href="mobile-customize.html"><span>customize</span></a></li>
+          <li class="last"><img src="images/m-pro-vintage01.jpg" alt="" /><a href="mobile-customize.html"><span>customize</span></a></li>
+        </ul>
+      </div>
+  </li>
+  </ul>
+  <div class="h_line"></div>
+  <div class="mobileFollowUS">
+  	<h2>Follow Us</h2>
+    <ul>
+    	<li><a href="#"><img src="images/icon-m-facebook.png" alt="" /></a></li>
+        <li><a href="#"><img src="images/icon-m-twitter.png" alt="" /></a></li>
+        <li><a href="#"><img src="images/icon-m-pinterest.png" alt="" /></a></li>
+    </ul>
+    <div class="clear"></div>
+    <h2>Subscribe to newsletter</h2>
+    <form>
+        <div id="mainContent">
+        	<input placeholder="enter your email address" type="text"> <br>
+        </div>
+	</form>
+  </div>
+  <div class="mobileFooterNav">
+  	<ul class="left">
+    	<li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Colletions</a></li>
+        <li><a href="#">Bespoke</a></li>
+    </ul>
+    <ul class="right">
+    	<li><a href="#">About</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Stockist</a></li>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="clear line_bottom"></div>
+    <ul class="center">
+    	<li><a href="#">Terms</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Delivery</a></li>
+    </ul>
+    <div class="clear"></div>
+    <div class="mobileLogoFooter">
+    	<a href="#"><img src="images/mobile-footer-logo.png" alt="" /><br />
+        <span>1701. 2014 All rights reserved</span></a>
+    </div>
+    <div class="clear"></div>
+  </div>
+  </div>
+</div>
 <div class="clear"></div>
 
 <!-- Modal -->
@@ -476,17 +544,20 @@ will have the monogram or any other info that you would like to provide</span></
 <div class="clear"></div>
 <nav class="site-navigation navbar navbar-inverse navbar-fixed-bottom nav-visible">
       <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
   </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
     <ul class="nav navbar-nav navbar-left sky-mega-menu sky-mega-menu-pos-bottom sky-mega-menu-response-to-icons sky-mega-menu-anim-scale">
-			<li><a href="home.html"><i class="fa fa-single fa-home"></i></a></li>
-      		<li><a class="toggle1">Men</a></li>
+			<li class="mobileHide"><a href="home.html"><i class="fa fa-single fa-home"></i></a></li>
+            <li><a href="home.html" class="mobileNav">Home (Stories)</a></li>
+            <li class="mobileHide"><a class="toggle1">Men</a></li>
+            <li><a href="mobile-men.html" class="mobileNav">Men</a></li>
 			<li><a class="toggle3">Women</a></li>
 			<li><a class="toggle2">Collections</a></li>
-			<li><a href="bespoke.html">Bespoke</a></li>
+			<li><a href="bespoke.html" class="active">Bespoke</a></li>
+            <li><a href="product-all.html" class="mobileNav">View All Products</a></li>
 			<li class="bar">&nbsp;</li>
-			<li><a href="about.html" class="darker active">About</a></li>
+			<li><a href="about.html" class="darker">About</a></li>
 			<li><a href="press.html" class="darker">Press</a></li>
 			<li><a href="stockist.html" class="darker">Stockist</a></li>
 			<li><a href="journal-page.html" class="darker">Journal</a></li>
@@ -501,11 +572,12 @@ will have the monogram or any other info that you would like to provide</span></
                 </div>
 			</li>
         </ul>
-		<ul class="nav navbar-nav navbar-right">
-          <li class="orangeTxt">
-          	<div class="dropdown">
-            	<a href="user_account.html" class="account"><img src="images/user.jpg" alt="" />My Account</a>
-                  <!--<div class="submenu">
+		<ul class="nav navbar-nav navbar-right mobileNav">
+      <li class="orangeTxt marRight25 mobileShow"><a href="user_account.html" role="button" data-toggle="modal">My Account</a></li>
+      <li class="orangeTxt mobileHide">
+        <div class="dropdown"> 
+        	<a href="user_account.html" class="account"><img src="images/user.jpg" alt="" />My Account</a>
+          <!--<div class="submenu">
                     <ul class="root">
                       <li ><a href="#Dashboard">Dashboard</a></li>
                       <li ><a href="#Profile" >Profile</a></li>
@@ -513,9 +585,9 @@ will have the monogram or any other info that you would like to provide</span></
                       <li ><a href="#feedback">Send Feedback</a></li>
                     </ul>
                   </div>-->
-			</div>
-			</li>
-			<li class="orangeTxt">
+        </div>
+      </li>
+      <li class="orangeTxt mobileHide">
           	<div class="dropdown2">
             	<a class="account2">Follow Us</a>
                   <div class="submenu2">
@@ -541,7 +613,7 @@ will have the monogram or any other info that you would like to provide</span></
                   </div>
 			</div>
           </li>
-		</ul>
+    </ul>
   </div>
 </nav>
 <div role="main">
