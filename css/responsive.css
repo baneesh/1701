@@ -674,7 +674,7 @@ ul.bg p {
 	-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
 }
 .mainSectionMobile .aboutTabs .sky-tabs .txt{
-	height:180px !important;
+	height:150px !important;
 	}
 .mainSectionMobile .aboutTabs .sky-tabs >label {
 	position: relative;
