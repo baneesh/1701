@@ -306,6 +306,9 @@ a.account img {
 .mainSection{
 	display:none;
 	}
+.mainSection.mainSectionMobile{
+	display:block;
+	}
 .nav li.bar{
 	display:none;
 	}
@@ -580,8 +583,114 @@ ul.bg p {
 	width: 100%;
 	padding-right: 40px;
 }
+.mainSectionMobile .about-top {
+	float: left;
+	width: 100%;
+	height: 200px;
+	overflow:hidden;
+}
+.mainSectionMobile .aboutTabs .sky-tabs p {
+	color: #1A1A1A;
+	font-family: 'latolight';
+	font-size: 24px;
+	margin-bottom: 23px;
+	padding: 0;
+	line-height:30px;
+}
+.mainSectionMobile .aboutTabs .sky-tabs .typography p{
+	line-height:30px;
+	}
+.mainSectionMobile .aboutTabs .sky-tabs >label{
+	font-size:14px;
+	}
+.mainSectionMobile .aboutTabs .sky-tabs > label {
+	background: #fff;
+	padding: 0px !important;
+}
+.mainSectionMobile .aboutTabs .sky-tabs >label span span {
+	list-style:none;
+	float:left;
+	margin-right:0px;
+	border:1px solid #99C2D2;
+	padding:0px 20px;
+	border-radius:0px;
+	border-bottom-color: #fff;
+	background: transparent;
+	transition: background 0.4s, color 0.4s;
+	-o-transition: background 0.4s, color 0.4s;
+	-ms-transition: background 0.4s, color 0.4s;
+	-moz-transition: background 0.4s, color 0.4s;
+	-webkit-transition: background 0.4s, color 0.4s;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.mainSectionMobile .about-bottom .left, .mainSectionMobile .aboutTabs .sky-tabs .typography h2{
+	display:none;
+	}
+.mainSectionMobile .about-bottom .right.width50p.pad80{
+	width:100%;
+	padding:20px;
+	}
+.mainSectionMobile .aboutTabs label[for=sky-tab1] {
+	left: -16px;
+	right: 1;
+}
+.mainSectionMobile .aboutTabs .sky-tabs label {
+	position: relative !important;
+	top: 0px;
+}
+.mainSectionMobile .aboutTabs .sky-tabs-pos-top-right {
+	text-align: left;
+}
+.mainSectionMobile .aboutTabs label[for=sky-tab2] {
+	left: -12px;
+}
+.mainSectionMobile .aboutTabs label[for=sky-tab3] {
+	left: 197px;
+	top:-35px;
+}
+.mainSectionMobile .aboutTabs .sky-tabs >ul > li {
+	position: absolute;
+	top: -18px;
+	left: 0;
+	width: 100%;
+	overflow: auto;
+	padding:0px;
+	background: rgba(255,255,255,0.9);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	opacity: 0;
+	-o-transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%;
+	-o-transition: opacity 0.8s, -o-transform 0.8s;	
+	-ms-transition: opacity 0.8s, -ms-transform 0.8s;	
+	-moz-transition: opacity 0.8s, -moz-transform 0.8s;	
+	-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+}
+.mainSectionMobile .aboutTabs .sky-tabs .txt{
+	height:180px !important;
+	}
+.mainSectionMobile .aboutTabs .sky-tabs >label {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 1px;
+	padding-top: 0;
+	padding-left: 0;
+	font-size: 14px;
+	line-height: 33px;
+	cursor: pointer;
+	font-weight:normal;
+}
 
-	
 }
 
 

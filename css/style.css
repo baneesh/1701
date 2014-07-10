@@ -6006,6 +6006,9 @@ a.account2:hover {
 .mainSectionMobile{
 	display:none;
 	}
+.mainSection.mainSectionMobile{
+	display:block;
+	}
 .mainSectionMobile .main {
     position: fixed;
 	right:6px;
@@ -6834,4 +6837,10 @@ ul.bg .initials p{
 .mob-Login.barNav .productAll li > span > input[type='checkbox']:checked + label {
 	background-image: url(../images/icon-check-sprite-mobile.png);
 	background-position: left -46px;
+}
+.width100p {
+	width: 100%;
+}
+.pad20 {
+	padding: 20px;
 }
