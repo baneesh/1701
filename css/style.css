@@ -6785,3 +6785,53 @@ ul.bg li .barNav .productAll li span.right {
 	line-height: 28px;
 	float:right;
 }
+.marBottom10 {
+	margin-bottom: 10px !important;
+}
+.initials input[type=text]{
+	background : #FFFFFF;
+	border-style : Solid;
+	border-color : #CCCCCC;
+	border-width : 1px;
+	width : 96%;
+	height : 62px;
+	line-height:62px;
+	padding-left:20px;
+	display:block;
+	font-family: 'latolight';
+	font-size : 24px;
+	color : #CCCCCC;
+	margin:0 auto;
+	}
+ul.bg .initials p{
+	font-family: 'latolight';
+	font-size : 24px;
+	color : #CCCCCC;
+	padding-bottom:0px;
+	}
+.mob-Login.barNav .productAll label{
+	padding-left:74px;
+	font-family: 'latohairline';
+	font-size : 30px;
+	color : #F26E32;
+	}
+.mob-Login.barNav .productAll i.fa{
+	font-size:34px;
+	padding-top:6px;
+	}
+.mob-Login.barNav .productAll input[type='checkbox']{
+	width: 35px;
+	height: 35px
+	}
+.mob-Login.barNav .productAll li {
+	margin-left: 20px;
+}
+.mob-Login.barNav .productAll li > span > input[type='checkbox'] + label{
+	cursor: pointer;
+	background: url(../images/icon-check-sprite-mobile.png) no-repeat;
+	background-position: left 4px;
+	}
+.mob-Login.barNav .productAll li > span > input[type='checkbox']:checked + label {
+	background-image: url(../images/icon-check-sprite-mobile.png);
+	background-position: left -46px;
+}
