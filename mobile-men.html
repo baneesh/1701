@@ -57,18 +57,6 @@
 			});
 		});
 	</script>
-    <script>
-		function jqUpdateHeight(){
-			// Get the dimensions of the viewport
-			var sum = 0;
-			var height = $(".et-page-current .mobileMenSlider").each(function() {
-						   sum += $(this).height(); 
-						});
-			$(".et-wrapper").css("height", sum);
-		};
-		$(document).ready(jqUpdateHeight);    // When the page first loads
-		$(window).resize(jqUpdateHeight);     // When the browser changes size
-	</script>
     </head>
     <body class="cbp-spmenu-push">
 <header class="clearfix white-link">
@@ -746,6 +734,18 @@ jQuery(document).ready(function(){
 </script>
 <script src="js/jquery.bxslider.js"></script>
 <script src="js/jquery.toggle-panel.js"></script>
-<script src="js/custom-toggle-panel.js"></script> 
+<script src="js/custom-toggle-panel.js"></script>
+<script>
+		function jqUpdateHeight(){
+			// Get the dimensions of the viewport
+			var sum = 0;
+			var height = $(".et-page-current .mobileMenSlider").each(function() {
+						   sum += $(this).height(); 
+						});
+			$(".et-wrapper").css("height", sum);
+		};
+		$(document).ready(jqUpdateHeight);    // When the page first loads
+		$(window).resize(jqUpdateHeight);     // When the browser changes size
+</script>
 </body>
 </html>
