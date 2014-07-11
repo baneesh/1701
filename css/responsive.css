@@ -309,6 +309,10 @@ a.account img {
 .mainSection.mainSectionMobile{
 	display:block;
 	}
+.mainSection.mainSectionMobile #ascensorBuilding{
+	position:relative !important;
+	overflow:visible !important;
+	}
 .nav li.bar{
 	display:none;
 	}
@@ -674,7 +678,7 @@ ul.bg p {
 	-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
 }
 .mainSectionMobile .aboutTabs .sky-tabs .txt{
-	height:150px !important;
+	height:auto !important;
 	}
 .mainSectionMobile .aboutTabs .sky-tabs >label {
 	position: relative;
