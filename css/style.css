@@ -6977,3 +6977,108 @@ ul.bg .initials p{
 .pad20 {
 	padding: 20px;
 }
+.mainSectionMobile .tag-jn ul.left{
+	margin-bottom:0px;
+	margin-left:20px;
+	}
+.mainSectionMobile .tag-jn{
+	margin-top:0px;
+	}
+.mainSectionMobile .tag-jn li{
+	font-family: 'latolight';
+	font-size: 18px;
+	color: #B3B3B3;
+	float:left;
+	list-style:none;
+	margin-bottom:4px;
+}
+.mainSectionMobile .tag-jn li a {
+	font-family: 'latolight';
+	font-size: 18px;
+	color: #B3B3B3;
+	text-decoration: underline;
+}
+.mainSectionMobile .tag-jn .right{
+	margin-right:10px;
+	}
+.mainSectionMobile .tag-jn .right img {
+	vertical-align: baseline;
+}
+.marTop70 {
+	margin-top: 70px !important;
+}
+.mainSectionMobile .tag-jn ul.bg p{
+	padding-bottom:10px;
+	}
+.mainSectionMobile .tag-jn ul.bg #sizeImage{
+	margin-bottom:0px;
+	}
+.mainSectionMobile .tag-jn ul.bg {
+	margin-top: 0px;
+}
+.mainSectionMobile .tag-jn ul.bg h2{
+	font-family: 'latohairline';
+}
+.mainSectionMobile .tag-jn ul.bg h2.link{
+	cursor:pointer;
+	}
+.linkNext a{
+	font-family: 'latohairline';
+	font-size : 30px;
+	color : #ccc;
+	margin-left:20px;
+	margin-right:20px;
+	text-decoration:none;
+	}
+.linkNext {
+	margin-top:30px;
+	margin-bottom:30px;
+	}
+.mainSectionMobile .tag-jn .shareIt{
+	font-family: 'latohairline';
+	font-size : 24px;
+	color : #F26E32;
+	margin:0px;
+	width:auto;
+	margin-left:20px;
+	margin-bottom:20px;
+	}
+.mainSectionMobile .tag-jn .shareIt li{
+	list-style:none;
+	float:left;
+	margin-right:20px;
+	font-family: 'latohairline';
+	font-size : 24px;
+	color : #F26E32;
+	text-align:left;
+	}
+.mainSectionMobile .tag-jn .shareIt li:last-child{
+	margin-right:0px;
+	}
+.mainSectionMobile .tag-jn .shareIt li:first-child{
+	margin-right:50px;
+	}
+#sizeImage .imgCollectionStory li{
+	list-style:none;
+	float:left;
+	width:50%;
+	margin-bottom:20px;
+	}
+#sizeImage .imgCollectionStory li img{
+	width:100%;
+	}
+.mobileBannerContact img{
+	width:100%;
+	padding:20px;
+	}
+.boxThumb{
+	float:left;
+	background : #CCCCCC;
+	width : 42px;
+	height : 42px;
+	margin-left:20px;
+	margin-right:18px;
+	}
+.thumb-box-main{
+	margin-bottom:30px;
+	}

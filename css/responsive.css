@@ -582,6 +582,7 @@ nav .prev {
 }
 #sizeImage {
 	margin-bottom: 30px;
+	list-style:none;
 }
 ul.bg p {
 	width: 100%;
@@ -693,6 +694,12 @@ ul.bg p {
 	line-height: 33px;
 	cursor: pointer;
 	font-weight:normal;
+}
+.clear.marBottom116 {
+	margin-bottom: 0px !important;
+}
+.clear.marBottom40 {
+	margin-bottom: 0px !important;
 }
 
 }
