@@ -6000,6 +6000,139 @@ a.account2:hover {
 	}
 	
 	
+/*Reset Password Page Css*/
+
+#sign-in-form2 input {
+	padding-left: 80px;
+	margin-bottom: 10px;
+	color: #CCCCCC;
+	font-size: 14px;
+	font-family: 'latolight';
+	background : #FFFFFF;
+	border-style : Solid;
+	border-color : #CCCCCC;
+	border-width : 1px;
+	width : 414px;
+	height : 53px;
+	border-radius : 6px;
+	-moz-border-radius : 6px;
+	-webkit-border-radius : 6px;
+}
+#sign-in-form2 input:focus {
+	border-color: #F26E32;
+}
+#sign-in-form2 input:active {
+	border-color: #4D4D4D;
+}
+#sign-in-form2 input {
+	margin-bottom: 10px !important;
+}
+#sign-in-form2 .btn {
+	color: #fff;
+	/*padding: 1em 2.8em;*/
+	text-align: center;
+	margin-right: 0;
+	letter-spacing: 0;
+	font-size: 18px;
+	font-family: 'latobold';
+	margin-bottom: 8px !important;
+	margin-right: 28px;
+	border: none;
+	background : #F26E32;
+	width : 188px;
+	height : 54px;
+	border-radius : 6px;
+	-moz-border-radius : 6px;
+	-webkit-border-radius : 6px;
+}
+#sign-in-form2 p {
+    color: #666666;
+    font-family: 'latolight';
+    font-size: 14px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+#resetPassword div > span > input[type='radio'], #resetPassword div > span > input[type='checkbox'] {
+	/* Hide the input, but have it still be clickable */
+	opacity: 0;
+	float: left;
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+}
+#resetPassword div > span > input[type='radio'] + label, #resetPassword div > span > input[type='checkbox'] + label {
+	margin: 0;
+	clear: none;
+	/* Left padding makes room for image */
+	padding: 2px 0 4px 27px;
+	/* Make look clickable because they are */
+	cursor: pointer;
+	background: url(../images/icon-check-sprite.png) no-repeat;
+	background-position: left 2px;
+	color: #666666;
+	font-family: 'latolight';
+	font-size: 12px;
+	font-weight: normal;
+}
+/*
+    Change from unchecked to checked graphic
+*/
+#resetPassword div > span > input[type='radio']:checked + label {
+	background-image: url(../images/icon-check-sprite.png);
+	background-position: left -22px;
+}
+#resetPassword div > span > input[type='checkbox']:checked + label {
+	background-image: url(../images/icon-check-sprite.png);
+	background-position: left -22px;
+}
+#resetPassword .input {
+	position: relative;
+}
+#resetPassword a{
+	font-family: 'latobold';
+	font-size : 14px;
+	color : #F26E32;
+	margin-left:28px;
+	}
+#resetPassword a:hover{
+	text-decoration:none;
+	}
+#resetPassword .action{
+	font-family: 'latolight';
+	font-size : 12px;
+	color : #666666;
+	margin-top: 25px;
+	padding-left:10px;
+	}
+#myModal3 {
+	margin: 0px auto;
+}
+#myModal3 h3 {
+	font-family: 'latolight';
+	font-size: 36px;
+	margin-bottom: 10px;
+	margin-top: 34px;
+	text-align: center;
+	text-transform: none;
+}
+#myModal3:focus, .close-nw:focus {
+	outline-color: transparent !important;
+}
+#myModal3 .modal-dialog {
+    background: #fff url(../images/bg-reset.png);;
+    border-radius: 11px;
+    height: 360px;
+    margin-top: 100px;
+    width: 605px;
+}
+#myModal3 .modal-dialog .container3 {
+    margin: 0 auto;
+    width: 69%;
+}
+.hideModal{
+	display:none !important;
+}
+	
 
 /*Mobile Phone Css*/
 

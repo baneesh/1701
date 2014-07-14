@@ -301,7 +301,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
   </div>
 </div>
 <div class="clear"></div>
-<!-- Modal -->
+<!-- Modal Login -->
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <button type="button" class="close-nw" data-dismiss="modal" aria-hidden="true"><img src="images/bt_cross-black.png" alt="" /></button>
@@ -327,7 +327,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                 <input type="checkbox" checked="checked" onchange="handleInput(this);" tabindex="4" value="Keep me logged in" class="field checkbox" name="Field2" id="Field2">
                 <label for="Field2" class="choice">Keep me logged in</label>
                 </span> </div>
-              <div class="right marRight40"> <a href="">Forgot Password <span class="iconQ"></span></a> </div>
+              <div class="right marRight40"> <a href="#myModal3" role="button" data-toggle="modal" id="toggle2">Forgot Password <span class="iconQ"></span></a> </div>
             </form>
             <!--<form class="connect-button" name="login" method="post" action="#" id="twitter-connect-form">
               <h3>Sign In</h3>
@@ -431,6 +431,32 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
               <input type="submit" value="Sign Up" class="btn btn-green">
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Reset Password -->
+<div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <button type="button" class="close-nw" data-dismiss="modal" aria-hidden="true" id="closeBt"><img src="images/bt_cross-black.png" alt="" /></button>
+    <div class="container3">
+      <div id="resetPassword" class="accounts-form row">
+        <div class="span4 social offset2">
+          <div>
+            <form action="home.html" method="post" accept-charset="utf-8" id="sign-in-form2" class="kissmetrics-login">
+              <h3>Reset your password</h3>
+              <p>You can reset your password by providing your email address</p>
+              <div class="input"> <span class="icon-mail"></span>
+                <input id="id_email3" type="text" placeholder="enter your email address" name="email3" maxlength="75">
+                <!--<div class="email_suggestion"></div>--> 
+              </div>
+              <div class="action">
+                <input type="hidden" name="next" value="#">
+                <input type="submit" value="Submit" class="btn btn-green">or <a href="#">Return to Login</a>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -790,6 +816,18 @@ $( "#showRightPush" ).click(function() {
 			$('#hideM06').hide();
 			$('#showM06').hide();
 			$('li#sizeImage').not('li:nth-child(6)').hide(); 
+		});
+	});
+</script>
+<script>
+	$(document).ready(function(){
+		$('#toggle2').on('click', function () {
+			$('#myModal').addClass("hideModal");
+			$('.modal-backdrop').addClass("hideModal");
+		});
+		$('#closeBt').on('click', function () {
+			$('#myModal').removeClass("hideModal");
+			$('.modal-backdrop').removeClass("hideModal");
 		});
 	});
 </script>
