@@ -506,7 +506,8 @@ nav .prev {
 	font-family: 'latohairline' !important;
 }
 .navbar-inverse .navbar-nav > .orangeTxt a{
-	font-family: 'latolight' !important;
+	/*font-family: 'latolight' !important;*/
+	font-family: 'latoregular' !important;
 	}
 .nav > li > a {
 	padding: 15px 17px !important;
@@ -701,6 +702,21 @@ ul.bg p {
 .clear.marBottom40 {
 	margin-bottom: 0px !important;
 }
+.mainSectionMobile .user-bottom  .aboutTabs .sky-tabs >label span span{
+	padding:0px 14px !important;
+	margin-right: 2px;
+}
+.mainSectionMobile .user-bottom .aboutTabs .sky-tabs label {
+	position: relative !important;
+	top: 0px;
+	left:5px;
+}
+.mainSectionMobile .user-bottom .aboutTabs .sky-tabs >ul > li{
+	top:0px;
+	}
+.mainSectionMobile .user-bottom .aboutTabs .sky-tabs .typography ul{
+	margin-top:0px;
+	}
 
 }
 
