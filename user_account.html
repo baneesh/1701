@@ -963,38 +963,88 @@
                                         <ul>
                                             <li><h3><a href="#">34532</a></h3>
                                             	<ul>
-                                                    <li><a href="#">Reports</a></li>
-                                                    <li><a href="#">Search</a></li>
-                                                    <li><a href="#">Graphs</a></li>
-                                                    <li><a href="#">Settings</a></li>
+                                                    <li>
+                                                    	<div class="title">Item(s)</div>
+                                                    	<div class="imgBorder"><img src="images/img_user01.png" alt="" /></div>
+                                                    </li>
+                                                    <li>
+                                                    	<div class="title">Quantity</div>
+                                                    	<p class="txtCenter45">3</p>
+                                                    </li>
+                                                    <li>
+                                                    	<div class="title">Price</div>
+                                                        <p>$89</p>
+                                                    </li>
+                                                    <li>
+                                                    	<div class="title">Shipped to</div>
+                                                        <p>Shadman Ahmed XYZ Apartment, 12/234 ABC Street Mumbai-400001</p>
+                                                    </li>
                                                 </ul>
                                             </li>
                                             <li>In Process</li>
                                             <li>18/03/14</li>
                                             <li class="bold-txt">$234</li>
-                                            <li><a href="#"><img src="images/mob-icon-delete.png" alt="" /></a></li>
+                                            <li class="deltable"><a href="#"><img src="images/mob-icon-delete.png" alt="" /></a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="userTableRow">
+                                    <div class="userTableRow" id="accordian">
                                         <ul>
-                                            <li><a href="#">34532</a></li>
+                                            <li><h3><a href="#">34532</a></h3>
+                                            	<ul>
+                                                    <li>
+                                                    	<div class="title">Item(s)</div>
+                                                    	<div class="imgBorder"><img src="images/img_user01.png" alt="" /></div>
+                                                    </li>
+                                                    <li>
+                                                    	<div class="title">Quantity</div>
+                                                    	<p class="txtCenter45">3</p>
+                                                    </li>
+                                                    <li>
+                                                    	<div class="title">Price</div>
+                                                        <p>$89</p>
+                                                    </li>
+                                                    <li>
+                                                    	<div class="title">Shipped to</div>
+                                                        <p>Shadman Ahmed XYZ Apartment, 12/234 ABC Street Mumbai-400001</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                             <li>Delivered</li>
                                             <li>18/03/14</li>
                                             <li class="bold-txt">$234</li>
-                                            <li><a href="#"><img src="images/mob-icon-delete.png" alt="" /></a></li>
+                                            <li class="deltable"><a href="#"><img src="images/mob-icon-delete.png" alt="" /></a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="userTableRow">
+                                    <div class="userTableRow" id="accordian">
                                         <ul>
-                                            <li><a href="#">34532</a></li>
+                                            <li><h3><a href="#">34532</a></h3>
+                                            	<ul>
+                                                    <li>
+                                                    	<div class="title">Item(s)</div>
+                                                    	<div class="imgBorder"><img src="images/img_user01.png" alt="" /></div>
+                                                    </li>
+                                                    <li>
+                                                    	<div class="title">Quantity</div>
+                                                    	<p class="txtCenter45">3</p>
+                                                    </li>
+                                                    <li>
+                                                    	<div class="title">Price</div>
+                                                        <p>$89</p>
+                                                    </li>
+                                                    <li>
+                                                    	<div class="title">Shipped to</div>
+                                                        <p>Shadman Ahmed XYZ Apartment, 12/234 ABC Street Mumbai-400001</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                             <li>Cancelled</li>
                                             <li>18/03/14</li>
                                             <li class="bold-txt">$234</li>
-                                            <li><a href="#"><img src="images/mob-icon-delete.png" alt="" /></a></li>
+                                            <li class="deltable"><a href="#"><img src="images/mob-icon-delete.png" alt="" /></a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -1042,7 +1092,7 @@
                                 <div class="title bold-txt">$234</div>
                               </div>
                               <div class="pro-saved">
-                                <div class="title marLeft15"><a href="#"><img src="images/mob-icon-delete.png" alt="" /></a></div>
+                                <div class="title marLeft15 deltable2"><a href="#"><img src="images/mob-icon-delete.png" alt="" /></a></div>
                               </div>
                               </div>
                           </li>
@@ -1081,7 +1131,7 @@
                                 <div class="title bold-txt">$234</div>
                               </div>
                               <div class="pro-saved">
-                                <div class="title marLeft15"><a href="#"><img src="images/mob-icon-delete.png" alt="" /></a></div>
+                                <div class="title marLeft15 deltable2"><a href="#"><img src="images/mob-icon-delete.png" alt="" /></a></div>
                               </div>
                               </div>
                           </li>
@@ -1706,6 +1756,16 @@ $(document).ready(function(){
 		}
 	})
 })
+</script>
+<script>
+$('.deltable').live('click',function () {
+        $(this).parent().remove();   
+    });
+</script>
+<script>
+$('.deltable2').live('click',function () {
+         $(this).closest("li.removeList").remove();  
+    });
 </script>
 </body>
 </html>

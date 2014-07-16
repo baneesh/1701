@@ -7348,46 +7348,98 @@ ul.bg .initials p{
 
 /*Accordian Css*/
 
-#accordian {
+.mainSectionMobile #accordian {
 	
 }
 /*heading styles*/
-#accordian h3 {
+.mainSectionMobile #accordian h3 {
 	margin:0px;
 	padding:0px;
 	line-height:0px;
 }
 /*heading hover effect*/
-#accordian h3:hover {
+.mainSectionMobile #accordian h3:hover {
 	
 }
 /*iconfont styles*/
-#accordian h3 a {
+.mainSectionMobile #accordian h3 a {
 	font-size: 12px;
 	line-height: 90px;
 }
 /*list items*/
-#accordian li {
+.mainSectionMobile #accordian li {
 	list-style-type: none;
 	float:left;
 }
 /*links*/
-#accordian ul ul li a {
+.mainSectionMobile #accordian ul ul li a {
 	display: block;
 	/*transition for smooth hover animation*/
 	transition: all 0.15s;
 }
 /*hover effect on links*/
-#accordian ul ul li a:hover {
+.mainSectionMobile #accordian ul ul li a:hover {
 
 }
 /*Lets hide the non active LIs by default*/
-#accordian ul ul {
+.mainSectionMobile #accordian ul ul {
 	display: none;
 }
-#accordian li.active ul {
+.mainSectionMobile #accordian li.active ul {
 	display: block;
 }
-#accordian ul ul{
-	width:305px;
+.mainSectionMobile #accordian ul ul {
+	width: 305px;
+	background: #F2F2F2;
+	min-height: 135px;
+	overflow: visible !important;
+	position: relative;
+	top: -25px;
+	padding-left: 7px;
+}
+.mainSectionMobile #accordian ul ul li{
+	line-height:55px;
+	}
+.mainSectionMobile #accordian ul ul li p{
+	margin-left:0px;
+	}
+.mainSectionMobile #accordian ul ul li:nth-child(1):before {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 8px 9px 8px;
+	border-color: transparent transparent #F2F2F2 transparent;
+	line-height: 0px;
+	_border-color: #000000 #000000 #f2f2f2 #000000;
+	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+	position: absolute;
+	top: -9px;
+	z-index: 9999;
+	left: 0px;
+}
+
+
+/*Acoordian Css End*/
+
+.mainSectionMobile #accordian ul ul li:nth-child(1){
+	width:66px;
+	}
+.mainSectionMobile #accordian ul ul li:nth-child(2){
+	width:66px;
+	}
+.mainSectionMobile #accordian ul ul li:nth-child(3){
+	width:50px;
+	}
+.mainSectionMobile #accordian ul ul li:nth-child(4){
+	width:100px;
+	}
+.imgBorder{
+	border:1px solid #ccc !important;
+	width: 52px;
+	height: 52px;
+	line-height: 48px;
+	}
+.mainSectionMobile #accordian ul ul li p.txtCenter45{
+	width:45px;
+	text-align:center;
 	}
