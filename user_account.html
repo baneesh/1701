@@ -26,6 +26,7 @@
     <link href="css/main_aj.css" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
     <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/prefixfree-1.0.7.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
     <script src="js/perfect-scrollbar.js"></script>
@@ -958,9 +959,16 @@
                           <div class="userTable">
                             <ul>
                                 <li>
-                                    <div class="userTableRow">
+                                    <div class="userTableRow" id="accordian">
                                         <ul>
-                                            <li><a href="#">34532</a></li>
+                                            <li><h3><a href="#">34532</a></h3>
+                                            	<ul>
+                                                    <li><a href="#">Reports</a></li>
+                                                    <li><a href="#">Search</a></li>
+                                                    <li><a href="#">Graphs</a></li>
+                                                    <li><a href="#">Settings</a></li>
+                                                </ul>
+                                            </li>
                                             <li>In Process</li>
                                             <li>18/03/14</li>
                                             <li class="bold-txt">$234</li>
@@ -1085,17 +1093,17 @@
                 <div class="typography">
                     <ul class="bg marTop20">
           <li class="marBottom0 mob-Login">
-              <h2>Billing Address</h2>
+              <h1>Billing Address</h1>
               <div>
                 <form action="checkout.html" method="post" accept-charset="utf-8" id="sign-in-form" class="kissmetrics-login">
                   <div class="input">
-                    <input type="text" id="id_Fname" placeholder="Full Name" name="fname" maxlength="75">
+                    <input type="text" id="id_Fname" placeholder="Shadman Ahmed" name="fname" maxlength="75" class="darkerInput">
                   </div>
                   <div class="input">
-                    <input type="text" id="id_address" placeholder="address line 2" name="address" maxlength="75">
+                    <input type="text" id="id_address" placeholder="address line 2" name="address" maxlength="75" class="darkerInput">
                   </div>
                   <div class="input">
-                    <input type="text" id="id_company" placeholder="company" name="company" maxlength="75">
+                    <input type="text" id="id_company" placeholder="company" name="company" maxlength="75" class="darkerInput">
                   </div>
                   <div class="input">
                     <input type="text" id="id_phone" placeholder="phone" name="phone" maxlength="75">
@@ -1118,7 +1126,7 @@
               </div>
           </li>
           <li class="marBottom0 mob-Login">
-              <h2>Shopping Address</h2>
+              <h1>Shopping Address</h1>
               <div>
                 <form action="checkout.html" method="post" accept-charset="utf-8" id="sign-in-form" class="kissmetrics-login">
                   <div class="input">
@@ -1685,6 +1693,19 @@ jQuery(document).ready(function(){
 </script>
 <script src="js/jquery.bxslider.js"></script>
 <script src="js/jquery.toggle-panel.js"></script>
-<script src="js/custom-toggle-panel.js"></script> 
+<script src="js/custom-toggle-panel.js"></script>
+<script>
+$(document).ready(function(){
+	$("#accordian h3").click(function(){
+		//slide up all the link lists
+		$("#accordian ul ul").slideUp();
+		//slide down the link list below the h3 clicked - only if its closed
+		if(!$(this).next().is(":visible"))
+		{
+			$(this).next().slideDown();
+		}
+	})
+})
+</script>
 </body>
 </html>

@@ -703,9 +703,12 @@ ul.bg p {
 	margin-bottom: 0px !important;
 }
 .mainSectionMobile .user-bottom  .aboutTabs .sky-tabs >label span span{
-	padding:0px 14px !important;
+	padding:0px 4px !important;
 	margin-right: 2px;
 }
+.mainSectionMobile .user-bottom  .aboutTabs .sky-tabs >label{
+	font-size:18px;
+	}
 .mainSectionMobile .user-bottom .aboutTabs .sky-tabs label {
 	position: relative !important;
 	top: 0px;

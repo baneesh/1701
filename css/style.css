@@ -7175,10 +7175,15 @@ ul.bg .initials p{
 	text-align:center;
 	}
 .user-bottom .aboutTabs .sky-tabs .typography li .userTableRow li{
-	border-bottom:1px solid #B3B3B3;
-	height:90px;
+	/*border-bottom:1px solid #B3B3B3;*/
+	/*height:90px;*/
 	line-height:90px;
+	height:auto;
 	}
+.user-bottom .aboutTabs .sky-tabs .typography li .userTableRow {
+	border-bottom: 1px solid #B3B3B3;
+	float: left;
+}
 .mob-user .h_line {
 	display: block;
 	width: 100%;
@@ -7309,3 +7314,80 @@ ul.bg .initials p{
 .mainSectionMobile .aboutTabs .sky-tabs .typography .mob-Login .select-style2 select:focus {
 	outline: none;
 }
+.mainSectionMobile .aboutTabs .sky-tabs .typography .mob-Login #sign-in-form .shipCheckBox {
+	width: 100% !important;
+	margin-top: 12px;
+	text-align:center;
+}
+.mainSectionMobile .aboutTabs .sky-tabs .typography .mob-Login #sign-in-form .shipCheckBox input[type=checkbox]{
+	vertical-align:top;
+	}
+.mainSectionMobile .aboutTabs .sky-tabs .typography .mob-Login #sign-in-form .shipCheckBox span {
+	text-decoration: none;
+	line-height: 8px;
+	margin-left: 15px;
+	font-size:12px;
+}
+.mainSectionMobile .aboutTabs .sky-tabs .typography h1{
+	/*font-family: 'latohairline';*/
+	font-family: 'latolight';
+	font-size:30px;
+	color : #F36E34;
+	line-height:30px;
+	margin-left:20px;
+	text-align:left;
+	}
+.darkerInput{
+	border:none !important;
+	background : #F2F2F2 !important;
+	 }
+.borderBottom{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+
+/*Accordian Css*/
+
+#accordian {
+	
+}
+/*heading styles*/
+#accordian h3 {
+	margin:0px;
+	padding:0px;
+	line-height:0px;
+}
+/*heading hover effect*/
+#accordian h3:hover {
+	
+}
+/*iconfont styles*/
+#accordian h3 a {
+	font-size: 12px;
+	line-height: 90px;
+}
+/*list items*/
+#accordian li {
+	list-style-type: none;
+	float:left;
+}
+/*links*/
+#accordian ul ul li a {
+	display: block;
+	/*transition for smooth hover animation*/
+	transition: all 0.15s;
+}
+/*hover effect on links*/
+#accordian ul ul li a:hover {
+
+}
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+	display: none;
+}
+#accordian li.active ul {
+	display: block;
+}
+#accordian ul ul{
+	width:305px;
+	}
