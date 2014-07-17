@@ -157,24 +157,28 @@ p {
 	position: relative;
 	top: -77px;
 	display: block;
+	height:0px;
 }
 .navbar-inverse .navbar-nav > li > a.active.toggle2:after {
 	content: url(../images/slider-arrow.png);
 	position: relative;
 	top: -77px;
 	display: block;
+	height:0px;
 }
 .navbar-inverse .navbar-nav > li > a.active.toggle3:after {
 	content: url(../images/slider-arrow.png);
 	position: relative;
 	top: -77px;
 	display: block;
+	height:0px;
 }
 .navbar-inverse .navbar-nav > li > a.active.toggle4:after {
 	content: url(../images/slider-arrow.png);
 	position: relative;
 	top: -77px;
 	display: block;
+	height:0px;
 }
 .navbar-inverse .navbar-nav > li > a {
 	color: #4D4D4D;
@@ -4387,6 +4391,11 @@ input.qtyminus2 {
 }
 .bg-body .navbar{
 	z-index: 1030;
+}
+.toggle-panel1.boxed.bottom2, .toggle-panel2.boxed.bottom2, .toggle-panel3.boxed.bottom2, .toggle-panel4.boxed.bottom2 {
+    bottom: 63px;
+	position:absolute !important;
+	padding:0px;
 }
 
 /*Press Page Css*/
