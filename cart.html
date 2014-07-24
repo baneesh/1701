@@ -75,97 +75,6 @@
       </div>
         </div>
   </div>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog3">
-       <div class="modal-content3">
-       <button type="button" class="close-nw" data-dismiss="modal" aria-hidden="true"><img src="images/bt_cross-black.png" alt="" /></button>
-        <div class="modal-header2">
-              <div class="boxCart2">
-            <div class="bucket left"><img alt="" src="images/cart_icon_big.png"></div>
-            <div class="txt">Your Cart has 5 Items</div>
-          </div>
-          </div>
-          <div class="clear"></div>
-          <div class="line_h4"></div>
-          <div class="clear"></div>
-        <!-- contents -->
-        <div class="modal-body3 wrapper ps-container" id="description">
-          <div class="product-list2">
-            <ul>
-                <li>
-                <div class="pro-image"><img src="images/cart_pro01.png" alt="" /></div>
-                <div class="pro-detail">
-                    <p class="name">The Décolleté Compact Clutch or maybe a bigger name of the product.</p>
-                    <p>A Camera Clutch inspired by the mystery of Paris' 7th arrondissement - lazy afternoons, red lipstick on thin cigarettes, and a secret</p>
-                  </div>
-                <div class="pro-quantity marRight20">
-                    <div class="title">Quantity</div>
-                    <div class="clear"></div>
-                    <form id='myform' method='POST' action='#'>
-                    <input type='button' value='-' class='qtyminus2' field='quantity2' />
-                    <input type='text' name='quantity2' value='0' class='qty2' />
-                    <input type='button' value='+' class='qtyplus2' field='quantity2' />
-                  </form>
-                  </div>
-                <div class="pro-price marRight20">
-                    <div class="title">Unit Price</div>
-                    <p>$250</p>
-                  </div>
-                <div class="pro-subtotal">
-                    <div class="title">Subtotal</div>
-                    <p>$250</p>
-                  </div>
-                <div class="pro-del last2">
-                <!--<div class="line_v"></div>-->
-                <img src="images/icon-cross.png" alt="" />
-                </div>
-              </li>
-              <li>
-                <div class="pro-image"><img src="images/cart_pro01.png" alt="" /></div>
-                <div class="pro-detail">
-                    <p class="name">The Décolleté Compact Clutch or maybe a bigger name of the product.</p>
-                    <p>A Camera Clutch inspired by the mystery of Paris' 7th arrondissement - lazy afternoons, red lipstick on thin cigarettes, and a secret</p>
-                  </div>
-                <div class="pro-quantity marRight20">
-                    <div class="title">Quantity</div>
-                    <div class="clear"></div>
-                    <form id='myform' method='POST' action='#'>
-                    <input type='button' value='-' class='qtyminus2' field='quantity3' />
-                    <input type='text' name='quantity3' value='0' class='qty2' />
-                    <input type='button' value='+' class='qtyplus2' field='quantity3' />
-                  </form>
-                  </div>
-                <div class="pro-price marRight20">
-                    <div class="title">Unit Price</div>
-                    <p>$250</p>
-                  </div>
-                <div class="pro-subtotal">
-                    <div class="title">Subtotal</div>
-                    <p>$250</p>
-                  </div>
-                <div class="pro-del last2">
-                <!--<div class="line_v"></div>-->
-                <img src="images/icon-cross.png" alt="" />
-                </div>
-              </li>
-            </ul>
-          </div>
-            </div>
-        <div class="clear"></div>
-        <div class="modal-footer marTop40">
-        	<div class="left contFont marLeft40">continue browsing</div>
-			<div class="right">
-            	<div class="price-box-main2 marBottom40 marRight40">
-                    <div class="left">Total $1250</div>
-                    <div class="view-product2" onclick="location.href='checkout.html';">Proceed to checkout</div>
-          		</div>
-            </div>
-			<div class="clear"></div>
-         </div>
-      </div>
-        </div>
-  </div>
    <div class="cart02">
     <div class="container cbp-spmenu-push">
       <div class="main">
@@ -218,7 +127,7 @@
           <div class="clear"></div>
           <div class="boxCart">
             <ul>
-              <li class="yellow"><a href="#">Add Monogram</a></li>
+              <li class="yellow" data-toggle="modal" data-target="#myModal3"><a>Add Monogram</a></li>
               <li><a href="#">Add to Cart</a></li>
             </ul>
       	</div>
@@ -460,6 +369,147 @@
         </div>
   </div>
     </div>
+    
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog3">
+       <div class="modal-content3">
+       <button type="button" class="close-nw" data-dismiss="modal" aria-hidden="true"><img src="images/bt_cross-black.png" alt="" /></button>
+        <div class="modal-header2">
+              <div class="boxCart2">
+            <div class="bucket left"><img alt="" src="images/cart_icon_big.png"></div>
+            <div class="txt">Your Cart has 5 Items</div>
+          </div>
+          </div>
+          <div class="clear"></div>
+          <div class="line_h4"></div>
+          <div class="clear"></div>
+        <!-- contents -->
+        <div class="modal-body3 wrapper ps-container" id="description">
+          <div class="product-list2">
+            <ul>
+                <li>
+                <div class="pro-image"><img src="images/cart_pro01.png" alt="" /></div>
+                <div class="pro-detail">
+                    <p class="name">The Décolleté Compact Clutch or maybe a bigger name of the product.</p>
+                    <p>A Camera Clutch inspired by the mystery of Paris' 7th arrondissement - lazy afternoons, red lipstick on thin cigarettes, and a secret</p>
+                  </div>
+                <div class="pro-quantity marRight20">
+                    <div class="title">Quantity</div>
+                    <div class="clear"></div>
+                    <form id='myform' method='POST' action='#'>
+                    <input type='button' value='-' class='qtyminus2' field='quantity2' />
+                    <input type='text' name='quantity2' value='0' class='qty2' />
+                    <input type='button' value='+' class='qtyplus2' field='quantity2' />
+                  </form>
+                  </div>
+                <div class="pro-price marRight20">
+                    <div class="title">Unit Price</div>
+                    <p>$250</p>
+                  </div>
+                <div class="pro-subtotal">
+                    <div class="title">Subtotal</div>
+                    <p>$250</p>
+                  </div>
+                <div class="pro-del last2">
+                <!--<div class="line_v"></div>-->
+                <img src="images/icon-cross.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="pro-image"><img src="images/cart_pro01.png" alt="" /></div>
+                <div class="pro-detail">
+                    <p class="name">The Décolleté Compact Clutch or maybe a bigger name of the product.</p>
+                    <p>A Camera Clutch inspired by the mystery of Paris' 7th arrondissement - lazy afternoons, red lipstick on thin cigarettes, and a secret</p>
+                  </div>
+                <div class="pro-quantity marRight20">
+                    <div class="title">Quantity</div>
+                    <div class="clear"></div>
+                    <form id='myform' method='POST' action='#'>
+                    <input type='button' value='-' class='qtyminus2' field='quantity3' />
+                    <input type='text' name='quantity3' value='0' class='qty2' />
+                    <input type='button' value='+' class='qtyplus2' field='quantity3' />
+                  </form>
+                  </div>
+                <div class="pro-price marRight20">
+                    <div class="title">Unit Price</div>
+                    <p>$250</p>
+                  </div>
+                <div class="pro-subtotal">
+                    <div class="title">Subtotal</div>
+                    <p>$250</p>
+                  </div>
+                <div class="pro-del last2">
+                <!--<div class="line_v"></div>-->
+                <img src="images/icon-cross.png" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+            </div>
+        <div class="clear"></div>
+        <div class="modal-footer marTop40">
+        	<div class="left contFont marLeft40">continue browsing</div>
+			<div class="right">
+            	<div class="price-box-main2 marBottom40 marRight40">
+                    <div class="left">Total $1250</div>
+                    <div class="view-product2" onclick="location.href='checkout.html';">Proceed to checkout</div>
+          		</div>
+            </div>
+			<div class="clear"></div>
+         </div>
+      </div>
+        </div>
+  </div>
+
+<!-- Modal3 -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog3">
+       <div class="modal-content3 boxShadowTop">
+       <button type="button" class="close-nw" data-dismiss="modal" aria-hidden="true"><img src="images/bt_cross-black.png" alt="" /></button>
+        <div class="modal-header2">
+              <div class="boxCart2">
+            <div class="txt">Add a Monogram</div>
+          </div>
+          </div>
+          <div class="clear"></div>
+          <div class="line_h4"></div>
+          <div class="clear"></div>
+        <!-- contents -->
+        <div class="modal-body3 wrapper ps-container" id="description">
+          <div class="product-list5">
+            <ul>
+                <li>
+                <div class="pro-image3"><img src="images/mono_img01.png" alt="" /></div>
+                <div class="pro-detail3">
+                    <p class="name">Kindly type in your initials in the box</p>
+                    <p>A line here can explain where the initials will be engraved/embossed/printed</p>
+                    <p class="marBottom0"><input type="text" id="typeTxt" value="" placeholder="type in your initials"></p>
+                    <div class="price-box-main3 marTop20">
+                          <div class="left bgGeyRound" onclick="location.href='#';">Added</div>
+                          <div class="view-product5">$ 20 (extra)</div>
+                        </div>
+                  </div>
+              </li>
+              
+            </ul>
+          </div>
+            </div>
+        <div class="clear"></div>
+        <div class="modal-footer marTop40">
+        	<div class="left contFont marLeft40">continue browsing</div>
+			<div class="right">
+            	<div class="price-box-main2 marBottom40 marRight40">
+                    <div class="left">Total $1250</div>
+                    <div class="view-product2" onclick="location.href='checkout.html';">Proceed to checkout</div>
+          		</div>
+            </div>
+			<div class="clear"></div>
+         </div>
+      </div>
+        </div>
+  </div>
+
 <div class="clear"></div>
 <!--<div id="demo3" class="collapse fade out" role="dialog">test...</div>-->
 <nav class="site-navigation navbar navbar-inverse navbar-fixed-bottom nav-visible">
