@@ -2473,9 +2473,35 @@ a.account {
 	cursor: pointer;
 	overflow: hidden;
 }
+.right .navbar-nav:first-child{
+	margin-right:24px;
+	}
+.right .sky-mega-menu .grid-container3 {
+	left:43px;
+}
+.right .navbar-nav > li > a {
+	float: left;
+    height: 37px;
+    line-height: 37px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+	}
+.right .navbar-nav > li > a:hover,
+.right .navbar-nav > li > a:focus {
+  	color: #ffffff;
+  	background: url(../images/icon-sort.png) no-repeat #F36E34;
+	background-position: 144px 15px;
+}
+.right .sky-mega-menu li {
+	padding: 13px 0px;
+}
+.right .sky-mega-menu li ul li {
+	padding: 0 0 6px;
+}
 a.account img {
 	height: auto;
-	vertical-align: middle;
+	vertical-align: middle !important;
 	width: 25%;
 	margin-right: 20px;
 }
