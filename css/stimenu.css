@@ -1,0 +1,78 @@
+/*Sliding Text and Icon Menu Style*/
+.sti-menu{
+	/*width:1010px;
+	position:relative;
+	margin:60px auto 0 auto;*/
+}
+.sti-menu .slide{
+	float:left;
+	/*width:200px;
+	height:300px;
+	margin:1px;*/
+	background:none !important;
+}
+.sti-menu .slide div.product-box{
+	display:block;
+	overflow:hidden;
+	/*height:100%;
+	width:100%;*/
+	position:relative;
+}
+.sti-menu .slide div h2{
+	position:absolute;
+	top:12px;
+	left:0px;
+}
+.sti-menu .slide div a{
+	position:absolute;
+	top:118px;
+	left:0px;
+}
+.sti-menu .slide div p{
+	position:absolute;
+	top:38px;
+	left:0px;
+	width:182px;
+}
+.sti-icon{
+	/*width:100px;
+	height:100px;*/
+	position:absolute;
+	/*background-position:top left;
+	background-repeat:no-repeat;
+	background-color:transparent;*/
+	left:0px;
+	top:0px;
+	width:146px;
+	height:auto;
+	float:left;
+}
+.sti-icon-care{
+	background-image:url(../images/care.png);
+}
+.sti-icon-alternative{
+	background-image:url(../images/alternative.png);
+}
+.sti-icon-family{
+	background-image:url(../images/family.png);
+}
+.sti-icon-info{
+	background-image:url(../images/info.png);
+}
+.sti-icon-technology{
+	background-image:url(../images/technology.png);
+}
+
+/*Custom CSS*/
+
+.sti-menu li{
+	/*list-style:none;
+	float:left;
+	width:364px;
+	margin-right:60px;*/
+	}
+.sti-menu .info-product {
+    position: relative;
+	left: 166px;
+	padding:0px;
+}
