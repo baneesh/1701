@@ -680,7 +680,8 @@
 	}
 .aboutTabs .sky-tabs label{
 	position:fixed !important;
-	bottom:65px ;
+	/*bottom:65px ;*/
+	bottom:-150px ;
 	}
 .aboutTabs label[for=sky-tab1]{
 	right:420px;

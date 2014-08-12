@@ -2098,6 +2098,10 @@ a.active.trigger {
 	list-style: none;
 	float: left;
 	width: 25%;
+	overflow:hidden;
+}
+.about-bottom .width50p {
+	/*overflow:hidden;*/
 }
 .width50p {
 	width: 50%;
@@ -7577,3 +7581,133 @@ ul.bg .initials p{
 	width:45px;
 	text-align:center;
 	}
+	
+	
+/*Animation About*/
+
+@-webkit-keyframes moveFromTop {
+  from {
+    -webkit-transform: translateY(-100%)
+  }
+}
+@-moz-keyframes moveFromTop {
+  from {
+    -moz-transform: translateY(-100%)
+  }
+}
+@keyframes moveFromTop {
+  from {
+    transform: translateY(-100%)
+  }
+}
+#image1 {
+-webkit-animation: moveFromTop 1s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 1.5s;
+
+-moz-animation: moveFromTop 1s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: linear;
+-moz-animation-delay: 1.5s;
+
+-ms-animation: moveFromTop 1s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: linear;
+-ms-animation-delay: 1.5s;
+}
+#image2 {
+-webkit-animation: moveFromTop 1.2s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 1.5s;
+
+-moz-animation: moveFromTop 1.2s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: linear;
+-moz-animation-delay: 1.5s;
+
+-ms-animation: moveFromTop 1.2s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: linear;
+-ms-animation-delay: 1.5s;
+}
+#image3 {
+-webkit-animation: moveFromTop 1.4s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 1.5s;
+
+-moz-animation: moveFromTop 1.4s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: linear;
+-moz-animation-delay: 1.5s;
+
+-ms-animation: moveFromTop 1.4s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: linear;
+-ms-animation-delay: 1.5s;
+}
+#image4 {
+-webkit-animation: moveFromTop 1.6s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 1.5s;
+
+-moz-animation: moveFromTop 1.6s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: linear;
+-moz-animation-delay: 1.5s;
+
+-ms-animation: moveFromTop 1.6s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: linear;
+-ms-animation-delay: 1.5s;
+}
+@-webkit-keyframes moveFromBottom {
+  from {
+    -webkit-transform: translateY(100%)
+  }
+}
+@-moz-keyframes moveFromBottom {
+  from {
+    -moz-transform: translateY(100%)
+  }
+}
+@keyframes moveFromBottom {
+  from {
+    transform: translateY(100%)
+  }
+}
+#image5 {
+-webkit-animation: moveFromBottom 1s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 1.5s;
+
+-moz-animation: moveFromBottom 1s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: linear;
+-moz-animation-delay: 1.5s;
+  
+-ms-animation: moveFromBottom 1s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: linear;
+-ms-animation-delay: 1.5s;
+}
+#image6 {
+-webkit-animation: moveFromBottom 1s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 1.5s;
+
+-moz-animation: moveFromBottom 1s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: linear;
+-moz-animation-delay: 1.5s;
+
+-ms-animation: moveFromBottom 1s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: linear;
+-ms-animation-delay: 1.5s;
+}
