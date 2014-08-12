@@ -857,25 +857,34 @@ $( "#showRightPush" ).click(function() {
 	});
 </script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="js/jquery.iconmenu.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('#sti-menu').iconmenu({
-					animMouseenter	: {
-						'fText' : {speed : 150, easing : 'easeOutCubic', delay : 50, dir : -1},
-						'mText' : {speed : 150, easing : 'easeOutCubic', delay : 200, dir : -1},
-						'sText' : {speed : 150, easing : 'easeOutCubic', delay : 300, dir : -1},
-						'icon'  : {speed : 0, easing : 'swing', delay : 0, dir : -1}
-					},
-					animMouseleave	: {
-						'fText' : {speed : 100, easing : 'linear', delay : 0, dir : -1},
-						'mText' : {speed : 200, easing : 'linear', delay : 140, dir : -1},
-						'sText' : {speed : 200, easing : 'linear', delay : 0, dir : -1},
-						'icon'  : {speed : 10, easing : 'easeInQuart', delay : 0, dir : -1}
-					}
-				});
-			});
-		</script>
+<script type="text/javascript" src="js/jquery.iconmenu.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#sti-menu').iconmenu({
+			animMouseenter	: {
+				'fText' : {speed : 150, easing : 'easeOutCubic', delay : 50, dir : -1},
+				'mText' : {speed : 150, easing : 'easeOutCubic', delay : 200, dir : -1},
+				'sText' : {speed : 150, easing : 'easeOutCubic', delay : 300, dir : -1},
+				'icon'  : {speed : 0, easing : 'swing', delay : 0, dir : -1}
+			},
+			animMouseleave	: {
+				'fText' : {speed : 100, easing : 'linear', delay : 0, dir : -1},
+				'mText' : {speed : 200, easing : 'linear', delay : 140, dir : -1},
+				'sText' : {speed : 200, easing : 'linear', delay : 0, dir : -1},
+				'icon'  : {speed : 10, easing : 'easeInQuart', delay : 0, dir : -1}
+			}
+		});
+	});
+</script>
+<!--<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.floor-1').parallax("50%", 0.1);
+	$('.floor-2').parallax("50%", 0.1);
+	$('.floor-3').parallax("50%", 0.3);
+})
+</script>-->
+
 <!--<script>
 	$(document).ready(function($){
 	for (var i = 1; i < 10; ++i) {
