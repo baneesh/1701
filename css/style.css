@@ -7733,71 +7733,7 @@ ul.bg .initials p{
     transform: translateY(-100%)
   }
 }
-.anim#men1 {
--webkit-animation: moveToTop 0.125s;
--webkit-animation-fill-mode: forwards;
--webkit-animation-timing-function: easeOutQuint;
--webkit-animation-delay: 0s;
-
--moz-animation: moveToTop 0.125s;
--moz-animation-fill-mode: forwards;
--moz-animation-timing-function: easeOutQuint;
--moz-animation-delay: 0s;
-
--ms-animation: moveToTop 0.125s;
--ms-animation-fill-mode: forwards;
--ms-animation-timing-function: easeOutQuint;
--ms-animation-delay: 0s;
-}
-.anim#men2 {
--webkit-animation: moveToTop 0.1875s;
--webkit-animation-fill-mode: forwards;
--webkit-animation-timing-function: easeOutQuint;
--webkit-animation-delay: 0s;
-
--moz-animation: moveToTop 0.1875s;
--moz-animation-fill-mode: forwards;
--moz-animation-timing-function: easeOutQuint;
--moz-animation-delay: 0s;
-
--ms-animation: moveToTop 0.1875s;
--ms-animation-fill-mode: forwards;
--ms-animation-timing-function: easeOutQuint;
--ms-animation-delay: 0s;
-}
-.anim#men3 {
--webkit-animation: moveToTop 0.25s;
--webkit-animation-fill-mode: forwards;
--webkit-animation-timing-function: easeOutQuint;
--webkit-animation-delay: 0s;
-
--moz-animation: moveToTop 0.25s;
--moz-animation-fill-mode: forwards;
--moz-animation-timing-function: easeOutQuint;
--moz-animation-delay: 0s;
-
--ms-animation: moveToTop 0.25s;
--ms-animation-fill-mode: forwards;
--ms-animation-timing-function: easeOutQuint;
--ms-animation-delay: 0s;
-}
-.anim#men4 {
--webkit-animation: moveToTop 0.3125s;
--webkit-animation-fill-mode: forwards;
--webkit-animation-timing-function: easeOutQuint;
--webkit-animation-delay: 0s;
-
--moz-animation: moveToTop 0.3125s;
--moz-animation-fill-mode: forwards;
--moz-animation-timing-function: easeOutQuint;
--moz-animation-delay: 0s;
-
--ms-animation: moveToTop 0.3125s;
--ms-animation-fill-mode: forwards;
--ms-animation-timing-function: easeOutQuint;
--ms-animation-delay: 0s;
-}
-.anim#men5 {
+.anim#men1, .anim#men1 .gallery_r4 {
 -webkit-animation: moveToTop 0.375s;
 -webkit-animation-fill-mode: forwards;
 -webkit-animation-timing-function: easeOutQuint;
@@ -7813,7 +7749,7 @@ ul.bg .initials p{
 -ms-animation-timing-function: easeOutQuint;
 -ms-animation-delay: 0s;
 }
-.anim#men6 {
+.anim#men2, .anim#men2 .gallery_r4 {
 -webkit-animation: moveToTop 0.4375s;
 -webkit-animation-fill-mode: forwards;
 -webkit-animation-timing-function: easeOutQuint;
@@ -7829,7 +7765,7 @@ ul.bg .initials p{
 -ms-animation-timing-function: easeOutQuint;
 -ms-animation-delay: 0s;
 }
-.anim#men7 {
+.anim#men3, .anim#men3 .gallery_r4 {
 -webkit-animation: moveToTop 0.5s;
 -webkit-animation-fill-mode: forwards;
 -webkit-animation-timing-function: easeOutQuint;
@@ -7845,23 +7781,7 @@ ul.bg .initials p{
 -ms-animation-timing-function: easeOutQuint;
 -ms-animation-delay: 0s;
 }
-.anim.bx-prev{
--webkit-animation: moveToTop 0.0625s;
--webkit-animation-fill-mode: forwards;
--webkit-animation-timing-function: easeOutQuint;
--webkit-animation-delay: 0s;
-
--moz-animation: moveToTop 0.0625s;
--moz-animation-fill-mode: forwards;
--moz-animation-timing-function: easeOutQuint;
--moz-animation-delay: 0s;
-
--ms-animation: moveToTop 0.0625s;
--ms-animation-fill-mode: forwards;
--ms-animation-timing-function: easeOutQuint;
--ms-animation-delay: 0s;
-}
-.anim.bx-next{
+.anim#men4, .anim#men4 .gallery_r4 {
 -webkit-animation: moveToTop 0.5625s;
 -webkit-animation-fill-mode: forwards;
 -webkit-animation-timing-function: easeOutQuint;
@@ -7876,4 +7796,98 @@ ul.bg .initials p{
 -ms-animation-fill-mode: forwards;
 -ms-animation-timing-function: easeOutQuint;
 -ms-animation-delay: 0s;
+}
+.anim#men5, .anim#men5 .gallery_r4 {
+-webkit-animation: moveToTop 0.625s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.625s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.625s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim#men6, .anim#men6 .gallery_r4{
+-webkit-animation: moveToTop 0.6875s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.6875s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.6875s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim#men7, .anim#men7 .gallery_r4{
+-webkit-animation: moveToTop 0.75s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.75s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.75s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim.bx-prev{
+-webkit-animation: moveToTop 0.3125s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.3125s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.3125s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim.bx-next{
+-webkit-animation: moveToTop 0.8125s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.8125s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.8125s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+
+
+
+.anim#men1 .gallery_r4, .anim#men2 .gallery_r4, .anim#men3 .gallery_r4, .anim#men4 .gallery_r4, .anim#men5 .gallery_r4, .anim#men6 .gallery_r4, .anim#men7 .gallery_r4 {
+-webkit-animation-delay: 0.2s;
+
+-moz-animation-delay: 0.2s;
+
+-ms-animation-delay: 0.2s;
+}
+.anim#men1 .gallery_r4, .anim#men2 .gallery_r4, .anim#men3 .gallery_r4, .anim#men4 .gallery_r4, .anim#men5 .gallery_r4, .anim#men6 .gallery_r4, .anim#men7 .gallery_r4 {
+    position: relative;
+    top: 20px;
 }
