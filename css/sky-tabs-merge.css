@@ -679,9 +679,9 @@
 .about-bottom .top{
 	}
 .aboutTabs .sky-tabs label{
-	position:fixed !important;
 	/*bottom:65px ;*/
-	bottom:-150px ;
+	bottom:-40%;
+	position:absolute;
 	}
 .aboutTabs label[for=sky-tab1]{
 	right:420px;
