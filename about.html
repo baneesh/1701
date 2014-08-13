@@ -24,6 +24,7 @@
 	<link href="css/toggle-panel.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
 	<link href="css/main_aj.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/effect1.css" />
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 <script src="js/jquery-1.9.1.js"></script>
     <script src="js/modernizr.custom.js"></script>
@@ -61,7 +62,16 @@
 	</script>
     </head>
     <body class="cbp-spmenu-push">
-<header class="clearfix white-link">
+    <div id="ip-container" class="ip-container"> 
+      <!-- initial header -->
+      <div class="ip-header">
+        <div class="ip-loader"> <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+          <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+          <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+          </svg> </div>
+      </div>
+      </div>
+	<header class="clearfix white-link">
       <div class="header-elements"> <a href="home.html" class="logo"> <img src="images/logo.png" alt="" /> </a> </div>
     </header>
 <div class="clear"></div>
@@ -703,5 +713,8 @@ $('.last').live('click',function () {
 <script src="js/jquery.bxslider.js"></script>
 <script src="js/jquery.toggle-panel.js"></script>
 <script src="js/custom-toggle-panel.js"></script> 
+<script src="js/classie.js"></script> 
+<script src="js/pathLoader.js"></script> 
+<script src="js/mainLoader.js"></script>
 </body>
 </html>

@@ -300,6 +300,13 @@ a.account img {
 /* Tabled Portrait */
 @media screen and (max-width: 768px) {
 	
+	
+#ip-container, .ip-container{
+	display:none;
+	}
+.about-top li{
+	width:100%;
+	}
 .mainSectionMobile{
 	display:block;
 	}
@@ -680,7 +687,7 @@ ul.bg p {
 	-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
 }
 .mainSectionMobile .aboutTabs .sky-tabs .txt{
-	height:auto !important;
+	height:186px !important;
 	}
 .mainSectionMobile .aboutTabs .sky-tabs >label {
 	position: relative;
