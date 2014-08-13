@@ -727,7 +727,16 @@
   text-align: center;
   -webkit-font-smoothing: antialiased;
 }
+/* Laptop */
 
+@media screen and (max-width: 1400px) {
+	
+
+.aboutTabs .sky-tabs label {
+	bottom: -100px;
+}
+	
+}
 
 /**/
 /* pad */
