@@ -531,43 +531,43 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
   <article class="toggle-panel1 boxed bottom"><span>&nbsp;</span>
     <div class="bt-allProducts"><a href="product-all.html">view all products</a></div>
     <div class="slider1">
-      <div class="slide">
+      <div class="slide" id="men1">
         <div class="gallery_r1">
           <div class="gallery_r3"><a href="product01.html"><img src="images/pro-men01.png" /></a></div>
           <div class="gallery_r4"><a href="product01.html">Briefcase</a></div>
         </div>
       </div>
-      <div class="slide">
+      <div class="slide" id="men2">
         <div class="gallery_r1">
           <div class="gallery_r3"><img src="images/pro-men02.png" /></div>
           <div class="gallery_r4">Gym Bag</div>
         </div>
       </div>
-      <div class="slide">
+      <div class="slide" id="men3">
         <div class="gallery_r1">
           <div class="gallery_r3"><img src="images/pro-men03.png" /></div>
           <div class="gallery_r4">Laptop Case</div>
         </div>
       </div>
-      <div class="slide">
+      <div class="slide" id="men4">
         <div class="gallery_r1">
           <div class="gallery_r3"><a href="product01.html"><img src="images/pro-men04.png" /></a></div>
           <div class="gallery_r4"><a href="product01.html">Zip Wallet</a></div>
         </div>
       </div>
-      <div class="slide">
+      <div class="slide" id="men5">
         <div class="gallery_r1">
           <div class="gallery_r3"><img src="images/pro-men05.png" /></div>
           <div class="gallery_r4">Weekender</div>
         </div>
       </div>
-      <div class="slide">
+      <div class="slide" id="men6">
         <div class="gallery_r1">
           <div class="gallery_r3"><img src="images/pro-men06.png" /></div>
           <div class="gallery_r4">Poker Set</div>
         </div>
       </div>
-      <div class="slide">
+      <div class="slide" id="men7">
         <div class="gallery_r1">
           <div class="gallery_r3"><img src="images/pro-men07.png" /></div>
           <div class="gallery_r4">SLR Cases</div>
@@ -874,6 +874,13 @@ $( "#showRightPush" ).click(function() {
 				'icon'  : {speed : 10, easing : 'easeInQuart', delay : 0, dir : -1}
 			}
 		});
+	});
+</script>
+<script>
+	$(".toggle1").click(function(){
+		$( ".toggle-panel1 .slide" ).toggleClass( "anim" );	
+		$( ".bx-prev" ).toggleClass( "anim" );
+		$( ".bx-next" ).toggleClass( "anim" );				
 	});
 </script>
 <!--<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>

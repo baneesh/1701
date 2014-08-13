@@ -7711,3 +7711,169 @@ ul.bg .initials p{
 -ms-animation-timing-function: linear;
 -ms-animation-delay: 0s;
 }
+
+/*Animation Men's bar*/
+
+#men1, #men2, #men3, #men4, #men5, #men6, #men7, .anim.bx-next, .anim.bx-prev {
+	top:176px !important;
+	}
+
+@-webkit-keyframes moveToTop {
+  to {
+    -webkit-transform: translateY(-100%)
+  }
+}
+@-moz-keyframes moveToTop {
+  to {
+    -moz-transform: translateY(-100%)
+  }
+}
+@keyframes moveToTop {
+  to {
+    transform: translateY(-100%)
+  }
+}
+.anim#men1 {
+-webkit-animation: moveToTop 0.125s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.125s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.125s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim#men2 {
+-webkit-animation: moveToTop 0.1875s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.1875s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.1875s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim#men3 {
+-webkit-animation: moveToTop 0.25s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.25s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.25s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim#men4 {
+-webkit-animation: moveToTop 0.3125s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.3125s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.3125s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim#men5 {
+-webkit-animation: moveToTop 0.375s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.375s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.375s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim#men6 {
+-webkit-animation: moveToTop 0.4375s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.4375s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.4375s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim#men7 {
+-webkit-animation: moveToTop 0.5s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.5s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.5s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim.bx-prev{
+-webkit-animation: moveToTop 0.0625s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.0625s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.0625s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
+.anim.bx-next{
+-webkit-animation: moveToTop 0.5625s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-timing-function: easeOutQuint;
+-webkit-animation-delay: 0s;
+
+-moz-animation: moveToTop 0.5625s;
+-moz-animation-fill-mode: forwards;
+-moz-animation-timing-function: easeOutQuint;
+-moz-animation-delay: 0s;
+
+-ms-animation: moveToTop 0.5625s;
+-ms-animation-fill-mode: forwards;
+-ms-animation-timing-function: easeOutQuint;
+-ms-animation-delay: 0s;
+}
