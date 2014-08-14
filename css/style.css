@@ -533,8 +533,15 @@ span.iconQ {
 #myModal:focus, .close-nw:focus {
 	outline-color: transparent !important;
 }
-.arrow_right {
+#showRightPush .arrow_right {
 	background-image : url(../images/arrow_right.png);
+	background-repeat : no-repeat;
+	width: 54px;
+	height: 44px;
+	display: block;
+}
+#showRightPush.active .arrow_right {
+	background-image : url(../images/arrow_left.png);
 	background-repeat : no-repeat;
 	width: 54px;
 	height: 44px;
