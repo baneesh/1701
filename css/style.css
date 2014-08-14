@@ -534,14 +534,16 @@ span.iconQ {
 	outline-color: transparent !important;
 }
 #showRightPush .arrow_right {
-	background-image : url(../images/arrow_right.png);
+	background-image : url(../images/arrow_right_sprite.png);
+	background-position:top left;
 	background-repeat : no-repeat;
 	width: 54px;
 	height: 44px;
 	display: block;
 }
 #showRightPush.active .arrow_right {
-	background-image : url(../images/arrow_left.png);
+	background-image : url(../images/arrow_right_sprite.png);
+	background-position:bottom left;
 	background-repeat : no-repeat;
 	width: 54px;
 	height: 44px;
