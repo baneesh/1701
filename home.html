@@ -531,43 +531,43 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
   <article class="toggle-panel1 boxed bottom"><span>&nbsp;</span>
     <div class="bt-allProducts"><a href="product-all.html">view all products</a></div>
     <div class="slider1">
-      <div class="slide" id="men1">
+      <div class="slide men1">
         <div class="gallery_r1">
           <div class="gallery_r3"><a href="product01.html"><img src="images/pro-men01.png" /></a></div>
           <div class="gallery_r4"><a href="product01.html">Briefcase</a></div>
         </div>
       </div>
-      <div class="slide" id="men2">
+      <div class="slide men2">
         <div class="gallery_r1">
           <div class="gallery_r3"><img src="images/pro-men02.png" /></div>
           <div class="gallery_r4">Gym Bag</div>
         </div>
       </div>
-      <div class="slide" id="men3">
+      <div class="slide men3">
         <div class="gallery_r1">
           <div class="gallery_r3"><img src="images/pro-men03.png" /></div>
           <div class="gallery_r4">Laptop Case</div>
         </div>
       </div>
-      <div class="slide" id="men4">
+      <div class="slide men4">
         <div class="gallery_r1">
           <div class="gallery_r3"><a href="product01.html"><img src="images/pro-men04.png" /></a></div>
           <div class="gallery_r4"><a href="product01.html">Zip Wallet</a></div>
         </div>
       </div>
-      <div class="slide" id="men5">
+      <div class="slide men5">
         <div class="gallery_r1">
           <div class="gallery_r3"><img src="images/pro-men05.png" /></div>
           <div class="gallery_r4">Weekender</div>
         </div>
       </div>
-      <div class="slide" id="men6">
+      <div class="slide men6">
         <div class="gallery_r1">
           <div class="gallery_r3"><img src="images/pro-men06.png" /></div>
           <div class="gallery_r4">Poker Set</div>
         </div>
       </div>
-      <div class="slide" id="men7">
+      <div class="slide men7">
         <div class="gallery_r1">
           <div class="gallery_r3"><img src="images/pro-men07.png" /></div>
           <div class="gallery_r4">SLR Cases</div>
@@ -893,6 +893,16 @@ $( "#showRightPush" ).click(function() {
 		$( ".toggle-panel2 .slide .link-explore" ).toggleClass( "anim2" );
 		$( ".bx-prev" ).toggleClass( "anim2" );
 		$( ".bx-next" ).toggleClass( "anim2" );
+		$( ".toggle-panel1 .slide" ).removeClass( "anim" );	
+		$( ".bx-prev" ).removeClass( "anim" );
+		$( ".bx-next" ).removeClass( "anim" );
+	});
+	$(".toggle3").click(function(){
+		$( ".toggle-panel2 .slide h2" ).removeClass( "anim2" );
+		$( ".toggle-panel2 .slide p" ).removeClass( "anim2" );	
+		$( ".toggle-panel2 .slide .link-explore" ).removeClass( "anim2" );
+		$( ".bx-prev" ).removeClass( "anim2" );
+		$( ".bx-next" ).removeClass( "anim2" );
 		$( ".toggle-panel1 .slide" ).removeClass( "anim" );	
 		$( ".bx-prev" ).removeClass( "anim" );
 		$( ".bx-next" ).removeClass( "anim" );
