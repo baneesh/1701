@@ -6168,7 +6168,7 @@ a.account2:hover {
 	outline-color: transparent !important;
 }
 #myModal3 .modal-dialog {
-    background: #fff url(../images/bg-reset.png);;
+    background: #fff url(../images/bg-reset.png);
     border-radius: 11px;
     height: 360px;
     margin-top: 100px;
@@ -6181,8 +6181,101 @@ a.account2:hover {
 .hideModal{
 	display:none !important;
 }
-	
-	
+
+#myModal4 {
+	margin: 0px auto;
+}
+#myModal4 h3 {
+	font-family: 'latolight';
+	font-size: 36px;
+	margin-bottom: 10px;
+	margin-top: 34px;
+	text-align: center;
+	text-transform: none;
+}
+#myModal4:focus, .close-nw:focus {
+	outline-color: transparent !important;
+}
+#myModal4 .modal-dialog {
+   /* background: #fff url(../images/bg-reset.png);*/
+    border-radius: 11px;
+    height: 380px;
+    margin-top: 100px;
+    width: 605px;
+}
+#myModal4 .modal-dialog .container3 {
+    margin: 0 auto;
+    width: 69%;
+}
+#sign-in-form4 input {
+	padding-left: 80px;
+	margin-bottom: 10px;
+	color: #CCCCCC;
+	font-size: 14px;
+	font-family: 'latolight';
+	background : #FFFFFF;
+	border-style : Solid;
+	border-color : #CCCCCC;
+	border-width : 1px;
+	width : 414px;
+	height : 53px;
+	border-radius : 6px;
+	-moz-border-radius : 6px;
+	-webkit-border-radius : 6px;
+}
+#sign-in-form4 input:focus {
+	border-color: #F26E32;
+}
+#sign-in-form4 input:active {
+	border-color: #4D4D4D;
+}
+#sign-in-form4 input {
+	margin-bottom: 10px !important;
+}
+#sign-in-form4 .btn {
+	color: #fff;
+	/*padding: 1em 2.8em;*/
+	text-align: center;
+	margin-right: 0;
+	letter-spacing: 0;
+	font-size: 18px;
+	font-family: 'latobold';
+	/*margin-bottom: 8px !important;
+	margin-right: 28px;*/
+	border: none;
+	background : #F26E32;
+	/*width : 188px;*/
+	height : 54px;
+	border-radius : 6px;
+	-moz-border-radius : 6px;
+	-webkit-border-radius : 6px;
+}
+#sign-in-form4 p {
+    color: #666666;
+    font-family: 'latolight';
+    font-size: 14px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#resetPassword4 .input {
+	position: relative;
+}
+#resetPassword4 a{
+	font-family: 'latobold';
+	font-size : 14px;
+	color : #F26E32;
+	margin-left:28px;
+	}
+#resetPassword4 a:hover{
+	text-decoration:none;
+	}
+#resetPassword4 .action{
+	font-family: 'latolight';
+	font-size : 12px;
+	color : #666666;
+	margin-top: 10px;
+	/*padding-left:10px;*/
+	}
 /* Add Monogram Page Css */
 
 .yellow a{
