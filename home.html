@@ -13,7 +13,7 @@
 <!-- Custom css -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/responsive.css">
-<link rel="stylesheet" type="text/css" href="css/stimenu.css" />
+<!--<link rel="stylesheet" type="text/css" href="css/stimenu.css" />-->
 <!-- icon fonts -->
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -582,14 +582,14 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
     </div>
   </article>
   <article class="toggle-panel2 boxed bottom"><span>&nbsp;</span>
-  	<!--<div class="slider2">
+  	<div class="slider2">
       <div class="slide">
           <div class="product-box">
         	<div class="left"><img src="images/g2.png" alt="" /></div>
             <div class="info-product left">
-            	<h2>The Orient Express</h2>
-            	<p>It is 1897 and Mme. DuVerre, stares out of her window at a tall, gilded lamppost that bears a clock informing her that it is 3:25pm in the afternoon.</p>
-                <div class="link-explore">
+            	<h2 class="col1">The Orient Express</h2>
+            	<p class="col2">It is 1897 and Mme. DuVerre, stares out of her window at a tall, gilded lamppost that bears a clock informing her that it is 3:25pm in the afternoon.</p>
+                <div class="link-explore col3">
                 	<a href="collection01.html">Explore More</a>
                 </div>
             </div>
@@ -599,16 +599,16 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
           <div class="product-box">
         	<div class="left"><img src="images/g2.png" alt="" /></div>
             <div class="info-product left">
-            	<h2>La Grande Dame</h2>
-            	<p>It is 1897 and Mme. DuVerre, stares out of her window at a tall, gilded lamppost that bears a clock informing her that it is 3:25pm in the afternoon.</p>
-                <div class="link-explore">
+            	<h2 class="col1">La Grande Dame</h2>
+            	<p class="col2">It is 1897 and Mme. DuVerre, stares out of her window at a tall, gilded lamppost that bears a clock informing her that it is 3:25pm in the afternoon.</p>
+                <div class="link-explore col3">
                 	<a href="collection01.html">Explore More</a>
                 </div>
             </div>
         </div>
         </div>
-    </div>-->
-    <ul id="sti-menu" class="sti-menu slider2">
+    </div>
+    <!--<ul id="sti-menu" class="sti-menu slider2">
     		<li>
               <div class="slide">
         		<div class="product-box">
@@ -633,7 +633,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
               </div>
       		</div>
            </li>
-           </ul>
+           </ul>-->
   </article>
   <article class="toggle-panel3 boxed bottom"><span>&nbsp;</span>
 	<div class="sliderW" style="height:176px;"></div>
@@ -856,7 +856,7 @@ $( "#showRightPush" ).click(function() {
 		});
 	});
 </script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!--<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.iconmenu.js"></script>
 <script type="text/javascript">
 	$(function() {
@@ -875,12 +875,27 @@ $( "#showRightPush" ).click(function() {
 			}
 		});
 	});
-</script>
+</script>-->
 <script>
 	$(".toggle1").click(function(){
 		$( ".toggle-panel1 .slide" ).toggleClass( "anim" );	
 		$( ".bx-prev" ).toggleClass( "anim" );
-		$( ".bx-next" ).toggleClass( "anim" );				
+		$( ".bx-next" ).toggleClass( "anim" );
+		$( ".toggle-panel2 .slide h2" ).removeClass( "anim2" );
+		$( ".toggle-panel2 .slide p" ).removeClass( "anim2" );	
+		$( ".toggle-panel2 .slide .link-explore" ).removeClass( "anim2" );
+		$( ".bx-prev" ).removeClass( "anim2" );
+		$( ".bx-next" ).removeClass( "anim2" );
+	});
+	$(".toggle2").click(function(){
+		$( ".toggle-panel2 .slide h2" ).toggleClass( "anim2" );
+		$( ".toggle-panel2 .slide p" ).toggleClass( "anim2" );	
+		$( ".toggle-panel2 .slide .link-explore" ).toggleClass( "anim2" );
+		$( ".bx-prev" ).toggleClass( "anim2" );
+		$( ".bx-next" ).toggleClass( "anim2" );
+		$( ".toggle-panel1 .slide" ).removeClass( "anim" );	
+		$( ".bx-prev" ).removeClass( "anim" );
+		$( ".bx-next" ).removeClass( "anim" );
 	});
 </script>
 <!--<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
