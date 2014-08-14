@@ -6199,9 +6199,10 @@ a.account2:hover {
 #myModal4 .modal-dialog {
    /* background: #fff url(../images/bg-reset.png);*/
     border-radius: 11px;
-    height: 380px;
+    height: auto;
     margin-top: 100px;
-    width: 605px;
+    width: 600px;
+	padding-bottom:30px;
 }
 #myModal4 .modal-dialog .container3 {
     margin: 0 auto;
