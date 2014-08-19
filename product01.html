@@ -22,10 +22,10 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.vegas.min.css">
     <link rel="stylesheet" href="css/sky-mega-menu.css">
     <link href="css/toggle-panel.css" rel="stylesheet" />
-<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
-<link href="css/main_aj.css" rel="stylesheet" type="text/css" />
-<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-<script src="js/jquery-1.9.1.js"></script>
+	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
+	<link href="css/main_aj.css" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<script src="js/jquery-1.9.1.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
     <script src="js/perfect-scrollbar.js"></script>
@@ -61,7 +61,7 @@
 	</script>
     </head>
     <body class="cbp-spmenu-push" id="demo">
-<header class="clearfix white-link">
+	<header class="clearfix white-link">
       <div class="header-elements"> <a href="home.html" class="logo"> <img src="images/logo.png" alt="" /> </a> </div>
     </header>
 <div class="clear"></div>
@@ -724,7 +724,7 @@ $( function() {
     // Define a slideshow with overlay and pause it
 	$.vegas( backgroundList[0] )
 	( 'overlay', {
-		opacity: 0.5
+		opacity: 1
 	})
 	( 'pause' );
 
@@ -740,7 +740,7 @@ $( function() {
 				
                 $( '#pause' )
 					.show()
-					.css( 'opacity', 0.5 )
+					.css( 'opacity', 1 )
 					.html( 'PAUSE' );
 					
 				$.vegas( 'slideshow', { 
@@ -754,7 +754,7 @@ $( function() {
 				
                 $( '#pause' )
 					.show()
-					.css( 'opacity', 0.5 )
+					.css( 'opacity', 1 )
 					.html( 'PLAY' );
 					
                 $.vegas( 'pause' );  

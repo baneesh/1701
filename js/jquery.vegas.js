@@ -250,7 +250,6 @@
 
                 $('body').trigger('vegasprevious', [$current.get(0), step - 1, from - 1]);
             }
-
             return $.vegas;
         },
 
@@ -275,7 +274,7 @@
             clearInterval(timer);
 
             $('body').trigger('vegasstop', [$current.get(0), from - 1]);
-
+			
             return $.vegas;
         },
 
@@ -388,6 +387,7 @@
         }
 
         $img.css(properties);
+		$("#demo img.vegas-background").css({ top: $(this).height() });
     }
 
     // Display the loading indicator
