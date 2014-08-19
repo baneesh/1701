@@ -143,7 +143,7 @@ p {
 	line-height: inherit;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-	background: #fff;
+	/*background: #fff;*/
 	color: #F26E32;
 }
 .navbar-inverse .navbar-nav > li > a.active {
@@ -2275,10 +2275,12 @@ a.active.trigger {
 	height: 63px;
 	border: 0px solid #cccccc;
 	opacity : 0.9;
- filter: alpha(opacity=90) progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+	filter: alpha(opacity=90) progid:DXImageTransform.Microsoft.Alpha(opacity=90);
 }
 .navbar-inverse {
 	background: #fff;
+	opacity : 0.9;
+	filter: alpha(opacity=90) progid:DXImageTransform.Microsoft.Alpha(opacity=90);
 }
 .navbar-nav a[role="button"] {
 	font-family: 'latolight';
