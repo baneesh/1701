@@ -8151,3 +8151,46 @@ ul.bg .initials p{
 -ms-animation-timing-function: easeOutQuint;
 -ms-animation-delay: 0s;
 }
+
+/*About new page*/
+
+#image1{
+	overflow:hidden;
+	height: 392px;
+    width: 25%;
+	display:block;
+	background:url(../images/about-01x.jpg) no-repeat;
+	background-size:contain;
+	}
+#image2{
+	overflow:hidden;
+	height: 392px;
+    width: 25%;
+	display:block;
+	background:url(../images/about-02x.jpg) no-repeat;
+	background-size:contain;
+	}
+#image3{
+	overflow:hidden;
+	height: 392px;
+    width: 25%;
+	display:block;
+	background:url(../images/about-03x.jpg) no-repeat;
+	background-size:contain;
+	}
+#image4{
+	overflow:hidden;
+	height: 392px;
+    width: 25%;
+	display:block;
+	background:url(../images/about-04x.jpg) no-repeat;
+	background-size:contain;
+	}
+#image5{
+	overflow:hidden;
+	height: 600px;
+    width: 50%;
+	display:block;
+	background:url(../images/about-05x.jpg) no-repeat;
+	background-size:cover;
+	}
