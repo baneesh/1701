@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/jquery.slidepanel.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/component2.css" />
     <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.vegas.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/jquery.vegas.min.css">-->
     <link rel="stylesheet" href="css/sky-mega-menu.css">
     <link href="css/toggle-panel.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
@@ -60,7 +60,7 @@
 		});
 	</script>
     </head>
-    <body class="cbp-spmenu-push" id="demo">
+    <body class="cbp-spmenu-push" id="demo-product">
 	<header class="clearfix white-link">
       <div class="header-elements"> <a href="home.html" class="logo"> <img src="images/logo.png" alt="" /> </a> </div>
     </header>
@@ -70,22 +70,27 @@
     <div class="floor-1 bg-product">
     	<div class="lt-edition">Limited Edition <span>24/99</span></div>
         <div id="container">
-            <ul id="menu">
-                  <!--<li><a href="#" data-valign="top"><i class="fa fa-camera" style="border: 1px solid rgb(255, 255, 255);"></i></a></li>
-                  <li><a href="#" data-valign="top"><i class="fa fa-camera"></i></a></li>
-                  <li><a href="#" data-valign="top"><i class="fa fa-camera"></i></a></li>
-                  <li><a href="#" data-valign="top"><i class="fa fa-play"></i></a></li>-->
-                  <li><a href="images/product01/background-1.jpg" data-valign="top"><img src="images/product01/thumbnail-1.jpg"></a></li>
-                  <li><a href="images/product01/background-2.jpg" data-valign="top"><img src="images/product01/thumbnail-2.jpg"></a></li>
-                  <li><a href="images/product01/background-3.jpg" data-valign="top"><img src="images/product01/thumbnail-3.jpg"></a></li>
-                  <li><a href="images/product01/background-4.jpg" data-valign="top"><img src="images/product01/thumbnail-4.jpg"></a></li>
-            </ul>
+            <div id="general">
+              <div id="content"> 
+                <!--panel 1-->
+                <div> </div>
+                
+                <!--panel 2-->
+                <div> </div>
+                
+                <!--panel 3-->
+                <div> </div>
+                
+                <!--panel 4-->
+                <div> </div>
+              </div>
+            </div>																	
       </div>
-        </div>
+	</div>
   </div>
   <div class="cart02">
     <div class="container cbp-spmenu-push">
-      <div class="main">
+      <div class="mainFixed">
         <div class="cart_base" data-toggle="modal" data-target="#myModal2"> <span class="cart_txt">0</span><br />
           <!--<div class="cart_icon"></div>--> 
         </div>
@@ -706,7 +711,7 @@ $(document).ready(function(){
 			});
 		</script> 
 <script src="js/jquery-ui.js"></script>
-<script type="text/javascript" src="js/jquery.vegas.js"></script>
+<!--<script type="text/javascript" src="js/jquery.vegas.js"></script>
 <script>
 $( function() { 
     var slideshowRunning = false,
@@ -791,7 +796,7 @@ $( function() {
 		$( '#thumbnail' ).attr( 'src', src );
 	});
  } );
-</script>
+</script>-->
 <!--<script src="js/jquery.ascensor.js"></script> 
 <script>
 			var ascensor = $('#ascensorBuilding').ascensor();
@@ -923,6 +928,32 @@ jQuery(document).ready(function(){
 		pagerCustom: '#bx-pager2',
 	});
 });
+</script>
+<!--<script type="text/javascript" src="js/product-js/jquery.min.js"></script>-->
+<script type="text/javascript" src="js/product-js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="js/product-js/jquery.ascensor.js"></script>
+<script>
+$('#content').ascensor({
+		AscensorName:'page',
+		WindowsFocus:true,
+		WindowsOn:0,
+		
+		NavigationDirection:'y',
+		Direction: 'y',
+		Navig:true,
+		Link:false,
+		ReturnURL:false,
+		PrevNext:false,
+		CSSstyles:true,
+		
+		KeyArrow:true,
+		keySwitch:true,
+		ReturnCode:false,
+		
+		ChocolateAscensor:false,
+		AscensorMap: '0',
+		ContentCoord: '1|1 & 1|2 & 1|3 & 1|4 & 2|4 & 2|3 & 2|2 & 2|1'
+	});
 </script>
 </body>
 </html>

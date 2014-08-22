@@ -253,7 +253,7 @@
 	if(params.CSSstyles==true){
 		
 			
-		$('#'+params.AscensorName+'Navigation dt').css({'z-index': '20000','position': 'fixed','width':'80px','height':'80px'/*,'background':'#fff'*/});
+		$('#'+params.AscensorName+'Navigation dt').css({'z-index': '20000','position': 'absolute','width':'80px','height':'80px'/*,'background':'#fff'*/});
 //		$('#'+params.AscensorName+'Navigation dt:eq('+params.WindowsOn+')').css({'background': params.DefNavColor});
 		
 		if(params.ChocolateAscensor==true){
@@ -357,13 +357,13 @@
 	    });
 	    
 	    if(params.CSSstyles==true){
-	    	$('#'+params.AscensorName+'Prev').css({'position':'fixed', 'z-index':'20000', 'top':'20px', 'left':'30px', /*'background':'#ccc','color':'333', 'padding':'6px 10px'*/});
+	    	$('#'+params.AscensorName+'Prev').css({'position':'absolute', 'z-index':'20000', 'top':'20px', 'left':'30px', /*'background':'#ccc','color':'333', 'padding':'6px 10px'*/});
 	    }
 	    		
 	   
 		
 		if(params.CSSstyles==true){
-			 $('#'+params.AscensorName+'Next').css({'position':'fixed', 'z-index':'20000', 'top':'20px', 'left':'90px', /*'background':'#ccc','color':'333', 'padding':'6px 10px'*/});
+			 $('#'+params.AscensorName+'Next').css({'position':'absolute', 'z-index':'20000', 'top':'20px', 'left':'90px', /*'background':'#ccc','color':'333', 'padding':'6px 10px'*/});
 		}
 	
 	$('#'+params.AscensorName+'Next').click(function(){
@@ -610,7 +610,7 @@
 	if(params.ReturnCode==true){
 		$('body').append('<div><div id="result"><h1>Code Page</h1><p id="pageCode">'+resultatPage+'</p><br/><h1>Code Link</h1><p id="LinkCode">'+resultatLink+'</p></br><h1>Code Navigation</h1><p id="NavCode" ><p>'+resultatNav+'<p id="close">close this windows</p></div></div>');
    		
-		$('#result').css({'position':'fixed','top':'20%','left':'30%','background':'#fff','padding':'20px','font-size':'12px'});
+		$('#result').css({'position':'absolute','top':'20%','left':'30%','background':'#fff','padding':'20px','font-size':'12px'});
 		$('#close').css({'padding-left':'600px','color':'#f00','margin-top':'20px'});
 		$('#result h1').css({'font-size':'18px'});
 		$('#result p').css({'margin-left':'30px'});

@@ -8197,3 +8197,82 @@ ul.bg .initials p{
 	background:url(../images/about-05x.jpg) no-repeat;
 	background-size:cover;
 	}
+	
+/*Product Parallax Css*/
+
+#pageNavigation{
+	position:fixed;
+	top:210px;
+	left:55px;
+	}
+#pageNavigation a {
+	background-size:cover !important;
+    border-radius: 50%;
+    display: block;
+    font-size: 0;
+    width:73px;
+	height:73px;
+	margin:0 auto;
+}
+#pageNavigation a:hover, #pageNavigation a:focus, #pageNavigation a:active {
+	text-decoration: none;
+	color: #267932;
+}
+.pageNavigationButton.nav {
+	border: 1px solid #000;
+    border-radius: 50%;
+	height: 75px !important;
+    width: 75px !important;
+	cursor: pointer;
+}
+.pageNavigationButton.nav:hover {
+}
+.pageNavigationButton.nav-active {
+	border: 1px solid #ccc;
+    border-radius: 50%;
+}
+#pageNavigation a#pageNavigationButton0 {
+    background: url("../images/product01/thumbnail-1.jpg") no-repeat;
+}
+#pageNavigation a#pageNavigationButton1 {
+    background: url("../images/product01/thumbnail-2.jpg") no-repeat;
+}
+#pageNavigation a#pageNavigationButton2 {
+    background: url("../images/product01/thumbnail-3.jpg") no-repeat;
+}
+#pageNavigation a#pageNavigationButton3 {
+    background: url("../images/product01/thumbnail-4.jpg") no-repeat;
+}
+#content #page0 {
+    background: url("../images/product01/background-1.jpg") no-repeat fixed !important;
+	background-size: cover !important;
+}
+#content #page1 {
+    background: url("../images/product01/background-2.jpg") no-repeat fixed !important;
+	background-size: cover !important;
+}
+#content #page2 {
+    background: url("../images/product01/background-3.jpg") no-repeat fixed !important;
+	background-size: cover !important;
+}
+#content #page3 {
+    background: url("../images/product01/background-4.jpg") no-repeat fixed !important;
+	background-size: cover !important;
+}
+#content .page {
+	max-width:none;
+}
+#pageNavigation a:before, #pageNavigation a:after {
+    box-sizing: content-box;
+}
+#demo-product {
+	overflow:hidden !important;
+}
+.mainFixed {
+	width: 50px;
+	position:fixed;
+	margin-top: 36px;
+}
+.mainFixed .currency a{
+	top: 43px !important;
+	}
