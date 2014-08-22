@@ -253,7 +253,7 @@
 	if(params.CSSstyles==true){
 		
 			
-		$('#'+params.AscensorName+'Navigation dt').css({'z-index': '20000','position': 'fixed','width':'56px','height':'22px'/*,'background':'#fff'*/});
+		$('#'+params.AscensorName+'Navigation dt').css({'z-index': '20000','position': 'fixed','width':'80px','height':'80px'/*,'background':'#fff'*/});
 //		$('#'+params.AscensorName+'Navigation dt:eq('+params.WindowsOn+')').css({'background': params.DefNavColor});
 		
 		if(params.ChocolateAscensor==true){
@@ -269,12 +269,12 @@
 				var positionY= MapHeight*35;
 				var positionX= MapWidth*60;
 
-				$(this).css('bottom', function() {return (-1*CoordNavY*40+positionY); });
-				$(this).css('right', function() {return (-1*CoordNavX*70+positionX);});		
+				$(this).css('top', function() {return (-1*CoordNavY*170+positionY); });
+				$(this).css('left', function() {return (-1*CoordNavX*80+positionX);});		
 			});
 		}else{
 		$('#'+params.AscensorName+'Navigation').find('dt').each(function(index) {
-			$(this).css('bottom', function() {return (index*30); });		
+			$(this).css('top', function() {return (index*85); });		
 			
 		});
 		
@@ -490,22 +490,22 @@
 		function checkKey(e){
 			switch (e.keyCode) {
 	    		case 40:
-	    	    	ArrowFunction(0, -1);
-	    	    	return false;
-	    	    	break;
+	    	    	ArrowFunction(1, -1);
+	        		return false;
+	      			break;
 	    	    	
 	    	    case 38:
-	   	     		ArrowFunction(0, +1);
-	   	     		return false;
-	   	     		break;
-	   		    case 37:
 	   	     		ArrowFunction(1, +1);
 	   	     		return false;
 	   	     		break;
+	   		    case 37:
+	   	     		ArrowFunction(0, +1);
+	   	     		return false;
+	   	     		break;
 	        	case 39:
-	        		ArrowFunction(1, -1);
-	        		return false;
-	      			break;
+	        		ArrowFunction(0, -1);
+	    	    	return false;
+	    	    	break;
 			}      
 		}
 	

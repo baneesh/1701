@@ -47,22 +47,22 @@ body {
 }
 .nav-active {
 	/*background-color: #fff;*/
-	border: 1px solid #fff;
+	border: 1px solid #ccc;
     border-radius: 50%;
 }
 #pageNavigation a#pageNavigationButton0 {
-    background: url("../images/home.jpg") no-repeat;
+    background: url("../../images/product01/thumbnail-1.jpg") no-repeat;
 }
 #pageNavigation a#pageNavigationButton1 {
-    background: url("../images/slide2.jpg") no-repeat;
+    background: url("../../images/product01/thumbnail-2.jpg") no-repeat;
 }
 #pageNavigation a#pageNavigationButton2 {
-    background: url("../images/slide3.jpg") no-repeat;
+    background: url("../../images/product01/thumbnail-3.jpg") no-repeat;
 }
 #pageNavigation a#pageNavigationButton3 {
-    background: url("../images/slide4.jpg") no-repeat;
+    background: url("../../images/product01/thumbnail-4.jpg") no-repeat;
 }
-#pageNavigation a#pageNavigationButton4 {
+/*#pageNavigation a#pageNavigationButton4 {
     background: url("../images/slide5.jpg") no-repeat;
 }
 #pageNavigation a#pageNavigationButton5 {
@@ -73,25 +73,25 @@ body {
 }
 #pageNavigation a#pageNavigationButton7 {
     background: url("../images/slide8.jpg") no-repeat;
-}
+}*/
 
 #page0 {
-    background: url("../images/home.jpg") no-repeat fixed !important;
+    background: url("../../images/product01/background-1.jpg") no-repeat fixed !important;
 	background-size: cover !important;
 }
 #page1 {
-    background: url("../images/slide2.jpg") no-repeat fixed !important;
+    background: url("../../images/product01/background-2.jpg") no-repeat fixed !important;
 	background-size: cover !important;
 }
 #page2 {
-    background: url("../images/slide3.jpg") no-repeat fixed !important;
+    background: url("../../images/product01/background-3.jpg") no-repeat fixed !important;
 	background-size: cover !important;
 }
 #page3 {
-    background: url("../images/slide4.jpg") no-repeat fixed !important;
+    background: url("../../images/product01/background-4.jpg") no-repeat fixed !important;
 	background-size: cover !important;
 }
-#page4 {
+/*#page4 {
     background: url("../images/slide5.jpg") no-repeat fixed !important;
 	background-size: cover !important;
 }
@@ -106,4 +106,4 @@ body {
 #page7 {
     background: url("../images/slide8.jpg") no-repeat fixed !important;
 	background-size: cover !important;
-}
+}*/

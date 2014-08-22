@@ -3813,8 +3813,8 @@ input.qtyminus2 {
 	background : #333333;
 	width : 224px;
 	height : 47px;
-	padding: 6px 14px;
-	text-align: left;
+	/*padding: 6px 14px;*/
+	text-align: center;
 }
 .hoverProductItem .top h5 {
 	font-family: 'latolight';
@@ -3822,7 +3822,7 @@ input.qtyminus2 {
 	color : #FFFFFF;
 	margin: 0px;
 	padding: 0px;
-	line-height: 20px;
+	line-height: 47px;
 }
 .hoverProductItem .top h6 {
 	font-family: 'latolight';
@@ -4311,20 +4311,23 @@ input.qtyminus2 {
 	margin-top: 3px;
 }
 .productCategory {
-	margin-left: 31px;
+	margin-left: 10px;
 }
 .productCategory ul {
 	margin: 0px;
 	padding: 0px;
 }
 .productCategory li {
-	margin: 25px 0px;
+	/*margin: 25px 0px;*/
 	line-height: 39px;
+	margin: 25px 0px 25px 0;
+	padding:0px 15px;
 }
 .productCategory li.selected {
 	font-family: 'latolight';
 	background : #FF7BAC;
-	width : 83px;
+	/*width : 83px;*/
+	padding: 0 15px;
 	height : 39px;
 	border-radius : 4px;
 	-moz-border-radius : 4px;
@@ -4332,7 +4335,7 @@ input.qtyminus2 {
 	font-size : 14px;
 	color : #FFFFFF;
 	text-align: center;
-	margin-left: 25px;
+	/*margin-left: 25px;*/
 }
 .productAll span.right {
 	width: 14px;
