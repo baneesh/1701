@@ -53,30 +53,42 @@ body {
     border-radius: 50%;
 }
 #pageNavigation a#pageNavigationButton0 {
-    background: url("../../images/product01/thumbnail-1.jpg") no-repeat;
+    background: url("../images/thumbnail-1.jpg") no-repeat;
 }
 #pageNavigation a#pageNavigationButton1 {
-    background: url("../../images/product01/thumbnail-2.jpg") no-repeat;
+    background: url("../images/thumbnail-2.jpg") no-repeat;
 }
 #pageNavigation a#pageNavigationButton2 {
-    background: url("../../images/product01/thumbnail-3.jpg") no-repeat;
+    background: url("../images/thumbnail-3.jpg") no-repeat;
 }
 #pageNavigation a#pageNavigationButton3 {
-    background: url("../../images/product01/thumbnail-4.jpg") no-repeat;
+    background: url("../images/thumbnail-4.jpg") no-repeat;
 }
 #content #page0 {
-    background: url("../../images/product01/background-1.jpg") no-repeat fixed !important;
-	background-size: cover !important;
+    background: url("../images/background-1.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 300px;
+    background-size: contain;
 }
 #content #page1 {
-    background: url("../../images/product01/background-2.jpg") no-repeat fixed !important;
-	background-size: cover !important;
+	background: url("../images/background-2.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 300px;
+    background-size: contain;
 }
 #content #page2 {
-    background: url("../../images/product01/background-3.jpg") no-repeat fixed !important;
-	background-size: cover !important;
+	background: url("../images/background-3.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 300px;
+    background-size: contain;
 }
 #content #page3 {
-    background: url("../../images/product01/background-4.jpg") no-repeat fixed !important;
-	background-size: cover !important;
+    background: url("../images/background-4.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 300px;
+    background-size: contain;
 }

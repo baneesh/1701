@@ -172,9 +172,12 @@
     /*padding: 0 20px 20px !important;*/
 }
 .checkout .product-billing h1 {
-    bottom: auto;
+    bottom: -100px;
     position: relative;
 	left:auto;
+}
+.checkout .product-billing h1:after {
+    margin-top: -120px;
 }
 .checkout-bar {
     margin: 40px auto;

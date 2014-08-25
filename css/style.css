@@ -2880,8 +2880,8 @@ input.qtyminus2 {
 	float: right;
 	background : #FFFFFF;
 	width : 367px;
-	height : 720px;
-	border-bottom: 1px solid #E6E6E6;
+	height : 768px;
+	/*border-bottom: 1px solid #E6E6E6;*/
 }
 .checkout .product-billing h1 {
 	font-family: 'latobold';
@@ -2902,10 +2902,19 @@ input.qtyminus2 {
 	left: 40px;
 	cursor: pointer;
 }
-.checkout .product-billing h1:before {
+/*.checkout .product-billing h1:before {
 	height: 1px;
 	background: #E6E6E6;
 	width: 100%;
+}*/
+.checkout .product-billing h1:after {
+    background: #e6e6e6;
+    content: "";
+    display: block;
+    height: 1px;
+    margin-left: -40px;
+    margin-top: -150px;
+    width: 128%;
 }
 .checkout .product-billing #accordion {
 	position: inherit;
