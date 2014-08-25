@@ -8241,35 +8241,38 @@ ul.bg .initials p{
     border-radius: 50%;
 }
 #pageNavigation a#pageNavigationButton0 {
-    background: url("../images/product01/thumbnail-1.jpg") no-repeat;
+    background: url("../images/product01/front_view.png") no-repeat;
 }
 #pageNavigation a#pageNavigationButton1 {
-    background: url("../images/product01/thumbnail-2.jpg") no-repeat;
+    background: url("../images/product01/back_vew.png") no-repeat;
 }
 #pageNavigation a#pageNavigationButton2 {
-    background: url("../images/product01/thumbnail-3.jpg") no-repeat;
+    background: url("../images/product01/detail_view.png") no-repeat;
 }
 #pageNavigation a#pageNavigationButton3 {
-    background: url("../images/product01/thumbnail-4.jpg") no-repeat;
+    background: url("../images/product01/IMG_3652_copy.png") no-repeat;
 }
 #content #page0 {
-    background: url("../images/product01/background-1.jpg") no-repeat fixed !important;
-	background-size: cover !important;
+    background: url("../images/product01/front_view.png") no-repeat;
+	
 }
 #content #page1 {
-    background: url("../images/product01/background-2.jpg") no-repeat fixed !important;
-	background-size: cover !important;
+    background: url("../images/product01/back_vew.png") no-repeat;
+	
 }
 #content #page2 {
-    background: url("../images/product01/background-3.jpg") no-repeat fixed !important;
-	background-size: cover !important;
+    background: url("../images/product01/detail_view.png") no-repeat;
+	
 }
 #content #page3 {
-    background: url("../images/product01/background-4.jpg") no-repeat fixed !important;
-	background-size: cover !important;
+    background: url("../images/product01/IMG_3652_copy.png") no-repeat;
+	
 }
 #content .page {
 	max-width:none;
+	background-position: 34% 0 !important;
+    background-size: 906px auto !important;
+	background-attachment:fixed !important;
 }
 #pageNavigation a:before, #pageNavigation a:after {
     box-sizing: content-box;
