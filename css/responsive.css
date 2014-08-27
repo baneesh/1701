@@ -213,6 +213,10 @@
 #image5{
 	background-position:center -12em;
 	}
+#content .page {
+	background-position: 32% 0 !important;
+    background-size: 51% auto !important;
+}
 }
 
 @media screen and (max-width: 1351px) {
