@@ -284,7 +284,9 @@ a.account img {
 .nextStory {
     left: 41%;
 }
-	
+.mobileHide a.account {
+    width: 140px;
+}
 
 
 }
