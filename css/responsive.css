@@ -260,6 +260,12 @@ a.account img {
     margin-top: 2px;
     width: 30%;
 }
+.mobileHide a.account {
+    width: 140px;
+}
+.mobileHide a.account img {
+    margin-left: 0px;
+}
 .submenu {
     width: 80px;
 }
@@ -283,9 +289,6 @@ a.account img {
 
 .nextStory {
     left: 41%;
-}
-.mobileHide a.account {
-    width: 140px;
 }
 
 
