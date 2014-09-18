@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @font-face {
+	font-family: 'Athelas-Italic';
+	src: url('../fonts/Athelas-Italic.eot'); /* IE */
+	src: url('../fonts/Athelas-Italic.eot?iefix') format('embedded-opentype'), url('../fonts/Athelas-Italic.woff') format('woff'), url('../fonts/Athelas-Italic.ttf') format('truetype'), url('../fonts/Athelas-Italic.svg#athelas_italic') format('svg');
+}
+@font-face {
 	font-family: 'st_marie_thinthin';
 	src: url('../fonts/stmarie-thin-webfont.eot');
 	src: url('../fonts/stmarie-thin-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/stmarie-thin-webfont.woff') format('woff'), url('../fonts/stmarie-thin-webfont.ttf') format('truetype'), url('../fonts/stmarie-thin-webfont.svg#st_marie_thinthin') format('svg');
@@ -8291,3 +8296,46 @@ ul.bg .initials p{
 .top43{
 	top:43px !important;
 	}
+
+
+
+/*New Box Css Begin*/
+
+#box {
+	background: transparent;
+	height: 40px;
+	width: 150px;
+	position: relative;
+}
+#box .box1 {
+	width: 49%;
+	float: left;
+	border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 0 5px 0 0;
+	border-right: none;
+	height: inherit;
+}
+
+#box .box2 {
+	width: 49%;
+	float: left;
+	border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 5px 0 0 0;
+	border-left: none;
+	height: inherit;
+}
+
+#box .main {
+	position: absolute;
+	line-height: 40px;
+	width: 100%;
+	font-family: 'Athelas-Italic';
+	text-align: center;
+	font-size: 16px;
+	margin-top:0px;
+	color:#000;
+}
