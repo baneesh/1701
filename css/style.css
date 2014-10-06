@@ -209,30 +209,36 @@ a.darker.active {
 }
 .floor-1 {
 	/*background: #F9B233;*/
-	background: url(../images/bg-floor-1.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/bg-floor-1.jpg) 50% 0 no-repeat;
 	/*background: url(../images/bg-floor-1-high3.jpg) no-repeat;*/
 	background-size: cover;
+	background-attachment:fixed;
 	position: relative;
 }
 .floor-2 {
-	background: url(../images/bg-floor-2.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/bg-floor-2.jpg) 50% 0 no-repeat;
 	background-size: cover;
+	background-attachment:fixed;
 }
 .floor-3 {
-	background: url(../images/bg-floor-3.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/bg-floor-3.jpg) 50% 0 no-repeat;
 	background-size: cover;
+	background-attachment:fixed;
 }
 .floor-4 {
-	background: url(../images/bg-floor-4.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/bg-floor-4.jpg) 50% 0 no-repeat;
 	background-size: cover;
+	background-attachment:fixed;
 }
 .floor-5 {
-	background: url(../images/bg-floor-5.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/bg-floor-5.jpg) 50% 0 no-repeat;
 	background-size: cover;
+	background-attachment:fixed;
 }
 .floor-6 {
-	background: url(../images/bg-floor-6.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/bg-floor-6.jpg) 50% 0 no-repeat;
 	background-size: cover;
+	background-attachment:fixed;
 }
 .floor-7 {
 	background: #CA9E67;

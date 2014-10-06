@@ -67,7 +67,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
 <div class="clear"></div>
 <div class="mainSection">
   <div id="ascensorBuilding">
-    <div class="floor-1">
+    <div class="floor-1 floor">
       <div class="container">
         <div class="main2">
           <ul id="rb-grid" class="rb-grid clearfix">
@@ -101,11 +101,11 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
       </div>
       <!-- /container --> 
     </div>
-    <div class="floor-2">&nbsp;</div>
-    <div class="floor-3">&nbsp;</div>
-    <div class="floor-4">&nbsp;</div>
-    <div class="floor-5">&nbsp;</div>
-    <div class="floor-6">&nbsp;</div>
+    <div class="floor-2 floor">&nbsp;</div>
+    <div class="floor-3 floor">&nbsp;</div>
+    <div class="floor-4 floor">&nbsp;</div>
+    <div class="floor-5 floor">&nbsp;</div>
+    <div class="floor-6 floor">&nbsp;</div>
   </div>
   <div class="cart">
     <div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
@@ -745,12 +745,25 @@ $(document).ready(function(){
 				  }
 			  
 			});
-			$('#ascensorBuilding').bind('mousewheel', function(event) {
+			/* $('#ascensorBuilding').bind('mousewheel', function(event) {
           event.preventDefault();
           var scrollTop = this.scrollTop;
           this.scrollTop = (scrollTop + ((event.deltaY * event.deltaFactor) * -1));
           //console.log(event.deltaY, event.deltaFactor, event.originalEvent.deltaMode, event.originalEvent.wheelDelta);
-        });
+        });*/
+		
+    $('#ascensorBuilding').bind('mousewheel', function(e){
+        if(e.wheelDelta/120 > 0) {
+           ascensor.trigger("prev");
+        }
+        else{
+           ascensor.trigger("next");
+		   $("#d_clickable").removeClass("hide");
+        }
+    });
+
+			
+</script>
 			
 </script> 
 <script>
