@@ -698,7 +698,8 @@ $(document).ready(function(){
 			});
 		</script> 
 <script src="js/jquery-ui.js"></script> 
-<script src="js/jquery.ascensor.js"></script> 
+<script src="js/jquery.ascensor.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
 <script>
 			var ascensor = $('#ascensorBuilding').ascensor();
 			var floorAdded = false;
@@ -744,6 +745,12 @@ $(document).ready(function(){
 				  }
 			  
 			});
+			$('#ascensorBuilding').bind('mousewheel', function(event) {
+          event.preventDefault();
+          var scrollTop = this.scrollTop;
+          this.scrollTop = (scrollTop + ((event.deltaY * event.deltaFactor) * -1));
+          //console.log(event.deltaY, event.deltaFactor, event.originalEvent.deltaMode, event.originalEvent.wheelDelta);
+        });
 			
 </script> 
 <script>
