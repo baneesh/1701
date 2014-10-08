@@ -1607,6 +1607,10 @@
 	margin-right: 20px;
     padding: 0 17px;
 	}
+	.aboutTabs .sky-tabs label {
+bottom: 20px;
+
+}
 	}
 @media screen and (max-width: 1024px) {
 	.infoTabs .sky-tabs .txt2 {
