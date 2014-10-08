@@ -34,7 +34,13 @@
 .floor-bespoke .left2 {
     width: 70%;
 }
-
+.about-top {
+    height: 40%;
+    overflow: hidden;
+}
+.aboutTabs .sky-tabs .txt {
+    height: 220px;
+}
 }
 
 @media only screen and (max-width : 1824px) {
@@ -242,15 +248,28 @@
 
 @media screen and (max-width: 1350px) {
 	
+.aboutTabs .sky-tabs > label span span{
+	margin-right: 20px !important;
+    padding: 0 17px !important;
+	}
+}
+@media screen and (max-height: 768px) {
+	
+.aboutTabs .sky-tabs > ul > li {
+    height: 298px !important;
+}
+@media screen and (max-width: 1280px) , screen and (max-height: 800px){
+	.aboutTabs .sky-tabs > ul > li {
+    height: 316px !important;
+}
 
 }
 @media screen and (max-width: 1280px) , screen and (max-height: 720px){
 	.aboutTabs .sky-tabs > ul > li {
-    height: 270px !important;
+    height: 280px !important;
 }
 
 }
-
 @media only screen and (max-width : 1224px) {
 
 }
@@ -297,10 +316,10 @@ a.account img {
 .floor-bespoke .left2 {
 	padding-top: 1%;
 }
-.aboutTabs .sky-tabs > label span span{
-	margin-right: 20px !important;
-    padding: 0 17px !important;
-	}
+.aboutTabs .sky-tabs > label span span {
+    margin-right: 0 !important;
+    padding: 0 8px !important;
+}
 .aboutTabs .sky-tabs > ul > li {
     height: 354px !important;
 }
@@ -308,11 +327,7 @@ a.account img {
 }
 
 
-@media screen and (max-height: 768px) {
-	
-.aboutTabs .sky-tabs > ul > li {
-    height: 298px !important;
-}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {    
 	.aboutTabs .sky-tabs > ul > li {
     height: 304px !important;

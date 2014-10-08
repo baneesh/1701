@@ -680,7 +680,7 @@
 	}
 .aboutTabs .sky-tabs label{
 	/*bottom:65px ;*/
-	bottom:0px;
+	bottom:10px;
 	position:absolute;
 	}
 .aboutTabs label[for=sky-tab1]{
@@ -1603,6 +1603,10 @@
 		width:100%;
 		height:auto;
 		}
+		.aboutTabs .sky-tabs > label span span{
+	margin-right: 20px;
+    padding: 0 17px;
+	}
 	}
 @media screen and (max-width: 1024px) {
 	.infoTabs .sky-tabs .txt2 {

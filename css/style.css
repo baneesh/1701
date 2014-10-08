@@ -8306,7 +8306,11 @@ ul.bg .initials p{
 /*About page bugs Fixed*/
 
 #image6 {
-    bottom: 63px;
+    /*bottom: 63px;*/
     position: fixed;
     right: 0;
 }
+.about-top{
+	height:42%;
+	overflow:hidden;
+	}
