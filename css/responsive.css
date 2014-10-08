@@ -249,7 +249,7 @@
 @media screen and (max-width: 1350px) {
 	
 .aboutTabs .sky-tabs > label span span{
-	margin-right: 20px !important;
+	/*margin-right: 20px !important;*/
     padding: 0 17px !important;
 	}
 }

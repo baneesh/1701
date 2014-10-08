@@ -69,7 +69,7 @@
 .aboutTabs .sky-tabs >label span span {
 	list-style:none;
 	float:left;
-	margin-right:40px;
+	/*margin-right:40px;*/
 	border:1px solid #99C2D2;
 	border-radius:4px;
 	padding:0px 30px;
@@ -1604,13 +1604,17 @@
 		height:auto;
 		}
 		.aboutTabs .sky-tabs > label span span{
-	margin-right: 20px;
+	/*margin-right: 20px;*/
     padding: 0 17px;
 	}
 	.aboutTabs .sky-tabs label {
 bottom: 40px;
 }
-
+@-moz-document url-prefix() { 
+  .aboutTabs .sky-tabs label {
+bottom: 10px;
+}
+}
 }
 	}
 
