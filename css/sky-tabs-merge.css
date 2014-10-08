@@ -1608,8 +1608,8 @@
     padding: 0 17px;
 	}
 	.aboutTabs .sky-tabs label {
-bottom: 20px;
-
+bottom: 40px;
+position: absolute;
 }
 	}
 @media screen and (max-width: 1024px) {
