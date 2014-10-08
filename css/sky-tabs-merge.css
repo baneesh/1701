@@ -1609,9 +1609,11 @@
 	}
 	.aboutTabs .sky-tabs label {
 bottom: 40px;
-position: absolute;
+}
+
 }
 	}
+
 @media screen and (max-width: 1024px) {
 	.infoTabs .sky-tabs .txt2 {
 		width:74%;
