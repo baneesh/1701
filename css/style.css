@@ -7400,7 +7400,7 @@ ul.bg .initials p{
 	background:none;
 	}
 .aboutTabs .sky-tabs > ul > li{
-	height:240px !important;
+	height:400px !important;
 	overflow:hidden;
 	}
 .user-bottom .aboutTabs .sky-tabs > ul{
@@ -8301,3 +8301,12 @@ ul.bg .initials p{
 .top43{
 	top:43px !important;
 	}
+	
+	
+/*About page bugs Fixed*/
+
+#image6 {
+    bottom: 63px;
+    position: fixed;
+    right: 0;
+}

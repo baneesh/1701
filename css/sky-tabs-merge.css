@@ -680,7 +680,7 @@
 	}
 .aboutTabs .sky-tabs label{
 	/*bottom:65px ;*/
-	top:160%;
+	bottom:0px;
 	position:absolute;
 	}
 .aboutTabs label[for=sky-tab1]{
@@ -733,7 +733,7 @@
 	
 
 .aboutTabs .sky-tabs label {
-	top: 110%;
+	/*top: 110%;*/
 }
 	
 }

@@ -50,6 +50,22 @@
 .checkout .product-billing h1 {
     bottom: 35px;
 }
+.pad80 {
+    padding: 20px 40px;
+}
+.aboutTabs .sky-tabs > ul > li {
+    height: 312px !important;
+}
+@media screen and (max-width: 1600px) , screen and (max-height: 1024px){
+	.aboutTabs .sky-tabs > ul > li {
+    height: 400px !important;
+}
+
+}
+@media screen and (max-width: 1600px) , screen and (max-height: 900px){
+	.aboutTabs .sky-tabs > ul > li {
+    height: 312px !important;
+}
 
 }
 
@@ -217,6 +233,7 @@
 	background-position: 32% 0 !important;
     background-size: 51% auto !important;
 }
+
 }
 
 @media screen and (max-width: 1351px) {
@@ -227,8 +244,10 @@
 	
 
 }
-
-@media only screen and (max-width : 1280px) {
+@media screen and (max-width: 1280px) , screen and (max-height: 720px){
+	.aboutTabs .sky-tabs > ul > li {
+    height: 270px !important;
+}
 
 }
 
@@ -278,7 +297,38 @@ a.account img {
 .floor-bespoke .left2 {
 	padding-top: 1%;
 }
+.aboutTabs .sky-tabs > label span span{
+	margin-right: 20px !important;
+    padding: 0 17px !important;
+	}
+.aboutTabs .sky-tabs > ul > li {
+    height: 354px !important;
+}
 
+}
+
+
+@media screen and (max-height: 768px) {
+	
+.aboutTabs .sky-tabs > ul > li {
+    height: 298px !important;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {    
+	.aboutTabs .sky-tabs > ul > li {
+    height: 304px !important;
+}    
+}
+
+}
+@media screen and (max-width: 1152px) , screen and (min-height: 864px) {
+  .aboutTabs .sky-tabs > ul > li {
+    height: 354px !important;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {    
+	.aboutTabs .sky-tabs > ul > li {
+    height: 360px !important;
+}     
+}
 }
 
 /* -------------------------- Small screens -------------------------------------- */
@@ -290,7 +340,14 @@ a.account img {
 .nextStory {
     left: 41%;
 }
-
+.aboutTabs .sky-tabs > ul > li {
+    height: 298px !important;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {    
+	.aboutTabs .sky-tabs > ul > li {
+    height: 304px !important;
+}     
+}
 
 }
 
