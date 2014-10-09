@@ -27,6 +27,8 @@
 	font-size: 0;
 	text-align: left;
 	color: #99C2D2;
+	width:100%;
+	height:100%;
 }
 .aboutTabs .sky-tabs p{
 	color: #666666;
@@ -78,7 +80,8 @@
 	-o-transition: background 0.4s, color 0.4s;
 	-ms-transition: background 0.4s, color 0.4s;
 	-moz-transition: background 0.4s, color 0.4s;
-	-webkit-transition: background 0.4s, color 0.4s;	
+	-webkit-transition: background 0.4s, color 0.4s;
+	white-space:nowrap;
 }
 .aboutTabs .sky-tabs >label:hover span span {
 	background: #99C2D2;
@@ -680,19 +683,22 @@
 	}
 .aboutTabs .sky-tabs label{
 	/*bottom:65px ;*/
-	bottom:10px;
+	bottom:20px;
 	position:absolute;
 	}
 .aboutTabs label[for=sky-tab1]{
-	right:420px;
+	right:380px;
+	/*left:10%;*/
 	z-index:2 !important;
 	}
 .aboutTabs label[for=sky-tab2]{
-	right:220px;
+	right:200px;
+	/*left:44%;*/
 	z-index:2 !important;
 	}
 .aboutTabs label[for=sky-tab3]{
-	right:20px;
+	right:11px;
+	/*left:80%;*/
 	z-index:2 !important;
 	}
 .aboutTabs label[for=sky-tab11]{
@@ -762,7 +768,6 @@
 @media screen and (max-width: 1000px) {
 	.aboutTabs .sky-tabs >label span span {
 		padding: 0 15px;
-
 	}
 	.aboutTabs .sky-tabs >label .fa {
 		margin-right: 10px;
@@ -1603,18 +1608,10 @@
 		width:100%;
 		height:auto;
 		}
-		.aboutTabs .sky-tabs > label span span{
-	/*margin-right: 20px;*/
+	.aboutTabs .sky-tabs > label span span{
     padding: 0 17px;
 	}
-	.aboutTabs .sky-tabs label {
-bottom: 40px;
-}
-@-moz-document url-prefix() { 
-  .aboutTabs .sky-tabs label {
-bottom: 10px;
-}
-}
+	
 }
 	}
 
@@ -1635,6 +1632,9 @@ bottom: 10px;
 .infoTabs .width75p {
     width: 100%;
 }
+.aboutTabs .sky-tabs > label span span{
+    padding: 0 8px !important;
+	}
 	}
 @media screen and (max-width: 1000px) {
 	.infoTabs .sky-tabs > label span span {

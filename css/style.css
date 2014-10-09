@@ -7400,7 +7400,7 @@ ul.bg .initials p{
 	background:none;
 	}
 .aboutTabs .sky-tabs > ul > li{
-	height:400px !important;
+	height:310px !important;
 	overflow:hidden;
 	}
 .user-bottom .aboutTabs .sky-tabs > ul{
@@ -8309,8 +8309,14 @@ ul.bg .initials p{
     /*bottom: 63px;*/
     position: fixed;
     right: 0;
+	height:100%;
 }
 .about-top{
-	height:42%;
+	height:40%;
 	overflow:hidden;
 	}
+.aboutTabs {
+    height: 50%;
+    position: relative;
+    width: 100%;
+}

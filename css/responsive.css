@@ -39,7 +39,7 @@
     overflow: hidden;
 }
 .aboutTabs .sky-tabs .txt {
-    height: 220px;
+   /* height: 220px;*/
 }
 }
 
@@ -60,7 +60,7 @@
     padding: 20px 40px;
 }
 .aboutTabs .sky-tabs > ul > li {
-    height: 312px !important;
+    height: 270px !important;
 }
 @media screen and (max-width: 1600px) , screen and (max-height: 1024px){
 	.aboutTabs .sky-tabs > ul > li {
@@ -70,7 +70,7 @@
 }
 @media screen and (max-width: 1600px) , screen and (max-height: 900px){
 	.aboutTabs .sky-tabs > ul > li {
-    height: 312px !important;
+    height: 270px !important;
 }
 
 }
@@ -318,7 +318,7 @@ a.account img {
 }
 .aboutTabs .sky-tabs > label span span {
     margin-right: 0 !important;
-    padding: 0 8px !important;
+   /* padding: 0 8px !important;*/
 }
 .aboutTabs .sky-tabs > ul > li {
     height: 354px !important;
@@ -337,13 +337,9 @@ a.account img {
 }
 @media screen and (max-width: 1152px) , screen and (min-height: 864px) {
   .aboutTabs .sky-tabs > ul > li {
-    height: 354px !important;
+    height: 330px !important;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) {    
-	.aboutTabs .sky-tabs > ul > li {
-    height: 360px !important;
-}     
-}
+
 }
 
 /* -------------------------- Small screens -------------------------------------- */
