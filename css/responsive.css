@@ -62,6 +62,7 @@
 .aboutTabs .sky-tabs > ul > li {
     height: 270px !important;
 }
+}
 @media screen and (max-width: 1600px) , screen and (max-height: 1024px){
 	.aboutTabs .sky-tabs > ul > li {
     height: 400px !important;
@@ -323,10 +324,6 @@ a.account img {
 .aboutTabs .sky-tabs > ul > li {
     height: 354px !important;
 }
-
-}
-
-
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {    
 	.aboutTabs .sky-tabs > ul > li {
