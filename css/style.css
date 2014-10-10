@@ -8320,3 +8320,15 @@ ul.bg .initials p{
     position: relative;
     width: 100%;
 }
+
+/*NO Animation Class Css*/
+
+.col1.noAnim {
+	top:auto !important;
+	}
+.col2.noAnim {
+	top:auto !important;
+	}
+.col3.noAnim {
+	top:auto !important;
+	}
