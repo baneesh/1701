@@ -848,7 +848,7 @@
 	
   .sky-mega-menu-response-to-icons li {
   	position: static;
-  	font-size: 0;
+  	font-size: auto;
 	}
 	.sky-mega-menu-response-to-icons li a {
 		padding: 0 10px;

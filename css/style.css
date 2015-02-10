@@ -146,7 +146,7 @@ p {
 	/*background: #fff;*/
 	color: #F26E32;
 }
-.navbar-inverse .navbar-nav > li > a.active {
+navbar-inverse .navbar-nav > li > a.active {
 	color: #F26E32;
 }
 .navbar-inverse .navbar-nav > li > a.active.toggle1:after {
@@ -8335,3 +8335,26 @@ ul.bg .initials p{
 .col3.noAnim {
 	top:auto !important;
 	}
+/*=====================================================Adding new css by abhay =================================================
+===============================================================================================================================
+===============================================================================================================================*/
+.nav > li {
+	display: inline-block;
+}
+@viewport{
+    zoom: 0.15;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 0.15;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	#content .page {
+		background-position:29% 13% !important; 
+	}
+	body {
+		overflow: auto;
+	}
+}
+
