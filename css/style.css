@@ -8356,5 +8356,22 @@ ul.bg .initials p{
 	body {
 		overflow: auto;
 	}
+	.floor-bespoke .right {
+		padding-right: 0;
+	}
+	.page {
+		max-width: 380px;
+	}
+	.pcss3t > ul, .pcss3t > ul > li {
+		width: 380px !important;
+		padding: 0;
+		margin:0;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		padding: 0 10px;
+	}
+	.pressSlider .bx-viewport {
+		width: 100% !important;
+	}
 }
 
