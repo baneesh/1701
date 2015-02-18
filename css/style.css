@@ -8373,5 +8373,8 @@ ul.bg .initials p{
 	.pressSlider .bx-viewport {
 		width: 100% !important;
 	}
+	.about-top {
+		height: auto !important;
+	}
 }
 
