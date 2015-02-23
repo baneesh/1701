@@ -8369,6 +8369,7 @@ ul.bg .initials p{
 	}
 	.navbar-inverse .navbar-nav > li > a {
 		padding: 0 10px;
+		font-size: 9px;
 	}
 	.pressSlider .bx-viewport {
 		width: 100% !important;
