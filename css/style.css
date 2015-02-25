@@ -8353,6 +8353,9 @@ ul.bg .initials p{
 	#content .page {
 		background-position:29% 13% !important; 
 	}
+	.navbar {
+		opacity: 1;
+	}
 	body {
 		overflow: auto;
 	}
