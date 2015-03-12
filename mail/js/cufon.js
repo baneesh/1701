@@ -1,0 +1,2 @@
+Cufon.replace('div#main-navigation a, div.three-column-layout1 h2, div.post h3, div#our-clients h2, div#dashboard h3,   ', { fontFamily: 'VAG Rounded Std', hover: 'True' });
+Cufon.replace('div#statement h2, div#slideshow h2,  div#banner2 h2 ', { fontFamily: 'VAGRounded Lt', hover: 'True' });
